@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		390AA24C1FB5E0620061B2AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA24B1FB5E0620061B2AF /* main.m */; };
+		390AA24F1FB5E0620061B2AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA24E1FB5E0620061B2AF /* AppDelegate.m */; };
+		390AA2521FB5E0620061B2AF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA2511FB5E0620061B2AF /* FirstViewController.m */; };
+		390AA2551FB5E0620061B2AF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA2541FB5E0620061B2AF /* SecondViewController.m */; };
+		390AA2581FB5E0620061B2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390AA2561FB5E0620061B2AF /* Main.storyboard */; };
+		390AA25A1FB5E0620061B2AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390AA2591FB5E0620061B2AF /* Assets.xcassets */; };
+		390AA25D1FB5E0620061B2AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390AA25B1FB5E0620061B2AF /* LaunchScreen.storyboard */; };
+		390AA2681FB5E0620061B2AF /* Starred_ClimbingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA2671FB5E0620061B2AF /* Starred_ClimbingTests.m */; };
+		390AA2731FB5E0620061B2AF /* Starred_ClimbingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA2721FB5E0620061B2AF /* Starred_ClimbingUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		390AA2641FB5E0620061B2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 390AA23F1FB5E0620061B2AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 390AA2461FB5E0620061B2AF;
+			remoteInfo = "Starred Climbing";
+		};
+		390AA26F1FB5E0620061B2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 390AA23F1FB5E0620061B2AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 390AA2461FB5E0620061B2AF;
+			remoteInfo = "Starred Climbing";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		390AA2471FB5E0620061B2AF /* Starred Climbing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Starred Climbing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		390AA24B1FB5E0620061B2AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		390AA24D1FB5E0620061B2AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		390AA24E1FB5E0620061B2AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		390AA2501FB5E0620061B2AF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		390AA2511FB5E0620061B2AF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		390AA2531FB5E0620061B2AF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		390AA2541FB5E0620061B2AF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		390AA2571FB5E0620061B2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		390AA2591FB5E0620061B2AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		390AA25C1FB5E0620061B2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		390AA25E1FB5E0620061B2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		390AA2631FB5E0620061B2AF /* Starred ClimbingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Starred ClimbingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		390AA2671FB5E0620061B2AF /* Starred_ClimbingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Starred_ClimbingTests.m; sourceTree = "<group>"; };
+		390AA2691FB5E0620061B2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		390AA26E1FB5E0620061B2AF /* Starred ClimbingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Starred ClimbingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		390AA2721FB5E0620061B2AF /* Starred_ClimbingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Starred_ClimbingUITests.m; sourceTree = "<group>"; };
+		390AA2741FB5E0620061B2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		390AA2441FB5E0620061B2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		390AA2601FB5E0620061B2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		390AA26B1FB5E0620061B2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		390AA23E1FB5E0620061B2AF = {
+			isa = PBXGroup;
+			children = (
+				390AA2491FB5E0620061B2AF /* Starred Climbing */,
+				390AA2661FB5E0620061B2AF /* Starred ClimbingTests */,
+				390AA2711FB5E0620061B2AF /* Starred ClimbingUITests */,
+				390AA2481FB5E0620061B2AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		390AA2481FB5E0620061B2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				390AA2471FB5E0620061B2AF /* Starred Climbing.app */,
+				390AA2631FB5E0620061B2AF /* Starred ClimbingTests.xctest */,
+				390AA26E1FB5E0620061B2AF /* Starred ClimbingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		390AA2491FB5E0620061B2AF /* Starred Climbing */ = {
+			isa = PBXGroup;
+			children = (
+				390AA24D1FB5E0620061B2AF /* AppDelegate.h */,
+				390AA24E1FB5E0620061B2AF /* AppDelegate.m */,
+				390AA2501FB5E0620061B2AF /* FirstViewController.h */,
+				390AA2511FB5E0620061B2AF /* FirstViewController.m */,
+				390AA2531FB5E0620061B2AF /* SecondViewController.h */,
+				390AA2541FB5E0620061B2AF /* SecondViewController.m */,
+				390AA2561FB5E0620061B2AF /* Main.storyboard */,
+				390AA2591FB5E0620061B2AF /* Assets.xcassets */,
+				390AA25B1FB5E0620061B2AF /* LaunchScreen.storyboard */,
+				390AA25E1FB5E0620061B2AF /* Info.plist */,
+				390AA24A1FB5E0620061B2AF /* Supporting Files */,
+			);
+			path = "Starred Climbing";
+			sourceTree = "<group>";
+		};
+		390AA24A1FB5E0620061B2AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				390AA24B1FB5E0620061B2AF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		390AA2661FB5E0620061B2AF /* Starred ClimbingTests */ = {
+			isa = PBXGroup;
+			children = (
+				390AA2671FB5E0620061B2AF /* Starred_ClimbingTests.m */,
+				390AA2691FB5E0620061B2AF /* Info.plist */,
+			);
+			path = "Starred ClimbingTests";
+			sourceTree = "<group>";
+		};
+		390AA2711FB5E0620061B2AF /* Starred ClimbingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				390AA2721FB5E0620061B2AF /* Starred_ClimbingUITests.m */,
+				390AA2741FB5E0620061B2AF /* Info.plist */,
+			);
+			path = "Starred ClimbingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		390AA2461FB5E0620061B2AF /* Starred Climbing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 390AA2771FB5E0620061B2AF /* Build configuration list for PBXNativeTarget "Starred Climbing" */;
+			buildPhases = (
+				390AA2431FB5E0620061B2AF /* Sources */,
+				390AA2441FB5E0620061B2AF /* Frameworks */,
+				390AA2451FB5E0620061B2AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Starred Climbing";
+			productName = "Starred Climbing";
+			productReference = 390AA2471FB5E0620061B2AF /* Starred Climbing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		390AA2621FB5E0620061B2AF /* Starred ClimbingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 390AA27A1FB5E0620061B2AF /* Build configuration list for PBXNativeTarget "Starred ClimbingTests" */;
+			buildPhases = (
+				390AA25F1FB5E0620061B2AF /* Sources */,
+				390AA2601FB5E0620061B2AF /* Frameworks */,
+				390AA2611FB5E0620061B2AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				390AA2651FB5E0620061B2AF /* PBXTargetDependency */,
+			);
+			name = "Starred ClimbingTests";
+			productName = "Starred ClimbingTests";
+			productReference = 390AA2631FB5E0620061B2AF /* Starred ClimbingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		390AA26D1FB5E0620061B2AF /* Starred ClimbingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 390AA27D1FB5E0620061B2AF /* Build configuration list for PBXNativeTarget "Starred ClimbingUITests" */;
+			buildPhases = (
+				390AA26A1FB5E0620061B2AF /* Sources */,
+				390AA26B1FB5E0620061B2AF /* Frameworks */,
+				390AA26C1FB5E0620061B2AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				390AA2701FB5E0620061B2AF /* PBXTargetDependency */,
+			);
+			name = "Starred ClimbingUITests";
+			productName = "Starred ClimbingUITests";
+			productReference = 390AA26E1FB5E0620061B2AF /* Starred ClimbingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		390AA23F1FB5E0620061B2AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Joshua Marshall [ll13jrm]";
+				TargetAttributes = {
+					390AA2461FB5E0620061B2AF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					390AA2621FB5E0620061B2AF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 390AA2461FB5E0620061B2AF;
+					};
+					390AA26D1FB5E0620061B2AF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 390AA2461FB5E0620061B2AF;
+					};
+				};
+			};
+			buildConfigurationList = 390AA2421FB5E0620061B2AF /* Build configuration list for PBXProject "Starred Climbing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 390AA23E1FB5E0620061B2AF;
+			productRefGroup = 390AA2481FB5E0620061B2AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				390AA2461FB5E0620061B2AF /* Starred Climbing */,
+				390AA2621FB5E0620061B2AF /* Starred ClimbingTests */,
+				390AA26D1FB5E0620061B2AF /* Starred ClimbingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		390AA2451FB5E0620061B2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390AA25D1FB5E0620061B2AF /* LaunchScreen.storyboard in Resources */,
+				390AA25A1FB5E0620061B2AF /* Assets.xcassets in Resources */,
+				390AA2581FB5E0620061B2AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		390AA2611FB5E0620061B2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		390AA26C1FB5E0620061B2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		390AA2431FB5E0620061B2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390AA2551FB5E0620061B2AF /* SecondViewController.m in Sources */,
+				390AA24F1FB5E0620061B2AF /* AppDelegate.m in Sources */,
+				390AA2521FB5E0620061B2AF /* FirstViewController.m in Sources */,
+				390AA24C1FB5E0620061B2AF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		390AA25F1FB5E0620061B2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390AA2681FB5E0620061B2AF /* Starred_ClimbingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		390AA26A1FB5E0620061B2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390AA2731FB5E0620061B2AF /* Starred_ClimbingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		390AA2651FB5E0620061B2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 390AA2461FB5E0620061B2AF /* Starred Climbing */;
+			targetProxy = 390AA2641FB5E0620061B2AF /* PBXContainerItemProxy */;
+		};
+		390AA2701FB5E0620061B2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 390AA2461FB5E0620061B2AF /* Starred Climbing */;
+			targetProxy = 390AA26F1FB5E0620061B2AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		390AA2561FB5E0620061B2AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				390AA2571FB5E0620061B2AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		390AA25B1FB5E0620061B2AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				390AA25C1FB5E0620061B2AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		390AA2751FB5E0620061B2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		390AA2761FB5E0620061B2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		390AA2781FB5E0620061B2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Starred Climbing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ac.uk.leeds.Starred-Climbing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		390AA2791FB5E0620061B2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Starred Climbing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ac.uk.leeds.Starred-Climbing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		390AA27B1FB5E0620061B2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Starred ClimbingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ac.uk.leeds.Starred-ClimbingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Starred Climbing.app/Starred Climbing";
+			};
+			name = Debug;
+		};
+		390AA27C1FB5E0620061B2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Starred ClimbingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ac.uk.leeds.Starred-ClimbingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Starred Climbing.app/Starred Climbing";
+			};
+			name = Release;
+		};
+		390AA27E1FB5E0620061B2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Starred ClimbingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ac.uk.leeds.Starred-ClimbingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Starred Climbing";
+			};
+			name = Debug;
+		};
+		390AA27F1FB5E0620061B2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Starred ClimbingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ac.uk.leeds.Starred-ClimbingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Starred Climbing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		390AA2421FB5E0620061B2AF /* Build configuration list for PBXProject "Starred Climbing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				390AA2751FB5E0620061B2AF /* Debug */,
+				390AA2761FB5E0620061B2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		390AA2771FB5E0620061B2AF /* Build configuration list for PBXNativeTarget "Starred Climbing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				390AA2781FB5E0620061B2AF /* Debug */,
+				390AA2791FB5E0620061B2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		390AA27A1FB5E0620061B2AF /* Build configuration list for PBXNativeTarget "Starred ClimbingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				390AA27B1FB5E0620061B2AF /* Debug */,
+				390AA27C1FB5E0620061B2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		390AA27D1FB5E0620061B2AF /* Build configuration list for PBXNativeTarget "Starred ClimbingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				390AA27E1FB5E0620061B2AF /* Debug */,
+				390AA27F1FB5E0620061B2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 390AA23F1FB5E0620061B2AF /* Project object */;
+}
