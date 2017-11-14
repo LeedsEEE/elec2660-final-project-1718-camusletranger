@@ -11,8 +11,6 @@
 @interface Crag : Climb
 
 @property NSString *cragName, *cragGuidebook, *cragRockType;
-@property NSMutableArray *cragClimbs;
 
--(void) cragClimb: (Climb *) climb;
 
 @end

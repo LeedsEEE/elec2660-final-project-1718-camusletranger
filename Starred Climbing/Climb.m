@@ -10,4 +10,25 @@
 
 @implementation Climb
 
+-(void) setName: (NSString *) name andDifficulty: (NSString *) difficulty andQuality: (NSString *) quality {
+    
+    name = _climbName;
+    quality = _climbQuality;
+    difficulty = _climbDifficulty;
+    
+    
+}
+- (instancetype)initWith: (NSString *) name andDifficulty: (NSString *) difficulty andQuality: (NSString *) quality;
+
+{
+    self = [super init];
+    if (self)
+        
+        [self setName: name andDifficulty: difficulty andQuality: quality];
+    
+    return self;
+}
+
+
+
 @end

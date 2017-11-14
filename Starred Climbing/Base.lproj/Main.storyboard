@@ -107,7 +107,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT1-Ch-exe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2227" y="-315"/>
+            <point key="canvasLocation" x="2017" y="-313"/>
         </scene>
         <!--Crag Specific Table View Controller-->
         <scene sceneID="OeY-NZ-t6p">
@@ -135,7 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDl-oh-hlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2938" y="-315"/>
+            <point key="canvasLocation" x="2585" y="-313"/>
         </scene>
         <!--Item-->
         <scene sceneID="LXK-hJ-dYN">
