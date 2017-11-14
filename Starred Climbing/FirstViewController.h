@@ -10,6 +10,14 @@
 
 @interface FirstViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIPickerView *timeOfDayYearPicker;
+
+
+
+- (IBAction)gradeRangeEntered:(UITextField *)sender;
+- (IBAction)sortButtonPushed:(UIButton *)sender;
+
+
 
 @end
 
