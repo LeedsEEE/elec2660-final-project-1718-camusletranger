@@ -14,11 +14,13 @@
 {
     self = [super init];
     if (self) {
+        
         self.crags = [NSMutableArray array];
-        Crag *dinasCromlech, *clogwynYrGrochan, *carregWastad = [[Crag alloc] init];
+        Crag *dinasCromlech, *clogwynYrGrochan, *carregWastad, *stanagePopular = [[Crag alloc] init];
         [dinasCromlech setCragName:@"Cromlech" andGuideBook:@"Llanberis Pass, North Wales Rock" andRockType: @"Dolorite" andTOD:@"Mid Day" andTOY:@"Summer"];
         [clogwynYrGrochan setCragName:@"Clogwyn Yr Grochan" andGuideBook:@"Llanberis Pass, North Wales Rock" andRockType:@"Dolorite" andTOD:@"Midday" andTOY:@"Mid Summer"];
         [carregWastad setCragName:@"Carreg Wastad" andGuideBook:@"Llanberis Pass, North Wales Rock"  andRockType:@"Dolorite" andTOD:@"Afternoon" andTOY:@"Mid Summer"];
+        [stanagePopular setCragName:@"Stanage Popular" andGuideBook:@"Lancashire Grit" andRockType:@"Grit" andTOD:@"Midday" andTOY:@"Early Winter"];
         
         self.dinasCromlechClimbs = [NSMutableArray array];
         Climb *dinasCromlechClimbs = [[Climb alloc] init];
@@ -44,17 +46,17 @@
         self.clogwynYrGrochanClimbs = [NSMutableArray array];
         Climb *clogwynYrGrochanClimbs = [[Climb alloc] init];
         [clogwynYrGrochanClimbs setName:@"Brant" andDifficulty:@"VS4c" andQuality:@"***"];
-        [clogwynYrGrochanClimbs setName:@"Nea" andDifficulty:@"VS4b" andQuality:@"***"];
+        [clogwynYrGrochanClimbs setName:@"Nea" andDifficulty:@"VS4b" andQuality:@"**"];
         [clogwynYrGrochanClimbs setName:@"Phantom Rib" andDifficulty:@"VS4c" andQuality:@"***"];
         [clogwynYrGrochanClimbs setName:@"Brant Direct" andDifficulty:@"HVS5a" andQuality:@"***"];
         [clogwynYrGrochanClimbs setName:@"Spectre" andDifficulty:@"HVS5a" andQuality:@"***"];
         [clogwynYrGrochanClimbs setName:@"Kaisergebirge Wall" andDifficulty:@"HVS5b" andQuality:@"***"];
-        [clogwynYrGrochanClimbs setName:@"Karwendal Wall" andDifficulty:@"HVS5b" andQuality:@"***"];
-        [clogwynYrGrochanClimbs setName:@"Sickle" andDifficulty:@"HVS5b" andQuality:@"***"];
-        [clogwynYrGrochanClimbs setName:@"Hangover" andDifficulty:@"E15b" andQuality:@"***"];
-        [clogwynYrGrochanClimbs setName:@"Slape Direct" andDifficulty:@"E25b" andQuality:@"***"];
-        [clogwynYrGrochanClimbs setName:@"First Amendment" andDifficulty:@"E25c" andQuality:@"***"];
-        [clogwynYrGrochanClimbs setName:@"Spectrum" andDifficulty:@"E25c" andQuality:@"***"];
+        [clogwynYrGrochanClimbs setName:@"Karwendal Wall" andDifficulty:@"HVS5b" andQuality:@"**"];
+        [clogwynYrGrochanClimbs setName:@"Sickle" andDifficulty:@"HVS5b" andQuality:@"**"];
+        [clogwynYrGrochanClimbs setName:@"Hangover" andDifficulty:@"E15b" andQuality:@"*"];
+        [clogwynYrGrochanClimbs setName:@"Slape Direct" andDifficulty:@"E25b" andQuality:@"**"];
+        [clogwynYrGrochanClimbs setName:@"First Amendment" andDifficulty:@"E25c" andQuality:@"**"];
+        [clogwynYrGrochanClimbs setName:@"Spectrum" andDifficulty:@"E25c" andQuality:@"**"];
         [clogwynYrGrochanClimbs setName:@"Stroll On" andDifficulty:@"E36a" andQuality:@"***"];
         [clogwynYrGrochanClimbs setName:@"Quazar" andDifficulty:@"E36a" andQuality:@"***"];
         [clogwynYrGrochanClimbs setName:@"Quantum Jump" andDifficulty:@"E56b" andQuality:@"***"];
@@ -75,7 +77,59 @@
         [carregWastadClimbs setName:@"Erosion Groove Direct" andDifficulty:@"E25c" andQuality:@"***"];
         [carregWastadClimbs setName:@"Zangorilla" andDifficulty:@"E46a" andQuality:@"***"];
 
-
+        
+        self.stanagePopularClimbs = [NSMutableArray array];
+        Climb *stanagePopularClimbs = [[Climb alloc] init];
+        [stanagePopularClimbs setName:@"Little Women" andDifficulty:@"E77a" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Groove Is In The Heart" andDifficulty:@"E77a" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Shine On" andDifficulty:@"E76c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Black Car Burning" andDifficulty:@"E76c" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Cemetary Waits" andDifficulty:@"E76c" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Warm Love" andDifficulty:@"E67a" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Carpe Diem" andDifficulty:@"E66c" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Wall Of Sound" andDifficulty:@"E66b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Strange Without Oxygen" andDifficulty:@"E56c" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Headless Chicken" andDifficulty:@"E56b" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Boc No Buttress" andDifficulty:@"EE56a" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Snug as a Thug on a Jug" andDifficulty:@"E46b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Off With His Head!" andDifficulty:@"E46b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Chameleon" andDifficulty:@"E46b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"The Asp" andDifficulty:@"E36a" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Tipler Direct" andDifficulty:@"E36a" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Censor" andDifficulty:@"E35c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"The Guillotine" andDifficulty:@"E5c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Black Hawk Bastion" andDifficulty:@"E35c" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Ashes" andDifficulty:@"E35c" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Cave Eliminate" andDifficulty:@"E26a" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"The Dangler" andDifficulty:@"E25c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Wuthering" andDifficulty:@"E25b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Yosemite Wall" andDifficulty:@"E25b" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Desperation" andDifficulty:@"E16a" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Pedlars Rib" andDifficulty:@"E15c" andQuality:@"**"];
+        [stanagePopularClimbs setName:@"Dark Continent" andDifficulty:@"E15c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Swings" andDifficulty:@"E15c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"The Link" andDifficulty:@"E15b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"The Scoop" andDifficulty:@"HVS5b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Congo River" andDifficulty:@"HVS5b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Central Trinity Direct" andDifficulty:@"HVS5b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Paucity" andDifficulty:@"HVS5b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Good Friday" andDifficulty:@"HVS5b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Whillans Pendulum and Black Magic" andDifficulty:@"HVS5b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Mississipi Buttrss Direct" andDifficulty:@"VS4c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Ellis's Eliminate" andDifficulty:@"VS4c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Hargreaves' Original Route" andDifficulty:@"VS4c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Central Trinity" andDifficulty:@"VS4c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Martello Buttress" andDifficulty:@"VS4c" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"April Crack" andDifficulty:@"HS4b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Manchester Buttress" andDifficulty:@"HS4b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Byne's Route" andDifficulty:@"HS4b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Castle Crack" andDifficulty:@"HS4b" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Balcony Buttress" andDifficulty:@"S" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Bishop's Route" andDifficulty:@"S" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Blackhawk Hell Route" andDifficulty:@"S" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Heaven Crack" andDifficulty:@"VD" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Hollybush Crack" andDifficulty:@"VD" andQuality:@"***"];
+        [stanagePopularClimbs setName:@"Black Hawk Traverse Left" andDifficulty:@"VD" andQuality:@"**"];
 
         
     }
