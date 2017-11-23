@@ -18,7 +18,7 @@
     
     
 }
-- (instancetype)initWith: (NSString *) name andDifficulty: (NSString *) difficulty andQuality: (NSString *) quality;
+/*- (instancetype)initWith: (NSString *) name andDifficulty: (NSString *) difficulty andQuality: (NSString *) quality;
 
 {
     self = [super init];
@@ -27,7 +27,7 @@
         [self setName: name andDifficulty: difficulty andQuality: quality];
     
     return self;
-}
+}*/
 
 
 

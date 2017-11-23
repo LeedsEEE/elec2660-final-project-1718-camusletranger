@@ -20,6 +20,8 @@
 		390AA2851FB5EBAC0061B2AF /* CragSpecificTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA2841FB5EBAC0061B2AF /* CragSpecificTableViewController.m */; };
 		390AA2891FB5F1F60061B2AF /* ClimbingPhotoAndy.JPG - OneDrive.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 390AA2881FB5F1F60061B2AF /* ClimbingPhotoAndy.JPG - OneDrive.webarchive */; };
 		390AA28B1FB5F35C0061B2AF /* MarkAlmack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 390AA28A1FB5F35C0061B2AF /* MarkAlmack.jpg */; };
+		392C5EE21FC6D93C007BE014 /* TestDataModelSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 392C5EE11FC6D93C007BE014 /* TestDataModelSubclass.m */; };
+		392C5EE51FC6D957007BE014 /* TestDataModelImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 392C5EE41FC6D957007BE014 /* TestDataModelImport.m */; };
 		39EFB78D1FBB1EAC00EEF502 /* Climb.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFB78C1FBB1EAC00EEF502 /* Climb.m */; };
 		39EFB7901FBB1EC900EEF502 /* Crag.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFB78F1FBB1EC900EEF502 /* Crag.m */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,10 @@
 		390AA2841FB5EBAC0061B2AF /* CragSpecificTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CragSpecificTableViewController.m; sourceTree = "<group>"; };
 		390AA2881FB5F1F60061B2AF /* ClimbingPhotoAndy.JPG - OneDrive.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ClimbingPhotoAndy.JPG - OneDrive.webarchive"; sourceTree = "<group>"; };
 		390AA28A1FB5F35C0061B2AF /* MarkAlmack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MarkAlmack.jpg; sourceTree = "<group>"; };
+		392C5EE01FC6D93C007BE014 /* TestDataModelSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataModelSubclass.h; sourceTree = "<group>"; };
+		392C5EE11FC6D93C007BE014 /* TestDataModelSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataModelSubclass.m; sourceTree = "<group>"; };
+		392C5EE31FC6D957007BE014 /* TestDataModelImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataModelImport.h; sourceTree = "<group>"; };
+		392C5EE41FC6D957007BE014 /* TestDataModelImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataModelImport.m; sourceTree = "<group>"; };
 		39EFB78B1FBB1EAC00EEF502 /* Climb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Climb.h; sourceTree = "<group>"; };
 		39EFB78C1FBB1EAC00EEF502 /* Climb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Climb.m; sourceTree = "<group>"; };
 		39EFB78E1FBB1EC900EEF502 /* Crag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crag.h; sourceTree = "<group>"; };
@@ -134,6 +140,10 @@
 				39EFB78C1FBB1EAC00EEF502 /* Climb.m */,
 				39EFB78E1FBB1EC900EEF502 /* Crag.h */,
 				39EFB78F1FBB1EC900EEF502 /* Crag.m */,
+				392C5EE01FC6D93C007BE014 /* TestDataModelSubclass.h */,
+				392C5EE11FC6D93C007BE014 /* TestDataModelSubclass.m */,
+				392C5EE31FC6D957007BE014 /* TestDataModelImport.h */,
+				392C5EE41FC6D957007BE014 /* TestDataModelImport.m */,
 				390AA28A1FB5F35C0061B2AF /* MarkAlmack.jpg */,
 				390AA2881FB5F1F60061B2AF /* ClimbingPhotoAndy.JPG - OneDrive.webarchive */,
 				390AA2561FB5E0620061B2AF /* Main.storyboard */,
@@ -308,9 +318,11 @@
 			files = (
 				390AA2551FB5E0620061B2AF /* SecondViewController.m in Sources */,
 				39EFB78D1FBB1EAC00EEF502 /* Climb.m in Sources */,
+				392C5EE21FC6D93C007BE014 /* TestDataModelSubclass.m in Sources */,
 				390AA24F1FB5E0620061B2AF /* AppDelegate.m in Sources */,
 				390AA2521FB5E0620061B2AF /* FirstViewController.m in Sources */,
 				390AA24C1FB5E0620061B2AF /* main.m in Sources */,
+				392C5EE51FC6D957007BE014 /* TestDataModelImport.m in Sources */,
 				390AA2851FB5EBAC0061B2AF /* CragSpecificTableViewController.m in Sources */,
 				39EFB7901FBB1EC900EEF502 /* Crag.m in Sources */,
 				390AA2821FB5EB9B0061B2AF /* CragListTableViewController.m in Sources */,

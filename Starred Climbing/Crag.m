@@ -9,10 +9,15 @@
 #import "Crag.h"
 
 @implementation Crag
--(void) cragClimb:(Climb *)climb{
+
+-(void) setCragName: (NSString *) name andGuideBook:(NSString *) guide andRockType:(NSString *) rock andTOD: (NSString *) tod andTOY:(NSString *) toy{
     
-    
-    
-    
+    name = _cragName;
+    guide = _cragGuidebook;
+    rock = _cragRockType;
+    tod = _cragTOD; // Time of day
+    toy = _cragTOY; // Time of year
+
 }
+
 @end
