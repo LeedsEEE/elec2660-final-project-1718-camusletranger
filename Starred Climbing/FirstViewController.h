@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DataModel.h"
+#import "SearchOperations.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *timeOfDayYearPicker;
 
@@ -18,7 +18,7 @@
 - (IBAction)gradeRangeEntered:(UITextField *)sender;
 - (IBAction)sortButtonPushed:(UIButton *)sender;
 
-
+@property (strong, nonatomic) SearchOperations *search;
 
 @end
 

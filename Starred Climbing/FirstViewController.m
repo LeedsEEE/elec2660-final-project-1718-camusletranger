@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.timeOfDayYearPicker.delegate = self;
+    self.timeOfDayYearPicker.dataSource = self;
+    
+    self.search = [[SearchOperations alloc] init];
 }
 
 
@@ -33,4 +37,77 @@
 
 - (IBAction)sortButtonPushed:(UIButton *)sender {
 }
+
+#pragma mark Time of Day and Year Picker Delegate Methods
+
+/*- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+
+    UIView *band = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 50, 30)];
+
+    
+    if (component == 0) {
+        
+        band.text = [self.search.timeOfDayArray objectAtIndex:row];
+        
+        
+    }
+}*/
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    
+    NSString *title;
+    
+    if(component == 0) {
+        
+        title = [self.search.timeOfDayArray objectAtIndex:row];
+        
+    }
+    else if (component == 1) {
+        
+        
+        title = [self.search.timOfYearArray objectAtIndex:row];
+        
+    }
+    return title;
+    
+    
+}
+
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+
+    
+}
+
+#pragma mark Time of Day and Year Picker Data Source Methods
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    
+    return 2;
+    
+}
+
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    
+    NSInteger rows;
+    
+    if (component == 0) { // Component for time of day, morning, afternoon, or evening
+        
+        rows = 3;
+    }
+    else if (component == 1){                // Component for time of year, winter, spring, summer or autumn
+        
+        rows = 4;
+    }
+    
+    return rows;
+    
+}
+
+
+
+
+
+
 @end
