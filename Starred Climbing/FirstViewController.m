@@ -94,11 +94,11 @@
     
     if (component == 0) { // Component for time of day, morning, afternoon, or evening
         
-        rows = 3;
+        rows = [self.search.timeOfDayArray count];
     }
-    else if (component == 1){                // Component for time of year, winter, spring, summer or autumn
+    else if (component == 1){  // Component for time of year, winter, spring, summer or autumn
         
-        rows = 4;
+        rows = [self.search.timOfYearArray count];
     }
     
     return rows;
