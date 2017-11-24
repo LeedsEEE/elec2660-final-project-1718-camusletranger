@@ -76,6 +76,10 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
+    self.search.timeOfDay = [self.timeOfDayYearPicker selectedRowInComponent:0];
+    self.search.timeOfYear = [self.timeOfDayYearPicker selectedRowInComponent:1];
+    
+    
     
 }
 
