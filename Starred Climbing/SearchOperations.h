@@ -16,7 +16,6 @@
 @property NSInteger timeOfDay, timeOfYear;                              // Setters and getters for picker position relevent to time of day/year
 
 @property (strong, nonatomic) NSMutableArray *selectedClimbs;           // Array made of crags selected by picker time of day/year selections
-@property (strong, nonatomic) NSMutableArray *climbsAtCrag;             // Array made of climbs specific to those crags selected via the picker
 
 -(void) addCrag: (Crag *) crag;                                         // Method to add climb to an array based on the picker selected crags
 

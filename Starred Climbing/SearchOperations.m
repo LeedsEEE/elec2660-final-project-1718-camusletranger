@@ -24,8 +24,11 @@
 }
 
 
+-(void) addCrag: (Crag *) crag{
     
-
+    [_selectedClimbs addObject: crag];
+    
+}
 
 
 @end
