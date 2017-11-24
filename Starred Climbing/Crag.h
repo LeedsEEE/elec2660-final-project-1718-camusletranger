@@ -15,10 +15,5 @@
 
 -(void) setCragName: (NSString *) name andGuideBook:(NSString *) guide andRockType:(NSString *) rock andTOD: (NSString *) tod andTOY:(NSString *) toy;
 
--(NSMutableArray *) addClimbToArray: (Climb *) climb; 
--(NSMutableArray *) addCragToArray: (Crag *) crag;
-
--(Crag *) compareCragToPicker: (Crag *) comparedCrag;
-
 
 @end
