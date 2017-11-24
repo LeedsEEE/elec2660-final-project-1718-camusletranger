@@ -17,11 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+ 
     self.timeOfDayYearPicker.delegate = self;
     self.timeOfDayYearPicker.dataSource = self;
     
     self.search = [[SearchOperations alloc] init];
-}
+     
+     }
 
 
 - (void)didReceiveMemoryWarning {
@@ -64,12 +66,10 @@
     }
     else if (component == 1) {
         
-        
         title = [self.search.timOfYearArray objectAtIndex:row];
         
     }
     return title;
-    
     
 }
 

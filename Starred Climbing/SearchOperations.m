@@ -16,8 +16,8 @@
     if (self) {
         
         
-        self.timeOfDayArray = [NSArray arrayWithObjects: @"Morning",  @"Midday", @"Afternoon", @"Evening", nil];
-        self.timOfYearArray = [NSArray arrayWithObjects:@"Winter", @"Spring" @"Summer", @"Autumn", nil];
+        self.timeOfDayArray = [NSArray arrayWithObjects: @"Morning", @"Afternoon", @"Evening", nil];
+        self.timOfYearArray = [NSArray arrayWithObjects: @"Winter", @"Spring" @"Summer", @"Autumn", nil];
         
     }
     return self;
