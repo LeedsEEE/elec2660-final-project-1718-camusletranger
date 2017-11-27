@@ -36,6 +36,8 @@
     
     for (i = 0; i <= self.data.crags.count; ++i) {
      
+        
+        
     }
     }
     
