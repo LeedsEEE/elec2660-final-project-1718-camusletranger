@@ -24,25 +24,20 @@
 }
 
 
--(void) addCrag: (Crag *) crag{
+-(void) addCrag: (Crag *) crag {
     
     [_selectedCrags addObject: crag];
     
 }
 
--(void) searchCrags: (Crag *) crags {
+-(Crag *) searchCrags: (NSString *) cragTime {
     
     int i;
     
     for (i = 0; i <= self.data.crags.count; ++i) {
-        
-        if (self.cragTOD && self.cragTOY isEqualToString: ) {
-        
-        }
-        
-        
+     
     }
-    
+    }
     
 }
 

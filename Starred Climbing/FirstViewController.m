@@ -61,8 +61,8 @@
     
     if(component == 0) {
         
-        title = [self.search.timeOfDayArray objectAtIndex:row];
-        
+        title = [self.search.timeOfDayArray objectAtIndex:row]; // Populates rows in picker with the array of string objects
+
     }
     else if (component == 1) {
         

@@ -22,7 +22,7 @@
 
 -(void) addCrag: (Crag *) crag;                                         // Method to add climb to an array based on the picker selected crags
 
--(void) searchCrags: (Crag *) crags;                                    // Method to search for matches between the picker selected time of day/year and those stored in the data model
+-(Crag *) searchCrags: (NSString *) cragTime;                           // Method to search for matches between the picker selected time of day/year and those stored in the data model
 
 
 @end
