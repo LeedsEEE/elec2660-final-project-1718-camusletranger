@@ -7,6 +7,7 @@
 //
 
 #import "TestDataModelSubclass.h"
+#import "FirstViewController.h"
 
 @interface SearchOperations : TestDataModelSubclass
 
@@ -15,10 +16,13 @@
 
 @property NSInteger timeOfDay, timeOfYear;                              // Setters and getters for picker position relevent to time of day/year
 
-@property (strong, nonatomic) NSMutableArray *selectedClimbs;           // Array made of crags selected by picker time of day/year selections
+@property (strong, nonatomic) NSMutableArray *selectedCrags;            // Array made of crags selected by picker time of day/year selections
+
+@property (strong, nonatomic) TestDataModelSubclass *data;              // Data Model memory allocation such that the search crag methos can compare to the data model
 
 -(void) addCrag: (Crag *) crag;                                         // Method to add climb to an array based on the picker selected crags
 
+-(void) searchCrags: (Crag *) crags;                                    // Method to search for matches between the picker selected time of day/year and those stored in the data model
 
 
 @end

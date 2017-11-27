@@ -26,7 +26,23 @@
 
 -(void) addCrag: (Crag *) crag{
     
-    [_selectedClimbs addObject: crag];
+    [_selectedCrags addObject: crag];
+    
+}
+
+-(void) searchCrags: (Crag *) crags {
+    
+    int i;
+    
+    for (i = 0; i <= self.data.crags.count; ++i) {
+        
+        if (self.cragTOD && self.cragTOY isEqualToString: ) {
+        
+        }
+        
+        
+    }
+    
     
 }
 

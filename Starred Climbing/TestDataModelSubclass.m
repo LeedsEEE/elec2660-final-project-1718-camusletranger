@@ -30,7 +30,21 @@
         [craigDoris setCragName:@"Craig Doris" andGuideBook:@"Lleyn Guide" andRockType:@"Crumbly, scary but good if you're into that" andTOD: @"Afternoon" andTOY:@"Autumn"];
         [easterIslandGully setCragName:@"Easter Island Gully" andGuideBook:@"Gogarth North" andRockType:@"Quartzite" andTOD:@"Afternoon" andTOY:@"Autumn"];
         
+        [self.crags addObject:dinasCromlech];     //index 0
+        [self.crags addObject:clogwynYrGrochan];  //index 1
+        [self.crags addObject:carregWastad];      //index 2
+        [self.crags addObject:stanagePopular];    //index 3
+        [self.crags addObject:craigBwlchYMoch];   //index 4
+        [self.crags addObject:craigPantIfan];     //index 5
+        [self.crags addObject:stGovensHeadEast];  //index 6
+        [self.crags addObject:stGovensHeadWest];  //index 7
+        [self.crags addObject:henloud];           //index 8
+        [self.crags addObject:roaches];           //index 9
+        [self.crags addObject:craigDoris];        //index 10
+        [self.crags addObject:easterIslandGully]; //index 11
         
+
+
         self.dinasCromlechClimbs = [NSMutableArray array];
         Climb *dinasCromlechClimbs = [[Climb alloc] init];
         [dinasCromlechClimbs setName:@"Cenotaph" andDifficulty:@"E15b" andQuality:@"***"];
