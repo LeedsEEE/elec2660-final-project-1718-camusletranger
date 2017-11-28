@@ -28,22 +28,18 @@
 
 -(void) addCrag: (Crag *) crag {
     
+    
     [_selectedCrags addObject: crag];
     
 }
 
-/*-(Crag *) searchCrags: (NSString *) cragTime {
+-(Crag *) compareTo: (Crag *) compCrag {
     
-    int i;
-    
-    for (i = 0; i <= self.data.crags.count; ++i) {
-     
+    if(([compCrag.cragTOY isEqualToString: self.cragTOY] && [compCrag.cragTOD isEqualToString: self.cragTOD ] )
         
-        
-    }
-    }
+        [_selectedCrags addCrag: compCrag];
     
-}*/
+}
 
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "TestDataModelSubclass.h"
-
+#import "Crag.h"
 @interface SearchOperations : TestDataModelSubclass
 
 @property (strong, nonatomic) TestDataModelSubclass *data;              // Data Model memory allocation such that the search crag methods can compare to the data model
@@ -21,8 +21,7 @@
 
 -(void) addCrag: (Crag *) crag;                                         // Method to add climb to an array based on the picker selected crags
 
-
-//-(Crag *) searchCrags: (NSString *) cragTime;                         // Method to search for matches between the picker selected time of day/year and those stored in the data model
+-(Crag *) compareTo: (Crag *) compCrag;
 
 
 @end
