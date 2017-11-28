@@ -37,7 +37,7 @@
     
     if(([compCrag.cragTOY isEqualToString: self.cragTOY] && [compCrag.cragTOD isEqualToString: self.cragTOD ] )
         
-        [_selectedCrags addCrag: compCrag];
+        [addCrag: compCrag];
     
 }
 

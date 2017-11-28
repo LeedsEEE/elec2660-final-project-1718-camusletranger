@@ -7,7 +7,6 @@
 //
 
 #import "TestDataModelSubclass.h"
-#import "Crag.h"
 @interface SearchOperations : TestDataModelSubclass
 
 @property (strong, nonatomic) TestDataModelSubclass *data;              // Data Model memory allocation such that the search crag methods can compare to the data model
