@@ -16,7 +16,19 @@
     if (self) {
         
         self.crags = [NSMutableArray array];
-        Crag *dinasCromlech, *clogwynYrGrochan, *carregWastad, *stanagePopular, *craigBwlchYMoch, *craigPantIfan, *stGovensHeadEast, *stGovensHeadWest, *henloud, *roaches, *craigDoris, *easterIslandGully = [[Crag alloc] init];
+        Crag *dinasCromlech = [[Crag alloc] init];
+        Crag *clogwynYrGrochan = [[Crag alloc] init];
+        Crag *carregWastad = [[Crag alloc] init];
+        Crag *stanagePopular = [[Crag alloc] init];
+        Crag *craigBwlchYMoch = [[Crag alloc] init];
+        Crag *craigPantIfan = [[Crag alloc] init];
+        Crag *stGovensHeadEast = [[Crag alloc] init];
+        Crag *stGovensHeadWest = [[Crag alloc] init];
+        Crag *henloud = [[Crag alloc] init];
+        Crag *roaches = [[Crag alloc] init];
+        Crag *craigDoris = [[Crag alloc] init];
+        Crag *easterIslandGully = [[Crag alloc] init];
+        
         [dinasCromlech setCragName:@"Cromlech" andGuideBook:@"Llanberis Pass, North Wales Rock" andRockType: @"Dolorite" andTOD:@"Morning" andTOY:@"Winter"];
         [clogwynYrGrochan setCragName:@"Clogwyn Yr Grochan" andGuideBook:@"Llanberis Pass, North Wales Rock" andRockType:@"Dolorite" andTOD:@"Afternoon" andTOY:@"Winter"];
         [carregWastad setCragName:@"Carreg Wastad" andGuideBook:@"Llanberis Pass, North Wales Rock"  andRockType:@"Dolorite" andTOD:@"Evening" andTOY:@"Winter"];

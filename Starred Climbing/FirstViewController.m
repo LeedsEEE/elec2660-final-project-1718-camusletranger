@@ -98,6 +98,7 @@
     
     if (component == 0) { // Component for time of day, morning, afternoon, or evening
         
+        
         rows = [self.search.timeOfDayArray count];
     }
     else if (component == 1){  // Component for time of year, winter, spring, summer or autumn

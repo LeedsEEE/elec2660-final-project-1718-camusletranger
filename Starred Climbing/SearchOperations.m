@@ -24,13 +24,15 @@
 }
 
 
+
+
 -(void) addCrag: (Crag *) crag {
     
     [_selectedCrags addObject: crag];
     
 }
 
--(Crag *) searchCrags: (NSString *) cragTime {
+/*-(Crag *) searchCrags: (NSString *) cragTime {
     
     int i;
     
@@ -41,7 +43,7 @@
     }
     }
     
-}
+}*/
 
 
 @end

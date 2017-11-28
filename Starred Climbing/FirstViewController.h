@@ -13,12 +13,13 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *timeOfDayYearPicker;
 
-
+@property (strong, nonatomic) SearchOperations *search;
 
 - (IBAction)gradeRangeEntered:(UITextField *)sender;
 - (IBAction)sortButtonPushed:(UIButton *)sender;
 
-@property (strong, nonatomic) SearchOperations *search;
+
+
 
 @end
 
