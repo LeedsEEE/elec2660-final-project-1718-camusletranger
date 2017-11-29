@@ -28,17 +28,12 @@
 
 -(void) addCrag: (Crag *) crag {
     
+    if(( [crag.cragTOY isEqualToString: self.cragTOY] && [crag.cragTOD isEqualToString: self.cragTOD ] )) { // Compares the time of day/year for the crag and user selected
     
-    [_selectedCrags addObject: crag];
-    
-}
-
--(Crag *) compareTo: (Crag *) compCrag {
-    
-    if(([compCrag.cragTOY isEqualToString: self.cragTOY] && [compCrag.cragTOD isEqualToString: self.cragTOD ] )
+    [_selectedCrags addObject: crag]; // Adds Crag object to a new array that is then used to populate the table view
         
-        [addCrag: compCrag];
-    
+    }
+
 }
 
 

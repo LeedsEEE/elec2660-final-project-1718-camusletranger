@@ -38,6 +38,21 @@
 }
 
 - (IBAction)sortButtonPushed:(UIButton *)sender {
+    
+    self.data = [[TestDataModelSubclass alloc] init];
+    self.search = [[SearchOperations alloc] init];
+
+    int i;
+    
+    for (i = 0; i <= [self.data.crags count]; ++i) {
+        
+        if(self.data.crags.index = i) {
+        
+            [self.search.selectedCrags addCrag: self.data.crags];
+        
+        }
+    }
+    
 }
 
 #pragma mark Time of Day and Year Picker Delegate Methods
