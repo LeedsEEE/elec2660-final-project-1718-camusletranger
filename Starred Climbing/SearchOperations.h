@@ -22,5 +22,4 @@
 -(void) addCrag: (Crag *) crag;                              // Method to add climb to an array based on the picker selected crags
 
 
-
 @end

@@ -46,10 +46,13 @@
     
     for (i = 0; i <= [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
         
-        if(self.data.crags.index = i) { // Changes the crag for each loop
+       // [self.data.crags objectAtIndex: i];
+        
+        
+        
+        if( [self.data.crags objectAtIndex: i] ) { // Changes the crag for each loop
         
             [self.search.selectedCrags addCrag: self.data.crags]; // Adds (or not) crag to new array
-            - (ObjectType)objectAtIndex:(NSUInteger)index; // see API
 
         }
     }
