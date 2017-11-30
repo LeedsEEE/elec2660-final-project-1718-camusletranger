@@ -15,14 +15,22 @@
     self = [super init];
     if (self) {
         
+        NSString *morning = @"Moring";
+        NSString *afternoon = @"Afternoon";
+        NSString *evening = @"Evening";
         
-        self.timeOfDayArray = [NSArray arrayWithObjects: @"Morning", @"Afternoon", @"Evening", nil];
-        self.timOfYearArray = [NSArray arrayWithObjects: @"Winter", @"Spring", @"Summer", @"Autumn", nil];
+        NSString *winter = @"Winter";
+        NSString *spring = @"Spring";
+        NSString *summer = @"Summer";
+        NSString *autumn = @"Autumn";
+        
+        self.timeOfDayArray = [NSArray arrayWithObjects: morning, afternoon, evening, nil];
+        self.timOfYearArray = [NSArray arrayWithObjects: winter, spring, summer, autumn, nil];
+    
         
     }
     return self;
 }
-
 
 
 

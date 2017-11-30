@@ -39,20 +39,6 @@
 
 - (IBAction)sortButtonPushed:(UIButton *)sender {
     
-    self.data = [[TestDataModelSubclass alloc] init];
-    //self.search = [[Operations alloc] init];
-
-    int i;
-    
-    for (i = 0; i <= [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
-        
-       // [self.data.crags objectAtIndex: i];
-    
-        if( [self.data.crags objectAtIndex: i] ) { // Changes the crag for each loop
-            
-            [self.emptyArray addObject: self.data.crags];
-        }
-    }
     
 }
 
@@ -94,8 +80,22 @@
 
     self.search.timeOfDay = [self.timeOfDayYearPicker selectedRowInComponent:0];
     self.search.timeOfYear = [self.timeOfDayYearPicker selectedRowInComponent:1];
+   
+    self.data = [[TestDataModelSubclass alloc] init];
+    //self.search = [[Operations alloc] init];
     
+    int i = 0;
     
+    for (i = 0; i <= [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
+        
+       
+           /* if(( [self.timeOfDayYearPicker isEqualToString: self.data.cragTOY] && [self.title isEqualToString: self.data.cragTOD] )) { // Compares the time of day/year for the crag and user selected */
+            
+                [self.emptyArray addObject: [self.data.crags objectAtIndex: i]];
+            
+       // }
+    }
+
     
 }
 
