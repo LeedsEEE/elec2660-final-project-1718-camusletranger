@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-
+#import "Operations.h"
 @interface FirstViewController ()
 
 @end
@@ -21,7 +21,7 @@
     self.timeOfDayYearPicker.delegate = self;
     self.timeOfDayYearPicker.dataSource = self;
     
-    self.search = [[SearchOperations alloc] init];
+    self.search = [[Operations alloc] init];
      
      }
 
@@ -40,20 +40,17 @@
 - (IBAction)sortButtonPushed:(UIButton *)sender {
     
     self.data = [[TestDataModelSubclass alloc] init];
-    self.search = [[SearchOperations alloc] init];
+    //self.search = [[Operations alloc] init];
 
     int i;
     
     for (i = 0; i <= [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
         
        // [self.data.crags objectAtIndex: i];
-        
-        
-        
+    
         if( [self.data.crags objectAtIndex: i] ) { // Changes the crag for each loop
-        
-            [self.search.selectedCrags addCrag: self.data.crags]; // Adds (or not) crag to new array
-
+            
+            [self.emptyArray addObject: self.data.crags];
         }
     }
     

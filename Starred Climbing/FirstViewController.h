@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SearchOperations.h"
+#import "Operations.h"
 #import "TestDataModelSubclass.h"
 
 @interface FirstViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *timeOfDayYearPicker;
 
-@property (strong, nonatomic) SearchOperations *search;
+@property (strong, nonatomic) Operations *search;
 @property (strong, nonatomic) TestDataModelSubclass *data;
 
 @property (strong, nonatomic) NSMutableArray *emptyArray;

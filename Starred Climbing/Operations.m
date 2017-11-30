@@ -1,14 +1,14 @@
 //
-//  SearchOperations.m
+//  Operations.m
 //  Starred Climbing
 //
-//  Created by Joshua Marshall [ll13jrm] on 24/11/2017.
+//  Created by Joshua Marshall [ll13jrm] on 30/11/2017.
 //  Copyright © 2017 Joshua Marshall [ll13jrm]. All rights reserved.
 //
 
-#import "SearchOperations.h"
+#import "Operations.h"
 
-@implementation SearchOperations
+@implementation Operations
 
 - (instancetype)init
 {
@@ -29,13 +29,15 @@
 -(void) addCrag: (Crag *) crag {
     
     if(( [crag.cragTOY isEqualToString: self.cragTOY] && [crag.cragTOD isEqualToString: self.cragTOD ] )) { // Compares the time of day/year for the crag and user selected
-    
-    [_selectedCrags addObject: crag]; // Adds Crag object to a new array that is then used to populate the table view
+        
+        [_selectedCrags addObject: crag]; // Adds Crag object to a new array that is then used to populate the table view
         
     }
-
+    
 }
 
-    
+
+
+
 
 @end

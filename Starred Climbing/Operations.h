@@ -1,14 +1,14 @@
 //
-//  SearchOperations.h
+//  Operations.h
 //  Starred Climbing
 //
-//  Created by Joshua Marshall [ll13jrm] on 24/11/2017.
+//  Created by Joshua Marshall [ll13jrm] on 30/11/2017.
 //  Copyright © 2017 Joshua Marshall [ll13jrm]. All rights reserved.
 //
 
-#import "TestDataModelSubclass.h"
-@interface SearchOperations : TestDataModelSubclass
+#import "Crag.h"
 
+@interface Operations : Crag
 
 @property (nonatomic, strong) NSArray *timeOfDayArray;       // Populates the picker with possible time of day, and time of year selections
 
