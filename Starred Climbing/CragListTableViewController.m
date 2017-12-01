@@ -37,21 +37,26 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
+    NSInteger numberOfSections;
+
+    numberOfSections = self.data.crags.count;
     
-    return 1;
+    return numberOfSections;
 
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    NSInteger numberOfRows;
+ /*   NSInteger numberOfRows;
     
     if (section == 0) {
         numberOfRows = self.data.crags.count;
     }
 
     return numberOfRows;
-
+*/
+    
+    return 1;
 }
 
 
