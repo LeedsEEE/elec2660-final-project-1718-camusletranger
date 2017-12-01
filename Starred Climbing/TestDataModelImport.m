@@ -16,30 +16,30 @@
     if (self) {
         
         self.crags = [NSMutableArray array];
-        Crag *dinasCromlech = [[Crag alloc] init];
-        Crag *clogwynYrGrochan = [[Crag alloc] init];
-        Crag *carregWastad = [[Crag alloc] init];
-        Crag *stanagePopular = [[Crag alloc] init];
-        Crag *craigBwlchYMoch = [[Crag alloc] init];
-        Crag *craigPantIfan = [[Crag alloc] init];
-        Crag *stGovensHeadEast = [[Crag alloc] init];
-        Crag *stGovensHeadWest = [[Crag alloc] init];
-        Crag *henloud = [[Crag alloc] init];
-        Crag *roaches = [[Crag alloc] init];
-        Crag *craigDoris = [[Crag alloc] init];
-        Crag *easterIslandGully = [[Crag alloc] init];
         
+        Crag *dinasCromlech = [[Crag alloc] init];
         [dinasCromlech setCragName:@"Cromlech" andGuideBook:@"Llanberis Pass, North Wales Rock" andRockType: @"Dolorite" andTOD:@"Morning" andTOY:@"Winter"];
+        Crag *clogwynYrGrochan = [[Crag alloc] init];
         [clogwynYrGrochan setCragName:@"Clogwyn Yr Grochan" andGuideBook:@"Llanberis Pass, North Wales Rock" andRockType:@"Dolorite" andTOD:@"Afternoon" andTOY:@"Winter"];
+        Crag *carregWastad = [[Crag alloc] init];
         [carregWastad setCragName:@"Carreg Wastad" andGuideBook:@"Llanberis Pass, North Wales Rock"  andRockType:@"Dolorite" andTOD:@"Evening" andTOY:@"Winter"];
+        Crag *stanagePopular = [[Crag alloc] init];
         [stanagePopular setCragName:@"Stanage Popular" andGuideBook:@"Lancashire Grit" andRockType:@"Grit" andTOD:@"Morning" andTOY:@"Spring"];
+        Crag *craigBwlchYMoch = [[Crag alloc] init];
         [craigBwlchYMoch setCragName:@"Craig Bwlch Y Moch" andGuideBook: @"Tremadog" andRockType: @"Dolerite" andTOD: @"Afternoon" andTOY:@"Spring"];
+        Crag *craigPantIfan = [[Crag alloc] init];
         [craigPantIfan setCragName:@"Craig Pant Ivan" andGuideBook: @"Tremadog" andRockType: @"Dolerite" andTOD:@"Evening" andTOY:@"Spring"];
+        Crag *stGovensHeadEast = [[Crag alloc] init];
         [stGovensHeadEast setCragName:@"St Govens Head East" andGuideBook:@"Pembrokshire" andRockType:@"Limestone" andTOD:@"Morning" andTOY:@"Sumemer"];
+        Crag *stGovensHeadWest = [[Crag alloc] init];
         [stGovensHeadWest setCragName:@"St Govens Head West" andGuideBook:@"Pembrokshire" andRockType:@"Limestone" andTOD:@"Afternoon" andTOY:@"Summer"];
+        Crag *henloud = [[Crag alloc] init];
         [henloud setCragName:@"Hencloud" andGuideBook:@"Lancashire Grit" andRockType:@"Gritstone" andTOD:@"Evening" andTOY:@"Summer"];
+        Crag *roaches = [[Crag alloc] init];
         [roaches setCragName:@"Roaches" andGuideBook:@"Lancashire Grit" andRockType:@"Gritstone" andTOD:@"Morning" andTOY:@"Aurumn"];
+        Crag *craigDoris = [[Crag alloc] init];
         [craigDoris setCragName:@"Craig Doris" andGuideBook:@"Lleyn Guide" andRockType:@"Crumbly, scary but good if you're into that" andTOD: @"Afternoon" andTOY:@"Autumn"];
+        Crag *easterIslandGully = [[Crag alloc] init];
         [easterIslandGully setCragName:@"Easter Island Gully" andGuideBook:@"Gogarth North" andRockType:@"Quartzite" andTOD:@"Afternoon" andTOY:@"Autumn"];
         
         [self.crags addObject:dinasCromlech];     //index 0
@@ -165,6 +165,8 @@
         [stanagePopularClimbs setName:@"Heaven Crack" andDifficulty:@"VD" andQuality:@"***"];
         [stanagePopularClimbs setName:@"Hollybush Crack" andDifficulty:@"VD" andQuality:@"***"];
         [stanagePopularClimbs setName:@"Black Hawk Traverse Left" andDifficulty:@"VD" andQuality:@"**"];
+        
+
         
         
     }

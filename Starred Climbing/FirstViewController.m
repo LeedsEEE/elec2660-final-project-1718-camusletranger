@@ -98,7 +98,7 @@
         
         if ([self.search.year isEqualToString: self.data.cragTOY] && [self.search.day isEqualToString:self.data.cragTOD]) {
             
-            [self.data.crags removeObject:[self.data.crags objectAtIndex: i]];
+           [self.data.crags removeObject:[self.data.crags objectAtIndex: i]];
             
             NSLog(@"Crag Name: %@", self.data.cragName);
         }
@@ -133,6 +133,23 @@
     
     return rows;
     
+}
+
+#pragma mark - Navigation View controller
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if([[segue identifier] isEqualToString:@"ShowCragDetails"]) {
+ 
+        CragListTableViewController *destinationViewcontroller = [segue destinationViewController];
+        
+        // Need to get required information to pass to table view
+        // Need to pass a new array to populate the table view in the next screen
+        
+        Crag *tempCrag = [self.data.crags objectAtIndex:<#(NSUInteger)#>;
+        destinationViewcontroller.crag = tempCrag;
+        
+    }
 }
 
 

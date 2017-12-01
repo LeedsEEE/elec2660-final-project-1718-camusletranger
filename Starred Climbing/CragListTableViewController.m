@@ -37,46 +37,56 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    NSInteger numberOfSections;
+ /*   NSInteger numberOfSections;
 
     numberOfSections = self.data.crags.count;
     
     return numberOfSections;
 
+   */
+    return 1;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
- /*   NSInteger numberOfRows;
+    NSInteger numberOfRows;
     
     if (section == 0) {
         numberOfRows = self.data.crags.count;
     }
 
     return numberOfRows;
-*/
+
+//    return 1;
     
-    return 1;
+    
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CragCell" forIndexPath:indexPath];
-    
+   
+
     // Configure the cell...
-    if (indexPath.section ==0) {
+   if (indexPath.section == 0) {
         
         Crag *tempCrags = [self.data.crags objectAtIndex:indexPath.row];
-        
+       
         cell.textLabel.text = tempCrags.cragName;
-        cell.detailTextLabel.text = tempCrags.cragRockType;
+        cell.detailTextLabel.text = tempCrags.cragGuidebook;
         
     }
     
     return cell;
+
 }
-
-
+- (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    NSString *header = [NSString stringWithFormat:@"Crags         Guide Book"];
+    
+    return header;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -111,14 +121,33 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+ /*  if ( [[ segue identifier ] isEqualToString:@"ShowCragDetails"]) //Check whether segue identifier is the one specified
+        
+    {
+        
+        TableViewController *destinationTableViewController = [segue destinationViewController]; //Local copy of the destiantion ViewController
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        //  To display the correct module we need to know which row was selected. This is done by getting the index path of the selected cell to then select the correct module from the array
+        if (indexPath.section == 0) {
+            
+            Crag *tempCrag = [self.data.crags objectAtIndex:indexPath.row];
+            destinationViewController.crag = tempCrag;
+            
+        }
+  
+    }
+
+ */   
 }
-*/
+
 
 @end
