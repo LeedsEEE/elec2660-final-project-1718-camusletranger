@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestDataModelSubclass.h"
 
 @interface CragListTableViewController : UITableViewController
+
+@property (strong, nonatomic) TestDataModelSubclass *data;
+
 
 @end

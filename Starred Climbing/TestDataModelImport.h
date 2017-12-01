@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Crag.h"
 
 @interface TestDataModelImport : NSObject
+
+@property (strong, nonatomic) NSMutableArray *crags;
+@property (strong, nonatomic) NSMutableArray *dinasCromlechClimbs, *clogwynYrGrochanClimbs, *carregWastadClimbs, *stanagePopularClimbs;
 
 @end

@@ -16,6 +16,7 @@
 
 @property (strong, nonatomic) Operations *search;
 @property (strong, nonatomic) TestDataModelSubclass *data;
+@property (strong, nonatomic) Crag *crag;
 
 @property (strong, nonatomic) NSMutableArray *emptyArray;
 

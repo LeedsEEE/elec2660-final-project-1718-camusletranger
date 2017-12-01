@@ -84,16 +84,25 @@
     self.data = [[TestDataModelSubclass alloc] init];
     //self.search = [[Operations alloc] init];
     
+    
     int i = 0;
     
     for (i = 0; i <= [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
         
+        if (component == 0) {
+            self.search.day = [self.search.timeOfDayArray objectAtIndex:row];
+        }
+        if (component == 1) {
+            self.search.year = [self.search.timOfYearArray objectAtIndex:row];
+        }
+        
+        if ([self.search.year isEqualToString: self.data.cragTOY] && [self.search.day isEqualToString:self.data.cragTOD]) {
+            
+            [self.data.crags removeObject:[self.data.crags objectAtIndex: i]];
+            
+            NSLog(@"Crag Name: %@", self.data.cragName);
+        }
        
-           /* if(( [self.timeOfDayYearPicker isEqualToString: self.data.cragTOY] && [self.title isEqualToString: self.data.cragTOD] )) { // Compares the time of day/year for the crag and user selected */
-            
-                [self.emptyArray addObject: [self.data.crags objectAtIndex: i]];
-            
-       // }
     }
 
     

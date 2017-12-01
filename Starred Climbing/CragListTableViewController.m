@@ -22,6 +22,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.data = [[TestDataModelSubclass alloc] init];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +36,41 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    
+    return 1;
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    
+    NSInteger numberOfRows;
+    
+    if (section == 0) {
+        numberOfRows = self.data.crags.count;
+    }
+
+    return numberOfRows;
+
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CragCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    if (indexPath.section ==0) {
+        
+        Crag *tempCrags = [self.data.crags objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = tempCrags.cragName;
+        cell.detailTextLabel.text = tempCrags.cragRockType;
+        
+    }
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
