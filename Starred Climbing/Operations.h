@@ -30,7 +30,8 @@
 
 -(NSString *) convertToStringYear; // Given the integer value of timeOfYearPosition and equates it with an NSString value that realtates to those in the picker, and in the Crag class
 
-
+//-(NSInteger) convertToStringDaytime: (NSInteger *) day;
+//-(void) convertToStringYeartime: (NSInteger *) year;
 
 -(void) addCrag: (Crag *) crag;    // Method to add climb to a new array
 

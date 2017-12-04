@@ -24,7 +24,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.data = [[TestDataModelSubclass alloc] init];
-    
+    self.tableOperations = [[Operations alloc] init];
     
 }
 
@@ -53,7 +53,9 @@
     NSInteger numberOfRows;
     
     if (section == 0) {
-        numberOfRows = self.data.crags.count;
+        //numberOfRows = self.data.crags.count;
+        numberOfRows = self.tableOperations.selectedCrags.count;
+        
     }
 
     return numberOfRows;
@@ -71,7 +73,7 @@
     // Configure the cell...
    if (indexPath.section == 0) {
         
-        Crag *tempCrags = [self.data.crags objectAtIndex:indexPath.row];
+        Crag *tempCrags = [self.tableOperations.selectedCrags objectAtIndex:indexPath.row];
        
         cell.textLabel.text = tempCrags.cragName;
         cell.detailTextLabel.text = tempCrags.cragGuidebook;

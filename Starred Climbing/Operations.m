@@ -34,9 +34,12 @@
     return self;
 }
 
+
+
 -(NSString *) convertToStringDay {
  
     NSString *day;
+    //NSInteger position = _timeOfDayPosition;
     
     switch (_timeOfDayPosition) {
             
@@ -67,8 +70,9 @@
 -(NSString *) convertToStringYear {
     
     NSString *year;
+    //NSInteger position = _timeOfYearPosition;
     
-    switch (_timeOfDayPosition) {
+    switch (_timeOfYearPosition) {
             
         case 0:
             
