@@ -27,66 +27,13 @@
         self.timeOfDayArray = [NSArray arrayWithObjects: morning, afternoon, evening, nil];
         self.timOfYearArray = [NSArray arrayWithObjects: winter, spring, summer, autumn, nil];
     
+        self.selectedCrags = [NSMutableArray array];
+        self.selectedCrags = [[NSMutableArray alloc] init];
         
     }
     return self;
 }
 
-/*
--(void) convertToStringDay: (NSString *) day {
-    
-    switch (_timeOfDayPosition) {
-            
-        case 0:
-            
-            day = @"Morning";
-            
-            break;
-        case 1:
-            
-            day = @"Afternoon";
-            
-            break;
-        case 2:
-            
-            day = @"Evening";
-            
-            break;
-            
-        default:
-            break;
-    }
-    
-    
-}
-
--(void) convertToStringYear: (NSString *) year {
-    
-    switch (_timeOfYearPosition) {
-            
-        case 0:
-            
-            year = @"Morning";
-            
-            break;
-        case 1:
-            
-            year = @"Afternoon";
-            
-            break;
-        case 2:
-            
-            year = @"Evening";
-            
-            break;
-            
-        default:
-            break;
-    }
-    
-    
-}
-*/
 -(NSString *) convertToStringDay {
  
     NSString *day;
@@ -151,13 +98,11 @@
 
 -(void) addCrag: (Crag *) crag {
     
-    if(( [crag.cragTOY isEqualToString: self.convertToStringYear] && [crag.cragTOD isEqualToString: self.convertToStringDay] )) { // Compares the time of day/year for the crag and user selected
-        
         [self.selectedCrags addObject: crag]; // Adds Crag object to a new array that is then used to populate the table view
-        
-    }
+    
     
 }
+
 
 
 

@@ -32,10 +32,7 @@
 
 
 
--(void) addCrag: (Crag *) crag;                              // Method to add climb to an array based on the picker selected crags
+-(void) addCrag: (Crag *) crag;    // Method to add climb to a new array
 
-
-
-//@property NSString *morning, *afternoon, *evening, *winter, *spring, *summer, *autumn;
 
 @end

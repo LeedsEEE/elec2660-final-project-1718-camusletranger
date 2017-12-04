@@ -8,15 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "Operations.h"
-#import "TestDataModelSubclass.h"
+//#import "TestDataModelSubclass.h"
+#import "TestDataModelImport.h"
 #import "CragListTableViewController.h"
+
 @interface FirstViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *timeOfDayYearPicker;
 
 @property (strong, nonatomic) Operations *search;
-@property (strong, nonatomic) TestDataModelSubclass *data;
+@property (strong, nonatomic) TestDataModelImport *data;
 @property (strong, nonatomic) Crag *crag;
+
+@property NSInteger tempTimeOfDay, tempTimeOfYear;
 
 @property (strong, nonatomic) NSMutableArray *emptyArray;
 

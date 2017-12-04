@@ -22,8 +22,10 @@
     self.timeOfDayYearPicker.dataSource = self;
     
     self.search = [[Operations alloc] init];
-     
-     }
+    self.data = [[TestDataModelImport alloc] init];
+    self.crag = [[Crag alloc] init];
+
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -81,32 +83,40 @@
     self.search.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
     self.search.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
     
-    self.data = [[TestDataModelSubclass alloc] init];
     self.search = [[Operations alloc] init];
-    
+    self.data = [[TestDataModelImport alloc] init];
+
+    //self.search.selectedCrags = [NSMutableArray array];
     
     int i = 0;
     
-    for (i = 0; i <= [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
-        
-        if (component == 0) {
-            self.search.timeOfDay = [self.search.timeOfDayArray objectAtIndex:row];
-        }
-        if (component == 1) {
-            self.search.timeOfYear = [self.search.timOfYearArray objectAtIndex:row];
-        }
-        
-        
+    if (component == 0) {
+        self.search.timeOfDay = [self.search.timeOfDayArray objectAtIndex:row];
+    }
+    if (component == 1) {
+        self.search.timeOfYear = [self.search.timOfYearArray objectAtIndex:row];
+    }
 
-        if ([self.data.cragTOD isEqualToString: self.search.convertToStringDay] && [self.data.cragTOY isEqualToString: self.search.convertToStringYear] ) {
-            
-            [self.emptyArray addObject: [self.data.crags objectAtIndex: i]];
-        }
+    for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
         
+        Crag *crag = [self.data.crags objectAtIndex:i];
+        
+        if ([crag.cragTOD isEqualToString: self.search.convertToStringDay] && [crag.cragTOY isEqualToString: self.search.convertToStringYear] ) {
+    
+            
+             //[self.search addCrag:[self.data.crags objectAtIndex:i]];
+             [self.search addCrag: crag];
+
+    
+            // [self.emptyArray addObject: [self.data.crags objectAtIndex: i]];
+        }
+
+
 
     }
 
-    
+    NSLog(@"Name: %@'", self.crag.cragName);
+
 }
 
 #pragma mark Time of Day and Year Picker Data Source Methods
@@ -127,7 +137,7 @@
         
         rows = [self.search.timeOfDayArray count];
     }
-    else if (component == 1){  // Component for time of year, winter, spring, summer or autumn
+    else if (component == 1) {  // Component for time of year, winter, spring, summer or autumn
         
         rows = [self.search.timOfYearArray count];
     }
@@ -147,8 +157,11 @@
         // Need to get required information to pass to table view
         // Need to pass a new array to populate the table view in the next screen
         
-        Crag *tempCrag = [self.data.crags objectAtIndex:<#(NSUInteger)#>;
-        destinationViewcontroller.crag = tempCrag;
+    //     Crag *tempCrag = [self.data.crags objectAtIndex:<#(NSUInteger)#>;
+      //   destinationViewcontroller.crag = tempCrag;
+        
+        Crag *tempCrag = self.search.selectedCrags;
+        
         
     }
 }
