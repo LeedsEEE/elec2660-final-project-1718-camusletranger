@@ -25,7 +25,6 @@
     self.operations = [[Operations alloc] init];
     self.data = [[TestDataModelImport alloc] init];
     self.crag = [[Crag alloc] init];
-   
 }
 
 
@@ -112,6 +111,7 @@
         NSLog(@"Crag time of year: %@", crag.cragTOY);
 
         if ([crag.cragTOD isEqualToString: self.operations.convertToStringDay] && [crag.cragTOY isEqualToString: self.operations.convertToStringYear] ) {
+            
             NSLog(@"POST IF STATEMNT");
             NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
             NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
@@ -125,13 +125,14 @@
 
             
              //[self.search addCrag:[self.data.crags objectAtIndex:i]];
-             [self.operations addCrag: crag];
+            //[self.operations addCrag: crag];
+            //self.emptyArray = [[NSMutableArray alloc] initWithObjects: [self.data.crags objectAtIndex:i], nil];
 
-    
-            // [self.emptyArray addObject: [self.data.crags objectAtIndex: i]];
+
+            [self.operations.selectedCrags addObject: [self.data.crags objectAtIndex: i]];
         }
 
-       // NSLog(@"Crag Name: %@", self.operations.cragName);
+        NSLog(@"Crag Name: %@", self.operations.selectedCrags);
 
     }
 

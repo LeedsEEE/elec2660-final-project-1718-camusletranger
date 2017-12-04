@@ -19,6 +19,7 @@
 @property (strong, nonatomic) Operations *operations;
 @property (strong, nonatomic) TestDataModelImport *data;
 @property (strong, nonatomic) Crag *crag;
+@property (strong, nonatomic) NSMutableArray *emptyArray;
 
 @property NSInteger tempTimeOfDay, tempTimeOfYear;
 
