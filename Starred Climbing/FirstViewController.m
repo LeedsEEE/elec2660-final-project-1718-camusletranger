@@ -78,11 +78,11 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
-    self.search.timeOfDay = [self.timeOfDayYearPicker selectedRowInComponent:0];
-    self.search.timeOfYear = [self.timeOfDayYearPicker selectedRowInComponent:1];
-   
+    self.search.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
+    self.search.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
+    
     self.data = [[TestDataModelSubclass alloc] init];
-    //self.search = [[Operations alloc] init];
+    self.search = [[Operations alloc] init];
     
     
     int i = 0;
@@ -90,19 +90,20 @@
     for (i = 0; i <= [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
         
         if (component == 0) {
-            self.search.day = [self.search.timeOfDayArray objectAtIndex:row];
+            self.search.timeOfDay = [self.search.timeOfDayArray objectAtIndex:row];
         }
         if (component == 1) {
-            self.search.year = [self.search.timOfYearArray objectAtIndex:row];
+            self.search.timeOfYear = [self.search.timOfYearArray objectAtIndex:row];
         }
         
-        if ([self.search.year isEqualToString: self.data.cragTOY] && [self.search.day isEqualToString:self.data.cragTOD]) {
+        
+
+        if ([self.data.cragTOD isEqualToString: self.search.convertToStringDay] && [self.data.cragTOY isEqualToString: self.search.convertToStringYear] ) {
             
-           [self.data.crags removeObject:[self.data.crags objectAtIndex: i]];
-            
-            NSLog(@"Crag Name: %@", self.data.cragName);
+            [self.emptyArray addObject: [self.data.crags objectAtIndex: i]];
         }
-       
+        
+
     }
 
     

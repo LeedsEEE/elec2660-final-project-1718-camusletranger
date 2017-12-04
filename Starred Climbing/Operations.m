@@ -32,13 +32,128 @@
     return self;
 }
 
+/*
+-(void) convertToStringDay: (NSString *) day {
+    
+    switch (_timeOfDayPosition) {
+            
+        case 0:
+            
+            day = @"Morning";
+            
+            break;
+        case 1:
+            
+            day = @"Afternoon";
+            
+            break;
+        case 2:
+            
+            day = @"Evening";
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+}
+
+-(void) convertToStringYear: (NSString *) year {
+    
+    switch (_timeOfYearPosition) {
+            
+        case 0:
+            
+            year = @"Morning";
+            
+            break;
+        case 1:
+            
+            year = @"Afternoon";
+            
+            break;
+        case 2:
+            
+            year = @"Evening";
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+}
+*/
+-(NSString *) convertToStringDay {
+ 
+    NSString *day;
+    
+    switch (_timeOfDayPosition) {
+            
+        case 0:
+            
+            day = @"Morning";
+            
+            break;
+        case 1:
+            
+            day = @"Afternoon";
+            
+            break;
+        case 2:
+            
+            day = @"Evening";
+            
+            break;
+            
+        default:
+            break;
+    }
+
+    return day;
+    
+}
+
+-(NSString *) convertToStringYear {
+    
+    NSString *year;
+    
+    switch (_timeOfDayPosition) {
+            
+        case 0:
+            
+            year = @"Morning";
+            
+            break;
+        case 1:
+            
+            year = @"Afternoon";
+            
+            break;
+        case 2:
+            
+            year = @"Evening";
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    return year;
+    
+}
+
 
 
 -(void) addCrag: (Crag *) crag {
     
-    if(( [crag.cragTOY isEqualToString: self.cragTOY] && [crag.cragTOD isEqualToString: self.cragTOD ] )) { // Compares the time of day/year for the crag and user selected
+    if(( [crag.cragTOY isEqualToString: self.convertToStringYear] && [crag.cragTOD isEqualToString: self.convertToStringDay] )) { // Compares the time of day/year for the crag and user selected
         
-        [_selectedCrags addObject: crag]; // Adds Crag object to a new array that is then used to populate the table view
+        [self.selectedCrags addObject: crag]; // Adds Crag object to a new array that is then used to populate the table view
         
     }
     
