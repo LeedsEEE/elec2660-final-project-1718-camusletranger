@@ -106,12 +106,20 @@
 
         NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
         NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
-        
+        NSLog(@"Converted to String: %@", self.operations.convertToStringDay);
+        NSLog(@"Converted to String: %@", self.operations.convertToStringYear);
+        NSLog(@"Crag time of day: %@", crag.cragTOD);
+        NSLog(@"Crag time of year: %@", crag.cragTOY);
+
         if ([crag.cragTOD isEqualToString: self.operations.convertToStringDay] && [crag.cragTOY isEqualToString: self.operations.convertToStringYear] ) {
-            
-        
+            NSLog(@"POST IF STATEMNT");
+            NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
+            NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
             NSLog(@"Converted to String: %@", self.operations.convertToStringDay);
             NSLog(@"Converted to String: %@", self.operations.convertToStringYear);
+            NSLog(@"Crag time of day: %@", crag.cragTOD);
+            NSLog(@"Crag time of year: %@", crag.cragTOY);
+
             
            // NSLog(@"Crag Name: %@", crag.cragName);
 
