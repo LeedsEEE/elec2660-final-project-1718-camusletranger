@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         
-        NSString *morning = @"Moring";
+        NSString *morning = @"Morning";
         NSString *afternoon = @"Afternoon";
         NSString *evening = @"Evening";
         
@@ -39,24 +39,23 @@
 -(NSString *) convertToStringDay {
  
     NSString *day;
-    //NSInteger position = _timeOfDayPosition;
+    NSInteger positionDay = self.timeOfDayPosition;
     
-    switch (_timeOfDayPosition) {
+    switch (positionDay) {
             
         case 0:
             
             day = @"Morning";
-            
             break;
+            
         case 1:
             
             day = @"Afternoon";
-            
             break;
+            
         case 2:
             
             day = @"Evening";
-            
             break;
             
         default:
@@ -70,24 +69,28 @@
 -(NSString *) convertToStringYear {
     
     NSString *year;
-    //NSInteger position = _timeOfYearPosition;
+    NSInteger positionYear = self.timeOfYearPosition;
     
-    switch (_timeOfYearPosition) {
+    switch (positionYear) {
             
         case 0:
             
-            year = @"Morning";
-            
+            year = @"Winter";
             break;
+            
         case 1:
             
-            year = @"Afternoon";
-            
+            year = @"Spring";
             break;
+            
         case 2:
             
-            year = @"Evening";
+            year = @"Summer";
+            break;
             
+        case 3:
+            
+            year = @"Autumn";
             break;
             
         default:
@@ -106,7 +109,62 @@
     
     
 }
+/*
+-(void) convertToStringYeartime: (NSInteger) positionYear {
+    
+    NSString *year;
+    
+    switch (positionYear) {
+            
+        case 0:
+            
+            year = @"Morning";
+            
+            break;
+            
+        case 1:
+            
+            year = @"Afternoon";
+            break;
+            
+        case 2:
+            
+            year = @"Evening";
+            break;
+            
+        default:
+            break;
+    }
 
+}
+
+-(void) convertToStringDaytime: (NSInteger) positionDay {
+    
+    NSString *day;
+    
+    switch (positionDay) {
+            
+        case 0:
+            
+            year = @"Morning";
+            
+            break;
+            
+        case 1:
+            
+            year = @"Afternoon";
+            break;
+            
+        case 2:
+            
+            year = @"Evening";
+            break;
+            
+        default:
+            break;
+    }
+
+}*/
 
 
 

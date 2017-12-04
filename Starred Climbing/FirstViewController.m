@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "Operations.h"
+
 @interface FirstViewController ()
 
 @end
@@ -84,26 +85,35 @@
        //self.data = [[TestDataModelImport alloc] init];
 
     //self.search.selectedCrags = [NSMutableArray array];
+    self.operations.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
+    self.operations.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
     
-    int i = 0;
+    // NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
+    // NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
 
-    
+    int i = 0;
    
     for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
        
         Crag *crag = [self.data.crags objectAtIndex:i];
 
-        self.operations.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
-        self.operations.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
         
     
-         NSLog(@"Crag Name: %@", crag.cragName);
+       // NSString *day = self.operations.convertToStringDay;
+       // NSString *year = self.operations.convertToStringYear;
+        
+       //  NSLog(@"Crag Name: %@", crag.cragName);
+
+        NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
+        NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
         
         if ([crag.cragTOD isEqualToString: self.operations.convertToStringDay] && [crag.cragTOY isEqualToString: self.operations.convertToStringYear] ) {
             
-          
+        
+            NSLog(@"Converted to String: %@", self.operations.convertToStringDay);
+            NSLog(@"Converted to String: %@", self.operations.convertToStringYear);
             
-            NSLog(@"Crag Name: %@", crag.cragName); 
+           // NSLog(@"Crag Name: %@", crag.cragName);
 
             
              //[self.search addCrag:[self.data.crags objectAtIndex:i]];
@@ -113,8 +123,7 @@
             // [self.emptyArray addObject: [self.data.crags objectAtIndex: i]];
         }
 
-       // NSLog(@"Crag Name: %@", _operations.cragName);
-
+       // NSLog(@"Crag Name: %@", self.operations.cragName);
 
     }
 
@@ -157,12 +166,10 @@
  
         CragListTableViewController *destinationViewcontroller = [segue destinationViewController];
         
-        // Need to get required information to pass to table view
-        // Need to pass a new array to populate the table view in the next screen
         
-        Operations *tempOperations = self.operations;
+        Operations *tempOperations = self.operations; // A tempory Operations class within which the array selectedCrags, from the addCrag method will be called to populate the table view
         
-        destinationViewcontroller.tableOperations = tempOperations;
+        destinationViewcontroller.tableOperations = tempOperations; //Within the TableViewController the tableOperations will call the relevent features of each Crag selected
         
     }
 }
