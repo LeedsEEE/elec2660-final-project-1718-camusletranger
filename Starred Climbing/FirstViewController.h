@@ -16,13 +16,12 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *timeOfDayYearPicker;
 
-@property (strong, nonatomic) Operations *search;
+@property (strong, nonatomic) Operations *operations;
 @property (strong, nonatomic) TestDataModelImport *data;
 @property (strong, nonatomic) Crag *crag;
 
 @property NSInteger tempTimeOfDay, tempTimeOfYear;
 
-@property (strong, nonatomic) NSMutableArray *emptyArray;
 
 - (IBAction)gradeRangeEntered:(UITextField *)sender;
 - (IBAction)sortButtonPushed:(UIButton *)sender;

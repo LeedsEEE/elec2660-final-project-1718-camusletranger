@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "TestDataModelSubclass.h"
 #import "FirstViewController.h"
-//#import "TestDataModelImport.h"
+#import "TestDataModelImport.h"
+#import "Operations.h"
 
 @interface CragListTableViewController : UITableViewController
 
 @property (strong, nonatomic) TestDataModelSubclass *data;
 @property (strong, nonatomic) Crag *crag;
+@property (strong, nonatomic) NSMutableArray *tempArray;
+
+@property (strong, nonatomic) Operations *tableOperations;
 
 @end

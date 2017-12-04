@@ -21,10 +21,10 @@
     self.timeOfDayYearPicker.delegate = self;
     self.timeOfDayYearPicker.dataSource = self;
     
-    self.search = [[Operations alloc] init];
+    self.operations = [[Operations alloc] init];
     self.data = [[TestDataModelImport alloc] init];
     self.crag = [[Crag alloc] init];
-
+   
 }
 
 
@@ -65,12 +65,12 @@
     
     if(component == 0) {
         
-        title = [self.search.timeOfDayArray objectAtIndex:row]; // Populates rows in picker with the array of string objects
+        title = [self.operations.timeOfDayArray objectAtIndex:row]; // Populates rows in picker with the array of string objects
 
     }
     else if (component == 1) {
         
-        title = [self.search.timOfYearArray objectAtIndex:row];
+        title = [self.operations.timOfYearArray objectAtIndex:row];
         
     }
     return title;
@@ -80,10 +80,10 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
-    self.search.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
-    self.search.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
+    self.operations.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
+    self.operations.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
     
-    self.search = [[Operations alloc] init];
+    self.operations = [[Operations alloc] init];
     self.data = [[TestDataModelImport alloc] init];
 
     //self.search.selectedCrags = [NSMutableArray array];
@@ -91,21 +91,21 @@
     int i = 0;
     
     if (component == 0) {
-        self.search.timeOfDay = [self.search.timeOfDayArray objectAtIndex:row];
+        self.operations.timeOfDay = [self.operations.timeOfDayArray objectAtIndex:row];
     }
     if (component == 1) {
-        self.search.timeOfYear = [self.search.timOfYearArray objectAtIndex:row];
+        self.operations.timeOfYear = [self.operations.timOfYearArray objectAtIndex:row];
     }
 
     for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
         
         Crag *crag = [self.data.crags objectAtIndex:i];
         
-        if ([crag.cragTOD isEqualToString: self.search.convertToStringDay] && [crag.cragTOY isEqualToString: self.search.convertToStringYear] ) {
+        if ([crag.cragTOD isEqualToString: self.operations.convertToStringDay] && [crag.cragTOY isEqualToString: self.operations.convertToStringYear] ) {
     
             
              //[self.search addCrag:[self.data.crags objectAtIndex:i]];
-             [self.search addCrag: crag];
+             [self.operations addCrag: crag];
 
     
             // [self.emptyArray addObject: [self.data.crags objectAtIndex: i]];
@@ -135,11 +135,11 @@
     if (component == 0) { // Component for time of day, morning, afternoon, or evening
         
         
-        rows = [self.search.timeOfDayArray count];
+        rows = [self.operations.timeOfDayArray count];
     }
     else if (component == 1) {  // Component for time of year, winter, spring, summer or autumn
         
-        rows = [self.search.timOfYearArray count];
+        rows = [self.operations.timOfYearArray count];
     }
     
     return rows;
@@ -157,11 +157,9 @@
         // Need to get required information to pass to table view
         // Need to pass a new array to populate the table view in the next screen
         
-    //     Crag *tempCrag = [self.data.crags objectAtIndex:<#(NSUInteger)#>;
-      //   destinationViewcontroller.crag = tempCrag;
+        Operations *tempOperations = self.operations;
         
-        Crag *tempCrag = self.search.selectedCrags;
-        
+        destinationViewcontroller.tableOperations = tempOperations;
         
     }
 }
