@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Operations.h"
+#import "TestDataModelImport.h"
 
 @interface CragSpecificTableViewController : UITableViewController
+
+@property (strong, nonatomic) TestDataModelImport *data;
 
 @end

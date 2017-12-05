@@ -14,10 +14,11 @@
 
 @interface CragListTableViewController : UITableViewController
 
-@property (strong, nonatomic) TestDataModelSubclass *data;
+@property (strong, nonatomic) TestDataModelImport *data;
 @property (strong, nonatomic) Crag *crag;
 @property (strong, nonatomic) NSMutableArray *tempArray;
 
 @property (strong, nonatomic) Operations *tableOperations;
+@property (strong, nonatomic) Operations *operations;
 
 @end

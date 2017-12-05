@@ -23,7 +23,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.data = [[TestDataModelSubclass alloc] init];
+    self.data = [[TestDataModelImport alloc] init];
     self.tableOperations = [[Operations alloc] init];
     
 }
@@ -53,8 +53,9 @@
     NSInteger numberOfRows;
     
     if (section == 0) {
-        //numberOfRows = self.data.crags.count;
-        numberOfRows = self.tableOperations.selectedCrags.count;
+        
+        numberOfRows = self.data.crags.count;
+        //numberOfRows = self.tableOperations.selectedCrags.count;
         
     }
 
@@ -72,8 +73,9 @@
 
     // Configure the cell...
    if (indexPath.section == 0) {
-        
-        Crag *tempCrags = [self.tableOperations.selectedCrags objectAtIndex:indexPath.row];
+       
+        Crag *tempCrags = [self.data.crags objectAtIndex:indexPath.row];
+        // Crag *tempCrags = [self.tableOperations.selectedCrags objectAtIndex:indexPath.row];
        
         cell.textLabel.text = tempCrags.cragName;
         cell.detailTextLabel.text = tempCrags.cragGuidebook;
@@ -130,26 +132,18 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
- /*  if ( [[ segue identifier ] isEqualToString:@"ShowCragDetails"]) //Check whether segue identifier is the one specified
         
-    {
-        
-        TableViewController *destinationTableViewController = [segue destinationViewController]; //Local copy of the destiantion ViewController
-        
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        //  To display the correct module we need to know which row was selected. This is done by getting the index path of the selected cell to then select the correct module from the array
-        if (indexPath.section == 0) {
+        if([[segue identifier] isEqualToString:@"ShowClimbDetails"]) {
             
-            Crag *tempCrag = [self.data.crags objectAtIndex:indexPath.row];
-            destinationViewController.crag = tempCrag;
+            CragListTableViewController *destinationViewcontroller = [segue destinationViewController];
             
-        }
-  
-    }
+            
+            Operations *tempOperations = self.operations; // A tempory Operations class within which the array selectedCrags, from the addCrag method will be called to populate the table view
+            
+            destinationViewcontroller.tableOperations = tempOperations; //Within the TableViewController the tableOperations will call the relevent features of each Crag selected
+            
 
- */   
 }
 
-
+}
 @end

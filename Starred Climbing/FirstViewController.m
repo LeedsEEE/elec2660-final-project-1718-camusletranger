@@ -44,15 +44,6 @@
     NSLog(@"Text Field: %@", self.difficultyTextField.text);
     
 }
-#pragma mark Text Field Delegate Methods
-
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    
-    [textField resignFirstResponder];
-    
-    return YES;
-}
 
 
 #pragma mark Time of Day and Year Picker Delegate Methods
@@ -135,6 +126,16 @@
   //  NSLog(@"Name: %@'", self.crag.cragName);
 
 }
+#pragma mark Text Field Delegate Methods
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 
 #pragma mark Time of Day and Year Picker Data Source Methods
 
