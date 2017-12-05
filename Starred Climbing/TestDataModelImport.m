@@ -15,6 +15,22 @@
     self = [super init];
     if (self) {
         
+        
+        NSString *morning = @"Morning";
+        NSString *afternoon = @"Afternoon";
+        NSString *evening = @"Evening";
+        
+        NSString *winter = @"Winter";
+        NSString *spring = @"Spring";
+        NSString *summer = @"Summer";
+        NSString *autumn = @"Autumn";
+        
+        self.timeOfDayArray = [NSArray arrayWithObjects: morning, afternoon, evening, nil];
+        self.timOfYearArray = [NSArray arrayWithObjects: winter, spring, summer, autumn, nil];
+        
+        self.selectedArray = [NSMutableArray array];
+
+        
         self.crags = [NSMutableArray array];
         
         self.crags = [NSMutableArray array];
@@ -257,6 +273,113 @@
     }
     return self;
 }
+
+-(void) addCragToArray: (Crag *) crag {
+    
+    int i = 0;
+    
+    for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
+        
+        Crag *crag = [self.data.crags objectAtIndex:i];
+        
+        
+        if ([crag.cragTOD isEqualToString: self.data.convertToStringDay] && [crag.cragTOY isEqualToString: self.data.convertToStringYear] ) {
+            
+            [self.selectedArray addObject:[self.data.crags objectAtIndex:i]];
+            // NSLog(@"Crag Name: %@", crag.cragName);
+            
+        }
+        
+        
+    }
+
+    
+}
+
+-(void) addCragArray {
+    
+    
+    int i = 0;
+    
+    for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
+        
+        Crag *crag = [self.data.crags objectAtIndex:i];
+        
+        
+        if ([crag.cragTOD isEqualToString: self.data.convertToStringDay] && [crag.cragTOY isEqualToString: self.data.convertToStringYear] ) {
+            
+            [self.selectedArray addObject:crag];
+            // NSLog(@"Crag Name: %@", crag.cragName);
+        }
+    }
+    
+}
+
+-(NSString *) convertToStringDay {
+    
+    NSString *day;
+    NSInteger positionDay = self.timeOfDayPosition;
+    
+    switch (positionDay) {
+            
+        case 0:
+            
+            day = @"Morning";
+            break;
+            
+        case 1:
+            
+            day = @"Afternoon";
+            break;
+            
+        case 2:
+            
+            day = @"Evening";
+            break;
+            
+        default:
+            break;
+    }
+    
+    return day;
+    
+}
+
+-(NSString *) convertToStringYear {
+    
+    NSString *year;
+    NSInteger positionYear = self.timeOfYearPosition;
+    
+    switch (positionYear) {
+            
+        case 0:
+            
+            year = @"Winter";
+            break;
+            
+        case 1:
+            
+            year = @"Spring";
+            break;
+            
+        case 2:
+            
+            year = @"Summer";
+            break;
+            
+        case 3:
+            
+            year = @"Autumn";
+            break;
+            
+        default:
+            break;
+    }
+    
+    return year;
+    
+}
+
 
 
 @end

@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Operations.h"
-//#import "TestDataModelSubclass.h"
 #import "TestDataModelImport.h"
 #import "CragListTableViewController.h"
 
@@ -20,7 +18,7 @@
 - (IBAction)sortButtonPushed:(UIButton *)sender;
 
 // ----- Instnaces of Classes ------
-@property (strong, nonatomic) Operations *operations;
+//@property (strong, nonatomic) Operations *operations;
 @property (strong, nonatomic) TestDataModelImport *data;
 @property (strong, nonatomic) Crag *crag;
 

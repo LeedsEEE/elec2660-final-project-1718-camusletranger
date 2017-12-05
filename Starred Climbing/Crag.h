@@ -16,5 +16,8 @@
 
 -(void) setCragName: (NSString *) name andGuideBook:(NSString *) guide andRockType:(NSString *) rock andTOD: (NSString *) tod andTOY:(NSString *) toy; //Custom method for faster input of data
 
+@property (strong, nonatomic) NSMutableArray *selectedCrags; // Array made of crags selected by picker time of day/year selections which will then be used to populate the table view
+
+-(void) addCrag: (Crag *) crag;    // Method to add a climb to the selectedCrags array
 
 @end

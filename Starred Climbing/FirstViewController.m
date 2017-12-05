@@ -7,7 +7,6 @@
 //
 
 #import "FirstViewController.h"
-#import "Operations.h"
 
 @interface FirstViewController ()
 
@@ -22,7 +21,7 @@
     self.timeOfDayYearPicker.delegate = self;
     self.timeOfDayYearPicker.dataSource = self;
     
-    self.operations = [[Operations alloc] init];
+   // self.operations = [[Operations alloc] init];
     self.crag = [[Crag alloc] init];
     self.data = [[TestDataModelImport alloc] init];
 }
@@ -38,9 +37,9 @@
 
 - (IBAction)sortButtonPushed:(UIButton *)sender {
     
-    self.operations.inputClimbDifficulty = self.difficultyTextField.text;
+    self.data.inputClimbDifficulty = self.difficultyTextField.text;
     
-    NSLog(@"Climb Difficulty: %@", self.operations.inputClimbDifficulty);
+    NSLog(@"Climb Difficulty: %@", self.data.inputClimbDifficulty);
     NSLog(@"Text Field: %@", self.difficultyTextField.text);
     
 }
@@ -67,12 +66,12 @@
     
     if(component == 0) {
         
-        title = [self.operations.timeOfDayArray objectAtIndex:row]; // Populates rows in picker with the time of day array of string objects
+        title = [self.data.timeOfDayArray objectAtIndex:row]; // Populates rows in picker with the time of day array of string objects
 
     }
     else if (component == 1) {
         
-        title = [self.operations.timOfYearArray objectAtIndex:row]; // As above but for time of year
+        title = [self.data.timOfYearArray objectAtIndex:row]; // As above but for time of year
         
     }
     return title;
@@ -82,12 +81,20 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
-    self.operations.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
-    self.operations.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
+    self.data.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
+    self.data.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
+    
+    [self.data addCragArray];
+    
+    
+    
     
     // NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
     // NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
-
+ 
+    
+    
+    /*
     int i = 0;
    
     for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
@@ -112,7 +119,7 @@
             NSLog(@"Crag time of year: %@", crag.cragTOY);
 
             
-        NSLog(@"Crag Name: %@", crag.cragName);
+          // NSLog(@"Crag Name: %@", crag.cragName);
             
             [self.operations addCrag: crag];
         }
@@ -123,7 +130,7 @@
 
     self.emptyArray = [[NSMutableArray alloc] initWithArray:self.operations.selectedCrags];
     
-  //  NSLog(@"Name: %@'", self.crag.cragName);
+  //  NSLog(@"Name: %@'", self.crag.cragName); */
 
 }
 #pragma mark Text Field Delegate Methods
@@ -153,11 +160,11 @@
     if (component == 0) { // Component for time of day, morning, afternoon, or evening
         
         
-        rows = [self.operations.timeOfDayArray count]; 
+        rows = [self.data.timeOfDayArray count];
     }
     else if (component == 1) {  // Component for time of year, winter, spring, summer or autumn
         
-        rows = [self.operations.timOfYearArray count];
+        rows = [self.data.timOfYearArray count];
     }
     
     return rows;
@@ -173,10 +180,13 @@
         CragListTableViewController *destinationViewcontroller = [segue destinationViewController];
         
         
-        Operations *tempOperations = self.operations; // A tempory Operations class within which the array selectedCrags, from the addCrag method will be called to populate the table view
+       // Operations *tempOperations = self.operations; // A tempory Operations class within which the array selectedCrags, from the addCrag method will be called to populate the table view
         
-        destinationViewcontroller.tableOperations = tempOperations; //Within the TableViewController the tableOperations will call the relevent features of each Crag selected
+        // destinationViewcontroller.tableOperations = tempOperations; //Within the TableViewController the tableOperations will call the relevent features of each Crag selected
         
+        TestDataModelImport *tempData = self.data; // A tempory Operations class within which the array selectedCrags, from the addCrag method will be called to populate the table view
+        
+        destinationViewcontroller.tableData = tempData; //Within the TableViewController the tableOperations will call the relevent features of each Crag selected
     }
 }
 

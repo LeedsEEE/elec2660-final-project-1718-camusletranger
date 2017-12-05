@@ -103,12 +103,6 @@
 
 
 
--(void) addCrag: (id) crag {
-    
-        [self.selectedCrags addObject: crag]; // Adds Crag object to a new array that is then used to populate the table view
-    
-    
-}
 
 
 

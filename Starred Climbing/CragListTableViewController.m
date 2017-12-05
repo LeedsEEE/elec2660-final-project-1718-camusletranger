@@ -24,7 +24,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.data = [[TestDataModelImport alloc] init];
-    self.tableOperations = [[Operations alloc] init];
+    self.tableData = [[TestDataModelImport alloc] init];
     
 }
 
@@ -74,11 +74,11 @@
     // Configure the cell...
    if (indexPath.section == 0) {
        
-        Crag *tempCrags = [self.data.crags objectAtIndex:indexPath.row];
+        Crag *tempData = [self.tableData.selectedArray objectAtIndex:indexPath.row];
         // Crag *tempCrags = [self.tableOperations.selectedCrags objectAtIndex:indexPath.row];
        
-        cell.textLabel.text = tempCrags.cragName;
-        cell.detailTextLabel.text = tempCrags.cragGuidebook;
+        cell.textLabel.text = tempData.cragName;
+        cell.detailTextLabel.text = tempData.cragGuidebook;
         
     }
     
@@ -138,9 +138,9 @@
             CragListTableViewController *destinationViewcontroller = [segue destinationViewController];
             
             
-            Operations *tempOperations = self.operations; // A tempory Operations class within which the array selectedCrags, from the addCrag method will be called to populate the table view
+            TestDataModelImport *tempData = self.data; // A tempory Operations class within which the array selectedCrags, from the addCrag method will be called to populate the table view
             
-            destinationViewcontroller.tableOperations = tempOperations; //Within the TableViewController the tableOperations will call the relevent features of each Crag selected
+            destinationViewcontroller.tableData = tempData; //Within the TableViewController the tableOperations will call the relevent features of each Crag selected
             
 
 }

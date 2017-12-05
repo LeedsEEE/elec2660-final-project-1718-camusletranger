@@ -18,7 +18,7 @@
 
 @property NSString *timeOfDay, *timeOfYear; // String to hold a specific time of day
 
-@property (strong, nonatomic) NSMutableArray *selectedCrags; // Array made of crags selected by picker time of day/year selections which will then be used to populate the table view
+// @property (strong, nonatomic) NSMutableArray *selectedCrags; // Array made of crags selected by picker time of day/year selections which will then be used to populate the table view
 
 
 -(NSString *) convertToStringDay; // Given the integer value of timeOfDayPosition, this equates that position with an NSString  eg. 0 is morning. This value is then compared with that time of day for the crag, and along with the time of year, if true the crag is added to selected climbs
@@ -26,8 +26,6 @@
 
 -(NSString *) convertToStringYear; // This works the same as above but for the time of year
 
-
--(void) addCrag: (id) crag;    // Method to add a climb to the selectedCrags array
 
 // ----- Methods for Searching via Climb's Difficulty
 
