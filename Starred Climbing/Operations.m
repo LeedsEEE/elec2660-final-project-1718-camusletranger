@@ -28,7 +28,7 @@
         self.timOfYearArray = [NSArray arrayWithObjects: winter, spring, summer, autumn, nil];
     
         self.selectedCrags = [NSMutableArray array];
-        self.selectedCrags = [[NSMutableArray alloc] init];
+        //self.selectedCrags = [[NSMutableArray alloc] init];
         
     }
     return self;
@@ -103,69 +103,12 @@
 
 
 
--(void) addCrag: (Crag *) crag {
+-(void) addCrag: (id) crag {
     
         [self.selectedCrags addObject: crag]; // Adds Crag object to a new array that is then used to populate the table view
     
     
 }
-/*
--(void) convertToStringYeartime: (NSInteger) positionYear {
-    
-    NSString *year;
-    
-    switch (positionYear) {
-            
-        case 0:
-            
-            year = @"Morning";
-            
-            break;
-            
-        case 1:
-            
-            year = @"Afternoon";
-            break;
-            
-        case 2:
-            
-            year = @"Evening";
-            break;
-            
-        default:
-            break;
-    }
-
-}
-
--(void) convertToStringDaytime: (NSInteger) positionDay {
-    
-    NSString *day;
-    
-    switch (positionDay) {
-            
-        case 0:
-            
-            year = @"Morning";
-            
-            break;
-            
-        case 1:
-            
-            year = @"Afternoon";
-            break;
-            
-        case 2:
-            
-            year = @"Evening";
-            break;
-            
-        default:
-            break;
-    }
-
-}*/
-
 
 
 

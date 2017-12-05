@@ -11,8 +11,9 @@
 
 @interface TestDataModelSubclass : Crag
 
-@property (strong, nonatomic) NSMutableArray *crags; 
-@property (strong, nonatomic) NSMutableArray *dinasCromlechClimbs, *clogwynYrGrochanClimbs, *carregWastadClimbs, *stanagePopularClimbs;
+@property (strong, nonatomic) NSMutableArray *crags; // An array of crag instances
+
+@property (strong, nonatomic) NSMutableArray *dinasCromlechClimbs, *clogwynYrGrochanClimbs, *carregWastadClimbs, *stanagePopularClimbs; // An array of climbs at specific crags
 
 
 @end

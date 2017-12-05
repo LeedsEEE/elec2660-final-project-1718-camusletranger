@@ -9,32 +9,31 @@
 #import "Crag.h"
 
 @interface Operations : Crag
-
+// ----- Methods for Sorting Crags -----
 @property (nonatomic, strong) NSArray *timeOfDayArray;       // Populates the picker with possible time of day, and time of year selections
 
 @property (nonatomic, strong) NSArray *timOfYearArray;       // Populates the picker with possible and time of year selections
 
-
 @property NSInteger  timeOfDayPosition, timeOfYearPosition;                  // Setters and getters for picker position relevent to time of day/year
 
-@property NSString *timeOfDay, *timeOfYear;
+@property NSString *timeOfDay, *timeOfYear; // String to hold a specific time of day
 
-@property (strong, nonatomic) NSMutableArray *selectedCrags; // Array made of crags selected by picker time of day/year selections
-
-//-(void) convertToStringDay: (NSString *) day; // Takes the integer value of timeOfDayPosition and equates it with an NSString value that realtates to those in the picker, and in the Crag class
-
-//-(void) convertToStringYear: (NSString *) year; // Takes the integer value of timeOfYearPosition and equates it with an NSString value that realtates to those in the picker, and in the Crag class
-
--(NSString *) convertToStringDay; // Given the integer value of timeOfDayPosition and equates it with an NSString value that realtates to those in the picker, and in the Crag class
+@property (strong, nonatomic) NSMutableArray *selectedCrags; // Array made of crags selected by picker time of day/year selections which will then be used to populate the table view
 
 
--(NSString *) convertToStringYear; // Given the integer value of timeOfYearPosition and equates it with an NSString value that realtates to those in the picker, and in the Crag class
+-(NSString *) convertToStringDay; // Given the integer value of timeOfDayPosition, this equates that position with an NSString  eg. 0 is morning. This value is then compared with that time of day for the crag, and along with the time of year, if true the crag is added to selected climbs
 
 
-//-(void) convertToStringYeartime: (NSInteger) postionYear;
-//-(void) convertToStringDaytime: (NSInteger) postionDay;
+-(NSString *) convertToStringYear; // This works the same as above but for the time of year
 
--(void) addCrag: (Crag *) crag;    // Method to add climb to a new array
+
+-(void) addCrag: (id) crag;    // Method to add a climb to the selectedCrags array
+
+// ----- Methods for Searching via Climb's Difficulty
+
+@property NSString *inputClimbDifficulty; //Gets string from the text field
+
+
 
 
 @end

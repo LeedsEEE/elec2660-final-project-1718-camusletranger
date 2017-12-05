@@ -23,8 +23,8 @@
     self.timeOfDayYearPicker.dataSource = self;
     
     self.operations = [[Operations alloc] init];
-    self.data = [[TestDataModelImport alloc] init];
     self.crag = [[Crag alloc] init];
+    self.data = [[TestDataModelImport alloc] init];
 }
 
 
@@ -34,15 +34,26 @@
 }
 
 
-- (IBAction)gradeRangeEntered:(UITextField *)sender {
-    
-    
-}
+
 
 - (IBAction)sortButtonPushed:(UIButton *)sender {
     
+    self.operations.inputClimbDifficulty = self.difficultyTextField.text;
+    
+    NSLog(@"Climb Difficulty: %@", self.operations.inputClimbDifficulty);
+    NSLog(@"Text Field: %@", self.difficultyTextField.text);
     
 }
+#pragma mark Text Field Delegate Methods
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 
 #pragma mark Time of Day and Year Picker Delegate Methods
 
@@ -65,12 +76,12 @@
     
     if(component == 0) {
         
-        title = [self.operations.timeOfDayArray objectAtIndex:row]; // Populates rows in picker with the array of string objects
+        title = [self.operations.timeOfDayArray objectAtIndex:row]; // Populates rows in picker with the time of day array of string objects
 
     }
     else if (component == 1) {
         
-        title = [self.operations.timOfYearArray objectAtIndex:row];
+        title = [self.operations.timOfYearArray objectAtIndex:row]; // As above but for time of year
         
     }
     return title;
@@ -80,10 +91,6 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
-       //self.operations = [[Operations alloc] init];
-       //self.data = [[TestDataModelImport alloc] init];
-
-    //self.search.selectedCrags = [NSMutableArray array];
     self.operations.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
     self.operations.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
     
@@ -95,13 +102,6 @@
     for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
        
         Crag *crag = [self.data.crags objectAtIndex:i];
-
-        
-    
-       // NSString *day = self.operations.convertToStringDay;
-       // NSString *year = self.operations.convertToStringYear;
-        
-       //  NSLog(@"Crag Name: %@", crag.cragName);
 
         NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
         NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
@@ -121,21 +121,17 @@
             NSLog(@"Crag time of year: %@", crag.cragTOY);
 
             
-           // NSLog(@"Crag Name: %@", crag.cragName);
-
+        NSLog(@"Crag Name: %@", crag.cragName);
             
-             //[self.search addCrag:[self.data.crags objectAtIndex:i]];
-            //[self.operations addCrag: crag];
-            //self.emptyArray = [[NSMutableArray alloc] initWithObjects: [self.data.crags objectAtIndex:i], nil];
-
-
-            [self.operations.selectedCrags addObject: [self.data.crags objectAtIndex: i]];
+            [self.operations addCrag: crag];
         }
 
-        NSLog(@"Crag Name: %@", self.operations.selectedCrags);
+        NSLog(@"Crag Name: %@", self.operations.cragName);
 
     }
 
+    self.emptyArray = [[NSMutableArray alloc] initWithArray:self.operations.selectedCrags];
+    
   //  NSLog(@"Name: %@'", self.crag.cragName);
 
 }
@@ -156,7 +152,7 @@
     if (component == 0) { // Component for time of day, morning, afternoon, or evening
         
         
-        rows = [self.operations.timeOfDayArray count];
+        rows = [self.operations.timeOfDayArray count]; 
     }
     else if (component == 1) {  // Component for time of year, winter, spring, summer or autumn
         

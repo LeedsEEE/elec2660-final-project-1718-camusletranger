@@ -10,7 +10,7 @@
 
 @interface Climb : NSObject
 
-@property NSString *climbName, *climbDifficulty, *climbQuality;
+@property NSString *climbName, *climbDifficulty, *climbQuality; //Properties of a climb
 
 -(void) setName: (NSString *) name andDifficulty: (NSString *) difficulty andQuality: (NSString *) quality; // Method to set name, difficulty, and quality of climb and make it quicker to enter data into DataModel
 

@@ -12,20 +12,24 @@
 #import "TestDataModelImport.h"
 #import "CragListTableViewController.h"
 
-@interface FirstViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface FirstViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 
+//----- Interface Buttons, Labels, Pickers etc. -----
 @property (weak, nonatomic) IBOutlet UIPickerView *timeOfDayYearPicker;
+@property (weak, nonatomic) IBOutlet UITextField *difficultyTextField;
+- (IBAction)sortButtonPushed:(UIButton *)sender;
 
+// ----- Instnaces of Classes ------
 @property (strong, nonatomic) Operations *operations;
 @property (strong, nonatomic) TestDataModelImport *data;
 @property (strong, nonatomic) Crag *crag;
+
+// ----- Arrays -----
 @property (strong, nonatomic) NSMutableArray *emptyArray;
 
-@property NSInteger tempTimeOfDay, tempTimeOfYear;
 
 
-- (IBAction)gradeRangeEntered:(UITextField *)sender;
-- (IBAction)sortButtonPushed:(UIButton *)sender;
+
 
 
 
