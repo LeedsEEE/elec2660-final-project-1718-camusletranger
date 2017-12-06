@@ -42,9 +42,13 @@
     
     NSInteger numberOfRows;
     
-    if ([self.crag.cragName isEqualToString: self.climb.c]) {
+    if ([self.crag.cragName isEqualToString: self.climb.climbAtCrag]) {
         
-        
+        if(section ==0) {
+            
+            //numberOfRows = self.data.crags.count;
+
+        }
         
     }
     

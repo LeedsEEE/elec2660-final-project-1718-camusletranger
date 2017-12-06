@@ -440,69 +440,83 @@
         zangorilla.climbDifficulty = @"E46a";
         zangorilla.climbQuality = @"***";
         
-        [stanagePopularClimbs setName: andDifficulty: andQuality:];
-        [stanagePopularClimbs setName: andDifficulty: andQuality:];
-        [stanagePopularClimbs setName: andDifficulty:" andQuality:];
-        [stanagePopularClimbs setName: andDifficulty: andQuality:];
-        [stanagePopularClimbs setName:@"Cemetary Waits" andDifficulty:@"E76c" andQuality:@"**"];
-        [stanagePopularClimbs setName:@"Warm Love" andDifficulty:@"E67a" andQuality:@"**"];
-        [stanagePopularClimbs setName:@"Carpe Diem" andDifficulty:@"E66c" andQuality:@"**"];
-        [stanagePopularClimbs setName:@"Wall Of Sound" andDifficulty:@"E66b" andQuality:@"***"];
-        [stanagePopularClimbs setName:@"Strange Without Oxygen" andDifficulty:@"E56c" andQuality:@"**"];
-        [stanagePopularClimbs setName:@"Headless Chicken" andDifficulty:@"E56b" andQuality:@"**"];
-        [stanagePopularClimbs setName:@"Boc No Buttress" andDifficulty:@"EE56a" andQuality:@"**"];
-        [stanagePopularClimbs setName:@"Snug as a Thug on a Jug" andDifficulty:@"E46b" andQuality:@"***"];
-     
+    
         
-        Climb * = [[Climb alloc] init];
         
-        .climbAtCrag = @"Stanage Popular";
-        .climbName = @"Little Women";
-        .climbDifficulty = @"E77a";
-        .climbQuality = @"***";
-        Climb * = [[Climb alloc] init];
+        Climb *littleWomen = [[Climb alloc] init];
         
-        .climbAtCrag = @"Stanage Popular";
-        .climbName = @"Groove Is In The Heart";
-        .climbDifficulty = @"E77a";
-        .climbQuality = @"***";
-        Climb * = [[Climb alloc] init];
+        littleWomen.climbAtCrag = @"Stanage Popular";
+        littleWomen.climbName = @"Little Women";
+        littleWomen.climbDifficulty = @"E77a";
+        littleWomen.climbQuality = @"***";
+        Climb *grooveIsInTheHeart = [[Climb alloc] init];
         
-        .climbAtCrag = @"Stanage Popular";
-        .climbName = @"Shine On";
-        .climbDifficulty = @"E76c";
-        .climbQuality = @"***";
-        Climb * = [[Climb alloc] init];
+        grooveIsInTheHeart.climbAtCrag = @"Stanage Popular";
+        grooveIsInTheHeart.climbName = @"Groove Is In The Heart";
+        grooveIsInTheHeart.climbDifficulty = @"E77a";
+        grooveIsInTheHeart.climbQuality = @"***";
+        Climb *shineOn = [[Climb alloc] init];
         
-        .climbAtCrag = @"Stanage Popular";
-        .climbName = @"Black Car Burning";
-        .climbDifficulty = @"E76c";
-        .climbQuality = @"**";
-        Climb * = [[Climb alloc] init];
+        shineOn.climbAtCrag = @"Stanage Popular";
+        shineOn.climbName = @"Shine On";
+        shineOn.climbDifficulty = @"E76c";
+        shineOn.climbQuality = @"***";
+        Climb *blackCarBurning = [[Climb alloc] init];
         
-        .climbAtCrag = ;
-        .climbName = ;
-        .climbDifficulty = ;
-        .climbQuality = ;
-        Climb * = [[Climb alloc] init];
+        blackCarBurning.climbAtCrag = @"Stanage Popular";
+        blackCarBurning.climbName = @"Black Car Burning";
+        blackCarBurning.climbDifficulty = @"E76c";
+        blackCarBurning.climbQuality = @"**";
+        Climb *cemetryWaits = [[Climb alloc] init];
         
-        .climbAtCrag = ;
-        .climbName = ;
-        .climbDifficulty = ;
-        .climbQuality = ;
-        Climb * = [[Climb alloc] init];
+        cemetryWaits.climbAtCrag = @"Stanage Popular";
+        cemetryWaits.climbName = @"Cemetary Waits";
+        cemetryWaits.climbDifficulty = @"E76c";
+        cemetryWaits.climbQuality = @"**";
+        Climb *warmLove = [[Climb alloc] init];
         
-        .climbAtCrag = ;
-        .climbName = ;
-        .climbDifficulty = ;
-        .climbQuality = ;
-        Climb * = [[Climb alloc] init];
+        warmLove.climbAtCrag = @"Stanage Popular";
+        warmLove.climbName = @"Warm Love";
+        warmLove.climbDifficulty = @"E67a";
+        warmLove.climbQuality = @"**";
+        Climb *carpeDiem = [[Climb alloc] init];
         
-        .climbAtCrag = ;
-        .climbName = ;
-        .climbDifficulty = ;
-        .climbQuality = ;
+        carpeDiem.climbAtCrag = @"Stanage Popular";
+        carpeDiem.climbName = @"Carpe Diem";
+        carpeDiem.climbDifficulty = @"E66c";
+        carpeDiem.climbQuality = @"**";
+        Climb *wallOfStange = [[Climb alloc] init];
+        
+        wallOfStange.climbAtCrag = @"Stanage Popular";
+        wallOfStange.climbName = @"Wall Of Sound";
+        wallOfStange.climbDifficulty = @"E66b";
+        wallOfStange.climbQuality = @"***";
+        Climb *stanageWithoutOxygen = [[Climb alloc] init];
+        
+        stanageWithoutOxygen.climbAtCrag = @"Stanage Popular";
+        stanageWithoutOxygen.climbName = @"Strange Without Oxygen";
+        stanageWithoutOxygen.climbDifficulty = @"E56c";
+        stanageWithoutOxygen.climbQuality = @"**";
+        Climb *headlessChicken = [[Climb alloc] init];
+        
+        headlessChicken.climbAtCrag = @"Stanage Popular";
+        headlessChicken.climbName = @"Headless Chicken";
+        headlessChicken.climbDifficulty = @"E56b";
+        headlessChicken.climbQuality = @"**";
+        Climb *bocNoButress = [[Climb alloc] init];
+        
+        bocNoButress.climbAtCrag = @"Stanage Popular";
+        bocNoButress.climbName = @"Boc No Buttress";
+        bocNoButress.climbDifficulty = @"EE56a";
+        bocNoButress.climbQuality = @"**";
+        Climb *snugAsAThugOnAJug = [[Climb alloc] init];
+        
+        snugAsAThugOnAJug.climbAtCrag = @"Stanage Popular";
+        snugAsAThugOnAJug.climbName = @"Snug as a Thug on a Jug";
+        snugAsAThugOnAJug.climbDifficulty = @"E46b";
+        snugAsAThugOnAJug.climbQuality = @"***";
 
+    
        
      /*  Climb * = [[Climb alloc] init];
         
@@ -515,7 +529,7 @@
         
         
         
-        [stanagePopularClimbs setName:@"Off With His Head!" andDifficulty:@"E46b" andQuality:@"***"];
+     /*   [stanagePopularClimbs setName:@"Off With His Head!" andDifficulty:@"E46b" andQuality:@"***"];
         [stanagePopularClimbs setName:@"Chameleon" andDifficulty:@"E46b" andQuality:@"***"];
         [stanagePopularClimbs setName:@"The Asp" andDifficulty:@"E36a" andQuality:@"***"];
         [stanagePopularClimbs setName:@"Tipler Direct" andDifficulty:@"E36a" andQuality:@"***"];
@@ -553,22 +567,8 @@
         [stanagePopularClimbs setName:@"Heaven Crack" andDifficulty:@"VD" andQuality:@"***"];
         [stanagePopularClimbs setName:@"Hollybush Crack" andDifficulty:@"VD" andQuality:@"***"];
         [stanagePopularClimbs setName:@"Black Hawk Traverse Left" andDifficulty:@"VD" andQuality:@"**"];
-
         
-     
-        
-        
-       
-        
-              self.carregWastadClimbs = [NSMutableArray array];
-        Climb *carregWastadClimbs = [[Climb alloc] init];
-        
-        
-        
-        self.stanagePopularClimbs = [NSMutableArray array];
-        Climb *stanagePopularClimbs = [[Climb alloc] init];
-        
-        
+        */
         
     }
     return self;
