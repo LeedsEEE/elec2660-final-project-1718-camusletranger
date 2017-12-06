@@ -22,6 +22,8 @@
 		390AA28B1FB5F35C0061B2AF /* MarkAlmack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 390AA28A1FB5F35C0061B2AF /* MarkAlmack.jpg */; };
 		392C5EE51FC6D957007BE014 /* TestDataModelImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 392C5EE41FC6D957007BE014 /* TestDataModelImport.m */; };
 		393808091FD0112B005C47E8 /* Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 393808081FD0112B005C47E8 /* Operations.m */; };
+		393943701FD7FB4400954D91 /* CragOnlyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3939436F1FD7FB4400954D91 /* CragOnlyTableViewController.m */; };
+		393943731FD7FB5700954D91 /* ClimbOnlyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393943721FD7FB5700954D91 /* ClimbOnlyTableViewController.m */; };
 		39EFB78D1FBB1EAC00EEF502 /* Climb.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFB78C1FBB1EAC00EEF502 /* Climb.m */; };
 		39EFB7901FBB1EC900EEF502 /* Crag.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFB78F1FBB1EC900EEF502 /* Crag.m */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,10 @@
 		392C5EE41FC6D957007BE014 /* TestDataModelImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataModelImport.m; sourceTree = "<group>"; };
 		393808071FD0112B005C47E8 /* Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operations.h; sourceTree = "<group>"; };
 		393808081FD0112B005C47E8 /* Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operations.m; sourceTree = "<group>"; };
+		3939436E1FD7FB4400954D91 /* CragOnlyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CragOnlyTableViewController.h; sourceTree = "<group>"; };
+		3939436F1FD7FB4400954D91 /* CragOnlyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CragOnlyTableViewController.m; sourceTree = "<group>"; };
+		393943711FD7FB5700954D91 /* ClimbOnlyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClimbOnlyTableViewController.h; sourceTree = "<group>"; };
+		393943721FD7FB5700954D91 /* ClimbOnlyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClimbOnlyTableViewController.m; sourceTree = "<group>"; };
 		39EFB78B1FBB1EAC00EEF502 /* Climb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Climb.h; sourceTree = "<group>"; };
 		39EFB78C1FBB1EAC00EEF502 /* Climb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Climb.m; sourceTree = "<group>"; };
 		39EFB78E1FBB1EC900EEF502 /* Crag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crag.h; sourceTree = "<group>"; };
@@ -136,6 +142,10 @@
 				390AA2811FB5EB9B0061B2AF /* CragListTableViewController.m */,
 				390AA2831FB5EBAC0061B2AF /* CragSpecificTableViewController.h */,
 				390AA2841FB5EBAC0061B2AF /* CragSpecificTableViewController.m */,
+				3939436E1FD7FB4400954D91 /* CragOnlyTableViewController.h */,
+				3939436F1FD7FB4400954D91 /* CragOnlyTableViewController.m */,
+				393943711FD7FB5700954D91 /* ClimbOnlyTableViewController.h */,
+				393943721FD7FB5700954D91 /* ClimbOnlyTableViewController.m */,
 				39EFB78B1FBB1EAC00EEF502 /* Climb.h */,
 				39EFB78C1FBB1EAC00EEF502 /* Climb.m */,
 				39EFB78E1FBB1EC900EEF502 /* Crag.h */,
@@ -317,12 +327,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				390AA2551FB5E0620061B2AF /* SecondViewController.m in Sources */,
+				393943731FD7FB5700954D91 /* ClimbOnlyTableViewController.m in Sources */,
 				39EFB78D1FBB1EAC00EEF502 /* Climb.m in Sources */,
 				393808091FD0112B005C47E8 /* Operations.m in Sources */,
 				390AA24F1FB5E0620061B2AF /* AppDelegate.m in Sources */,
 				390AA2521FB5E0620061B2AF /* FirstViewController.m in Sources */,
 				390AA24C1FB5E0620061B2AF /* main.m in Sources */,
 				392C5EE51FC6D957007BE014 /* TestDataModelImport.m in Sources */,
+				393943701FD7FB4400954D91 /* CragOnlyTableViewController.m in Sources */,
 				390AA2851FB5EBAC0061B2AF /* CragSpecificTableViewController.m in Sources */,
 				39EFB7901FBB1EC900EEF502 /* Crag.m in Sources */,
 				390AA2821FB5EB9B0061B2AF /* CragListTableViewController.m in Sources */,
