@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Crag.h"
 
 @interface ClimbOnlyTableViewController : UITableViewController
 
+@property (strong, nonatomic) Crag *crag;
+@property (strong, nonatomic) Climb *climb;
 @end

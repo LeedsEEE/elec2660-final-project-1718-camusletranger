@@ -12,7 +12,11 @@
 @interface TestDataModelImport : NSObject
 
 @property (strong, nonatomic) NSMutableArray *crags; // An array of crag instances
+@property (strong, nonatomic) NSMutableArray *climbs; // An array of climb instances
+
 @property (strong, nonatomic) NSMutableArray *dinasCromlechClimbs, *clogwynYrGrochanClimbs, *carregWastadClimbs, *stanagePopularClimbs; // An array of climbs at specific crags
+
+
 
 @property (strong, nonatomic) NSMutableArray *selectedArray;
 @property (strong, nonatomic) TestDataModelImport *data;
