@@ -59,10 +59,7 @@
         
     }
 
-    return numberOfRows;
-
-//    return 1;
-    
+    return numberOfRows;    
     
 }
 
