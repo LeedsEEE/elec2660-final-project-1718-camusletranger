@@ -703,7 +703,6 @@
         self.climbs = [[NSMutableArray alloc] init];
 
         
-        
         [self.climbs addObject:cenotaph];
         [self.climbs addObject:cemetryGates ];
         [self.climbs addObject:ivySepulchre ];

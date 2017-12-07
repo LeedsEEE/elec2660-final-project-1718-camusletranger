@@ -70,6 +70,13 @@
     return cell;
 }
 
+- (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    NSString *header = [NSString stringWithFormat:@"Crags         Guide Book"];
+    
+    return header;
+}
+
 
 /*
 // Override to support conditional editing of the table view.

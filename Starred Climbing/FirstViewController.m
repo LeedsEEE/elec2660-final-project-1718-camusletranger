@@ -86,51 +86,7 @@
     
     //[self.data addCragArray];
     
-    
-    
-    
-    // NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
-    // NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
- 
-    
-    
-    /*
-    int i = 0;
-   
-    for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
-       
-        Crag *crag = [self.data.crags objectAtIndex:i];
 
-        NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
-        NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
-        NSLog(@"Converted to String: %@", self.operations.convertToStringDay);
-        NSLog(@"Converted to String: %@", self.operations.convertToStringYear);
-        NSLog(@"Crag time of day: %@", crag.cragTOD);
-        NSLog(@"Crag time of year: %@", crag.cragTOY);
-
-        if ([crag.cragTOD isEqualToString: self.operations.convertToStringDay] && [crag.cragTOY isEqualToString: self.operations.convertToStringYear] ) {
-            
-            NSLog(@"POST IF STATEMNT");
-            NSLog(@"Postion Day: %li", (long)self.operations.timeOfDayPosition);
-            NSLog(@"Postion Year: %li", (long)self.operations.timeOfYearPosition);
-            NSLog(@"Converted to String: %@", self.operations.convertToStringDay);
-            NSLog(@"Converted to String: %@", self.operations.convertToStringYear);
-            NSLog(@"Crag time of day: %@", crag.cragTOD);
-            NSLog(@"Crag time of year: %@", crag.cragTOY);
-
-            
-          // NSLog(@"Crag Name: %@", crag.cragName);
-            
-            [self.operations addCrag: crag];
-        }
-
-        NSLog(@"Crag Name: %@", self.operations.cragName);
-
-    }
-
-    self.emptyArray = [[NSMutableArray alloc] initWithArray:self.operations.selectedCrags];
-    
-  //  NSLog(@"Name: %@'", self.crag.cragName); */
 
 }
 #pragma mark Text Field Delegate Methods

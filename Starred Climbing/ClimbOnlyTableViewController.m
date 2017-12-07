@@ -79,6 +79,12 @@
     return cell;
     
 }
+- (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    NSString *header = [NSString stringWithFormat:@"Climbs         Difficulty"];
+    
+    return header;
+}
 
 
 /*

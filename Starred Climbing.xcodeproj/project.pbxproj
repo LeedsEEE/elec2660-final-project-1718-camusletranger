@@ -10,7 +10,6 @@
 		390AA24C1FB5E0620061B2AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA24B1FB5E0620061B2AF /* main.m */; };
 		390AA24F1FB5E0620061B2AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA24E1FB5E0620061B2AF /* AppDelegate.m */; };
 		390AA2521FB5E0620061B2AF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA2511FB5E0620061B2AF /* FirstViewController.m */; };
-		390AA2551FB5E0620061B2AF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AA2541FB5E0620061B2AF /* SecondViewController.m */; };
 		390AA2581FB5E0620061B2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390AA2561FB5E0620061B2AF /* Main.storyboard */; };
 		390AA25A1FB5E0620061B2AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390AA2591FB5E0620061B2AF /* Assets.xcassets */; };
 		390AA25D1FB5E0620061B2AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390AA25B1FB5E0620061B2AF /* LaunchScreen.storyboard */; };
@@ -53,8 +52,6 @@
 		390AA24E1FB5E0620061B2AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		390AA2501FB5E0620061B2AF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		390AA2511FB5E0620061B2AF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		390AA2531FB5E0620061B2AF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		390AA2541FB5E0620061B2AF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		390AA2571FB5E0620061B2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		390AA2591FB5E0620061B2AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390AA25C1FB5E0620061B2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -139,8 +136,6 @@
 				390AA24E1FB5E0620061B2AF /* AppDelegate.m */,
 				390AA2501FB5E0620061B2AF /* FirstViewController.h */,
 				390AA2511FB5E0620061B2AF /* FirstViewController.m */,
-				390AA2531FB5E0620061B2AF /* SecondViewController.h */,
-				390AA2541FB5E0620061B2AF /* SecondViewController.m */,
 				390AA2801FB5EB9B0061B2AF /* CragListTableViewController.h */,
 				390AA2811FB5EB9B0061B2AF /* CragListTableViewController.m */,
 				390AA2831FB5EBAC0061B2AF /* CragSpecificTableViewController.h */,
@@ -331,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390AA2551FB5E0620061B2AF /* SecondViewController.m in Sources */,
 				393943731FD7FB5700954D91 /* ClimbOnlyTableViewController.m in Sources */,
 				393943761FD806EC00954D91 /* ClimbInformationViewController.m in Sources */,
 				39EFB78D1FBB1EAC00EEF502 /* Climb.m in Sources */,
