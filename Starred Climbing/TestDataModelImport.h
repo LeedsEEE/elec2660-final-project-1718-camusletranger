@@ -38,7 +38,7 @@
 
 
 -(NSString *) convertToStringYear; // This works the same as above but for the time of year
-
+-(Crag *) cragForArray;
 -(void) addCragToArray: (Crag *) crag;
 -(void) addCragArray;
 

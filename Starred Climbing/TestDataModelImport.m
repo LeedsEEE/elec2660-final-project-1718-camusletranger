@@ -13,6 +13,7 @@
 {
     Crag *cragForComparison;
     Climb *climbForComparison;
+    Crag *cragForArray;
     NSInteger numberOfClimbs;
     
 }
@@ -817,12 +818,17 @@
     }
     return self;
 }
+-(Crag*) cragForArray {
+    
+    return cragForArray;
+    
+}
 
 -(void) addCragToArray: (Crag *) crag {
     
     int i = 0;
     
-    for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
+    for (i = 0; i <= [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
         
         Crag *crag = [self.data.crags objectAtIndex:i];
         
