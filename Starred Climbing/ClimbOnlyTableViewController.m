@@ -22,8 +22,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.data =[[TestDataModelImport alloc] init];
-
+    
+    self.data = [[TestDataModelImport alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,23 +43,24 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
    
     NSInteger numberOfRows;
-   /* self.data = [[TestDataModelImport alloc] init];
 
+    /*
     if(section == 0) {
-    self.data.cragForcomparison = self.cragPush;
-    numberOfRows = self.data.numberOfClimbs;
-    NSLog(@"Number Of Rows = %ld", numberOfRows);
+    self.data.cragForComparison = self.cragPush;
+    self.data.numberOfClimbs = numberOfRows;
+        
+          }
+    NSLog(@"NumberOfRows = %ld", numberOfRows);
+    */
     
-    }*/
     if(section == 0) {
         
         numberOfRows = self.data.climbs.count;
         
     }
+    
     return numberOfRows;
 }
-
-
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -75,6 +77,7 @@
     }
     
     return cell;
+    
 }
 
 
@@ -112,14 +115,34 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+
+    if ([[segue identifier] isEqualToString:@"ShowClimbDetails"]) {
+        
+        ClimbInformationViewController *destinationViewController = [segue destinationViewController];
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        if(indexPath.section == 0){
+            
+            Climb *tempClimb = [self.data.climbs objectAtIndex:indexPath.row];
+            
+            destinationViewController.climbPush = tempClimb;
+        }
+    }
+    
 }
-*/
+
+
+
+
+
+
 
 @end

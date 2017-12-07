@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Crag.h"
 
 @interface ClimbInformationViewController : UIViewController
 
@@ -15,5 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *climbCrag;
 @property (weak, nonatomic) IBOutlet UILabel *climbGrade;
 @property (weak, nonatomic) IBOutlet UILabel *climbQuality;
+
+@property (strong, nonatomic) Climb *climbPush;
 
 @end

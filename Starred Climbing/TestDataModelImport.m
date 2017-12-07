@@ -12,6 +12,7 @@
 
 {
     Crag *cragForComparison;
+    Climb *climbForComparison;
     NSInteger numberOfClimbs;
     
 }
@@ -38,9 +39,7 @@
 
         
         self.crags = [NSMutableArray array];
-        
-       
-        
+    
         Crag *dinasCromlech = [[Crag alloc] init];
         
         dinasCromlech.cragName = @"Dinas Cromlechh";
@@ -701,7 +700,8 @@
         snugAsAThugOnAJug.climbDifficulty = @"E46b";
         snugAsAThugOnAJug.climbQuality = @"***";
        
-        
+        self.climbs = [[NSMutableArray alloc] init];
+
         
         
         [self.climbs addObject:cenotaph];
@@ -925,7 +925,7 @@
     
 }
 
--(Crag *) cragForcomparison {
+-(Crag *) cragForComparison {
     
     return cragForComparison;
 }
@@ -935,85 +935,40 @@
     return numberOfClimbs;
 }
 
--(void) setCragForcomparison: (Crag *) crag {
+-(void) setCragForComparison: (Crag *) crag {
     
     crag = cragForComparison;
     
 }
+-(Climb *) setClimbForComparison{
+    
+    return climbForComparison;
+    
+}
+
+
 -(void) setNumberOfClimbs: (NSInteger) number {
     
     self.data = [[TestDataModelImport alloc] init];
-    
+
     NSInteger j;
+        
+        for (j = 0; j <= [self.data.climbs count]; ++j) {
+            
+            Crag *crag = [self.data.climbs objectAtIndex:j];
+            
+            if ([crag.climbAtCrag isEqualToString: cragForComparison.cragName]) {
+                
+                ++number;
     
-  
-        
-        for (j =0; j <= [self.data.climbs count]; ++j) {
-            
-            Climb *climb = [self.data.climbs objectAtIndex:j];
-            
-            if ([climb.climbAtCrag isEqualToString:cragForComparison.cragName]) {
-                
-                number += number;
-                
-        
-            
         }
     }
 
+    NSLog(@"CragPush: %@", self.cragForComparison.cragName);
+    NSLog(@"Number Of Rows = %ld", numberOfClimbs);
     number = numberOfClimbs;
     
 }
-
-
-
-/*-(void) countClimbs:(Crag *)crag {
-    
-    NSInteger climbCount;
-    NSInteger i, j;
-    
-    for (i = 0; i <= [self.data.crags count]; ++i) {
-        
-        for (j =0; j <= [self.data.climbs count]; ++j) {
-            
-            Crag *crag = [self.data.crags objectAtIndex:i];
-            Climb *climb = [self.data.climbs objectAtIndex:j];
-            
-            if ([climb.climbAtCrag isEqualToString:crag.cragName]) {
-                
-                climbCount += climbCount;
-                
-            }
-
-        }
-    }
-    
-}
-
-
--(void) setNumberOfClimbs: (NSInteger) theNumber {
-    
-    NSInteger i, j;
-    
-    for (i = 0; i <= [self.data.crags count]; ++i) {
-        
-        for (j =0; j <= [self.data.climbs count]; ++j) {
-            
-            Crag *crag = [self.data.crags objectAtIndex:i];
-            Climb *climb = [self.data.climbs objectAtIndex:j];
-            
-            if ([climb.climbAtCrag isEqualToString:crag.cragName]) {
-                
-                theNumber += theNumber;
-                
-            }
-            
-        }
-    }
-    
-}
- */
-
 
 
 

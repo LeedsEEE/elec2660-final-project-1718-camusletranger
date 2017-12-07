@@ -39,16 +39,13 @@
 
 -(NSString *) convertToStringYear; // This works the same as above but for the time of year
 
-//-(void) setNumberOfClimbs: (NSInteger) theNumber;
--(void) countClimbs: (Crag *) crag;
+-(void) addCragToArray: (Crag *) crag;
+-(void) addCragArray;
 
-
-
-//-(void) addCragToArray: (Crag *) crag;
-//-(void) addCragArray;
-
--(void) setCragForcomparison: (Crag *) crag;
--(Crag *) cragForcomparison;
+-(void) setCragForComparison: (Crag *) crag;
+-(void) setClimbForComparison: (Climb *) climb;
+-(Crag *) cragForComparison;
+-(Climb *) climbForComparison;
 -(NSInteger) numberOfClimbs;
 -(void) setNumberOfClimbs: (NSInteger) number;
 
