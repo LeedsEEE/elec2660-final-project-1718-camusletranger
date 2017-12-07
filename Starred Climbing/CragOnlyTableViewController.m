@@ -41,7 +41,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     NSInteger numberOfRows;
-    
+
     if(section ==0) {
         
        numberOfRows = self.data.crags.count;

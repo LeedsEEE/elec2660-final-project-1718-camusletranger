@@ -40,26 +40,43 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+   
     NSInteger numberOfRows;
+   /* self.data = [[TestDataModelImport alloc] init];
+
+    if(section == 0) {
     self.data.cragForcomparison = self.cragPush;
     numberOfRows = self.data.numberOfClimbs;
     NSLog(@"Number Of Rows = %ld", numberOfRows);
     
+    }*/
+    if(section == 0) {
+        
+        numberOfRows = self.data.climbs.count;
+        
+    }
     return numberOfRows;
 }
 
 
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ClimbOnlyCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
+    if(indexPath.section == 0) {
+        
+        Climb *tempClimb = [self.data.climbs objectAtIndex:indexPath.row];
+        cell.textLabel.text = tempClimb.climbName;
+        cell.detailTextLabel.text = tempClimb.climbDifficulty;
+        
+    }
+    
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -38,7 +38,8 @@
 
         
         self.crags = [NSMutableArray array];
-
+        
+       
         
         Crag *dinasCromlech = [[Crag alloc] init];
         
@@ -48,7 +49,8 @@
         dinasCromlech.cragTOD = @"Morning";
         dinasCromlech.cragTOY = @"Winter";
         
-        
+        self.crags = [NSMutableArray array];
+
         //[dinasCromlech setCragName:@"Cromlech" andGuideBook:@"Llanberis Pass, North Wales Rock" andRockType: @"Dolorite" andTOD:@"Morning" andTOY:@"Winter"];
         Crag *clogwynYrGrochan = [[Crag alloc] init];
         clogwynYrGrochan.cragName = @"Clogwyn Y Grochan";
@@ -56,7 +58,8 @@
         clogwynYrGrochan.cragRockType = @"Dolerite";
         clogwynYrGrochan.cragTOY = @"Winter";
         clogwynYrGrochan.cragTOD = @"Afternooon";
-        
+
+        self.crags = [NSMutableArray array];
         
         // [clogwynYrGrochan setCragName:@"Clogwyn Yr Grochan" andGuideBook:@"Llanberis Pass, North Wales Rock" andRockType:@"Dolorite" andTOD:@"Afternoon" andTOY:@"Winter"];
         Crag *carregWastad = [[Crag alloc] init];
@@ -66,14 +69,17 @@
         carregWastad.cragTOD = @"Evening";
         carregWastad.cragTOY = @"Winter";
         
-        
+        self.crags = [NSMutableArray array];
+       
         //[carregWastad setCragName:@"Carreg Wastad" andGuideBook:@"Llanberis Pass, North Wales Rock"  andRockType:@"Dolorite" andTOD:@"Evening" andTOY:@"Winter"];
         Crag *stanagePopular = [[Crag alloc] init];
         stanagePopular.cragName = @"Stanage Popular";
         stanagePopular.cragGuidebook = @"Stanage";
         stanagePopular.cragTOD = @"Morning";
         stanagePopular.cragTOY = @"Spring";
-        
+   
+        self.crags = [NSMutableArray array];
+
         //[stanagePopular setCragName:@"Stanage Popular" andGuideBook:@"Lancashire Grit" andRockType:@"Grit" andTOD:@"Morning" andTOY:@"Spring"];
         Crag *craigBwlchYMoch = [[Crag alloc] init];
         
@@ -81,7 +87,9 @@
         craigBwlchYMoch.cragGuidebook = @"Tremadog";
         craigBwlchYMoch.cragTOY = @"Spring";
         craigBwlchYMoch.cragTOD = @"Afternoon";
-        
+       
+        self.crags = [NSMutableArray array];
+       
         
         // [craigBwlchYMoch setCragName:@"Craig Bwlch Y Moch" andGuideBook: @"Tremadog" andRockType: @"Dolerite" andTOD: @"Afternoon" andTOY:@"Spring"];
         Crag *craigPantIfan = [[Crag alloc] init];
@@ -90,7 +98,9 @@
         craigPantIfan.cragGuidebook = @"Tremadog";
         craigPantIfan.cragTOD = @"Evening";
         craigPantIfan.cragTOY = @"Spring";
-        
+       
+        self.crags = [NSMutableArray array];
+   
         
         //[craigPantIfan setCragName:@"Craig Pant Ivan" andGuideBook: @"Tremadog" andRockType: @"Dolerite" andTOD:@"Evening" andTOY:@"Spring"];
         Crag *stGovensHeadEast = [[Crag alloc] init];
@@ -100,7 +110,8 @@
         stGovensHeadEast.cragTOD = @"Morning";
         stGovensHeadEast.cragTOY = @"Summer";
         
-        
+        self.crags = [NSMutableArray array];
+    
         
         //[stGovensHeadEast setCragName:@"St Govens Head East" andGuideBook:@"Pembrokshire" andRockType:@"Limestone" andTOD:@"Morning" andTOY:@"Sumemer"];
         Crag *stGovensHeadWest = [[Crag alloc] init];
@@ -109,7 +120,8 @@
         stGovensHeadWest.cragGuidebook = @"Pembrokeshire";
         stGovensHeadWest.cragTOD = @"Afternoon";
         stGovensHeadWest.cragTOY = @"Summer";
-        
+        self.crags = [NSMutableArray array];
+     
         //[stGovensHeadWest setCragName:@"St Govens Head West" andGuideBook:@"Pembrokshire" andRockType:@"Limestone" andTOD:@"Afternoon" andTOY:@"Summer"];
         Crag *henloud = [[Crag alloc] init];
         
@@ -118,7 +130,8 @@
         henloud.cragTOD = @"Evening";
         henloud.cragTOY = @"Summer";
         
-        
+        self.crags = [NSMutableArray array];
+     
         //[henloud setCragName:@"Hencloud" andGuideBook:@"Lancashire Grit" andRockType:@"Gritstone" andTOD:@"Evening" andTOY:@"Summer"];
         Crag *roaches = [[Crag alloc] init];
         
@@ -126,7 +139,8 @@
         roaches.cragGuidebook = @"Lancashire Grit";
         roaches.cragTOD = @"Morning";
         roaches.cragTOY = @"Autumn";
-        
+        self.crags = [NSMutableArray array];
+      
         //[roaches setCragName:@"Roaches" andGuideBook:@"Lancashire Grit" andRockType:@"Gritstone" andTOD:@"Morning" andTOY:@"Aurumn"];
         Crag *craigDoris = [[Crag alloc] init];
         
@@ -134,7 +148,8 @@
         craigDoris.cragGuidebook =@"Lleyn Peninsular";
         craigDoris.cragTOD = @"Afternoon";
         craigDoris.cragTOY = @"Autumn";
-        
+        self.crags = [NSMutableArray array];
+   
         //[craigDoris setCragName:@"Craig Doris" andGuideBook:@"Lleyn Guide" andRockType:@"Crumbly, scary but good if you're into that" andTOD: @"Afternoon" andTOY:@"Autumn"];
         Crag *easterIslandGully = [[Crag alloc] init];
         
@@ -143,7 +158,8 @@
         easterIslandGully.cragTOD = @"Afternoon";
         easterIslandGully.cragTOY = @"Autumn";
         
-        
+        self.crags = [NSMutableArray array];
+ 
         //[easterIslandGully setCragName:@"Easter Island Gully" andGuideBook:@"Gogarth North" andRockType:@"Quartzite" andTOD:@"Afternoon" andTOY:@"Autumn"];
         
         [self.crags addObject:dinasCromlech];     //index 0
@@ -167,9 +183,10 @@
         cenotaph.climbName = @"Cenotaph";
         cenotaph.climbDifficulty = @"E15c";
         cenotaph.climbQuality = @"***";
-        [self.climbs addObject:cenotaph];
+       
 
-      
+        self.climbs = [NSMutableArray array];
+  
         Climb *cemetryGates = [[Climb alloc] init];
         
         cemetryGates.climbAtCrag = @"Dinas Cromlech";
@@ -177,8 +194,9 @@
         cemetryGates.climbDifficulty = @"E15c";
         cemetryGates.climbQuality = @"***";
      
-        [self.climbs addObject:cemetryGates ];
+      
 
+        self.climbs = [NSMutableArray array];
        
         Climb *ivySepulchre = [[Climb alloc] init];
         
@@ -186,7 +204,9 @@
         ivySepulchre.climbName = @"Ivy Sepulchre";
         ivySepulchre.climbDifficulty = @"E15b";
         ivySepulchre.climbQuality = @"*";
-        [self.climbs addObject:ivySepulchre ];
+      
+
+        self.climbs = [NSMutableArray array];
 
         Climb *flyingButtress  = [[Climb alloc] init];
         
@@ -194,7 +214,9 @@
         flyingButtress.climbName = @"Flying Buttress";
         flyingButtress.climbDifficulty = @"VD";
         flyingButtress.climbQuality = @"***";
-        [self.climbs addObject: flyingButtress];
+      
+
+        self.climbs = [NSMutableArray array];
 
         Climb *spiralStairs = [[Climb alloc] init];
         
@@ -202,7 +224,9 @@
         spiralStairs.climbName = @"Spiral Stairs";
         spiralStairs.climbDifficulty = @"VD";
         spiralStairs.climbQuality = @"***";
-        [self.climbs addObject:spiralStairs ];
+       
+
+        self.climbs = [NSMutableArray array];
 
         Climb *sabreCut  = [[Climb alloc] init];
         
@@ -211,9 +235,8 @@
         sabreCut.climbDifficulty = @"VS4c";
         sabreCut.climbQuality = @"**";
         
-        [self.climbs addObject:sabreCut ];
-
-      
+       
+        self.climbs = [NSMutableArray array];
         
         Climb *cobwebCrack = [[Climb alloc] init];
         
@@ -221,7 +244,9 @@
         cobwebCrack.climbName = @"Cobweb crack";
         cobwebCrack.climbDifficulty = @"VS5a";
         cobwebCrack.climbQuality = @"**";
-        [self.climbs addObject: cobwebCrack];
+       
+
+        self.climbs = [NSMutableArray array];
 
         Climb *noahsWarning  = [[Climb alloc] init];
         
@@ -229,7 +254,9 @@
         noahsWarning.climbName = @"Noah's Warning";
         noahsWarning.climbDifficulty = @"VS5a";
         noahsWarning.climbQuality = @"**";
-        [self.climbs addObject:noahsWarning ];
+       
+
+        self.climbs = [NSMutableArray array];
 
         Climb *theThing  = [[Climb alloc] init];
         
@@ -237,7 +264,9 @@
         theThing.climbName = @"The Thing";
         theThing.climbDifficulty = @"E25b";
         theThing.climbQuality = @"***";
-        [self.climbs addObject: theThing];
+        
+
+        self.climbs = [NSMutableArray array];
 
         Climb *theMonster = [[Climb alloc] init];
         
@@ -245,7 +274,9 @@
         theMonster.climbName = @"The Monster";
         theMonster.climbDifficulty = @"E25c";
         theMonster.climbQuality = @"**";
-        [self.climbs addObject: theMonster];
+       
+
+        self.climbs = [NSMutableArray array];
 
         Climb *grond = [[Climb alloc] init];
         
@@ -253,7 +284,8 @@
         grond.climbName = @"Grond";
         grond.climbDifficulty = @"E25b";
         grond.climbQuality = @"*";
-        [self.climbs addObject: grond];
+       
+        self.climbs = [NSMutableArray array];
 
         Climb *leftWall  = [[Climb alloc] init];
         
@@ -261,7 +293,9 @@
         leftWall.climbName = @"Left Wall";
         leftWall.climbDifficulty = @"E25b";
         leftWall.climbQuality = @"***";
-        [self.climbs addObject: leftWall];
+       
+
+        self.climbs = [NSMutableArray array];
 
         Climb *foil = [[Climb alloc] init];
         
@@ -269,15 +303,19 @@
         foil.climbName = @"Foil";
         foil.climbDifficulty = @"E15b";
         foil.climbQuality = @"***";
-        [self.climbs addObject:foil ];
-
+       
+        
+        self.climbs = [NSMutableArray array];
+        
         Climb *memoryLane = [[Climb alloc] init];
         
         memoryLane.climbAtCrag = @"Dinas Cromlech";
         memoryLane.climbName = @"Memory Lane";
         memoryLane.climbDifficulty = @"E35c";
         memoryLane.climbQuality = @"***";
-        [self.climbs addObject: memoryLane];
+       
+
+        self.climbs = [NSMutableArray array];
 
         Climb *resurection = [[Climb alloc] init];
         
@@ -285,7 +323,9 @@
         resurection.climbName = @"Resurection";
         resurection.climbDifficulty = @"E46a";
         resurection.climbQuality = @"***";
-        [self.climbs addObject: resurection];
+        
+
+        self.climbs = [NSMutableArray array];
 
         Climb *rightWall = [[Climb alloc] init];
         
@@ -293,7 +333,8 @@
         rightWall.climbName = @"Right Wall";
         rightWall.climbDifficulty = @"E56a";
         rightWall.climbQuality = @"***";
-        [self.climbs addObject: rightWall];
+       
+        self.climbs = [NSMutableArray array];
 
         Climb *atomicHotrod = [[Climb alloc] init];
         
@@ -301,7 +342,9 @@
         atomicHotrod.climbName = @"Atomic Hotrod";
         atomicHotrod.climbDifficulty = @"E56b";
         atomicHotrod.climbQuality = @"***";
-        [self.climbs addObject: atomicHotrod];
+      
+
+        self.climbs = [NSMutableArray array];
 
         Climb *lordOfTheFlies = [[Climb alloc] init];
         
@@ -309,7 +352,9 @@
         lordOfTheFlies.climbName = @"Lord Of The Flies";
         lordOfTheFlies.climbDifficulty = @"E66a";
         lordOfTheFlies.climbQuality = @"***";
-        [self.climbs addObject: lordOfTheFlies ];
+     
+
+        self.climbs = [NSMutableArray array];
 
     
         Climb *nea  = [[Climb alloc] init];
@@ -318,15 +363,19 @@
         nea.climbName = @"Nea";
         nea.climbDifficulty = @"VS4b";
         nea.climbQuality = @"**";
-        [self.climbs addObject: nea];
+      
 
+        self.climbs = [NSMutableArray array];
+        
         Climb *phantomRib = [[Climb alloc] init];
         
         phantomRib.climbAtCrag = @"Clogwyn Y Grochan";
         phantomRib.climbName = @"Phantom Rib";
         phantomRib.climbDifficulty = @"VS4c";
         phantomRib.climbQuality = @"***";
-        [self.climbs addObject: phantomRib];
+
+
+        self.climbs = [NSMutableArray array];
 
         Climb *brantDirect = [[Climb alloc] init];
         
@@ -334,7 +383,9 @@
         brantDirect.climbName = @"Brant Direct";
         brantDirect.climbDifficulty = @"HVS5a";
         brantDirect.climbQuality = @"***";
-        [self.climbs addObject:brantDirect ];
+
+
+        self.climbs = [NSMutableArray array];
 
         Climb *spectre = [[Climb alloc] init];
         
@@ -342,7 +393,8 @@
         spectre.climbName = @"Spectre";
         spectre.climbDifficulty = @"HVS5a";
         spectre.climbQuality = @"***";
-        [self.climbs addObject: spectre];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *kaisergebirgeWall = [[Climb alloc] init];
         
@@ -350,7 +402,8 @@
         kaisergebirgeWall.climbName = @"Kaisergebirge Wall";
         kaisergebirgeWall.climbDifficulty = @"HVS5b";
         kaisergebirgeWall.climbQuality = @"***";
-        [self.climbs addObject: kaisergebirgeWall];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *karwendalWall = [[Climb alloc] init];
         
@@ -358,7 +411,8 @@
         karwendalWall.climbName = @"Karwendal Wall";
         karwendalWall.climbDifficulty = @"HVS5b";
         karwendalWall.climbQuality = @"**";
-        [self.climbs addObject: karwendalWall];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *sickle = [[Climb alloc] init];
         
@@ -366,7 +420,8 @@
         sickle.climbName = @"Sickle";
         sickle.climbDifficulty = @"HVS5b";
         sickle.climbQuality = @"**";
-        [self.climbs addObject: sickle];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *hangover = [[Climb alloc] init];
         
@@ -374,7 +429,8 @@
         hangover.climbName = @"Hangover";
         hangover.climbDifficulty = @"E15b";
         hangover.climbQuality = @"*";
-        [self.climbs addObject: hangover];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *slapeDirect = [[Climb alloc] init];
         
@@ -382,7 +438,8 @@
         slapeDirect.climbName = @"Slape Direct";
         slapeDirect.climbDifficulty = @"E25b";
         slapeDirect.climbQuality = @"**";
-        [self.climbs addObject: slapeDirect];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *firstAmendment = [[Climb alloc] init];
         
@@ -390,7 +447,8 @@
         firstAmendment.climbName = @"First Amendment";
         firstAmendment.climbDifficulty = @"E25c";
         firstAmendment.climbQuality = @"**";
-        [self.climbs addObject: firstAmendment];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *spectrum = [[Climb alloc] init];
         
@@ -398,7 +456,8 @@
         spectrum.climbName = @"Spectrum";
         spectrum.climbDifficulty = @"E25c";
         spectrum.climbQuality = @"**";
-        [self.climbs addObject: spectrum];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *strollOn = [[Climb alloc] init];
         
@@ -406,7 +465,8 @@
         strollOn.climbName = @"Stroll On";
         strollOn.climbDifficulty = @"E36a";
         strollOn.climbQuality = @"***";
-        [self.climbs addObject: strollOn];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *quazar = [[Climb alloc] init];
         
@@ -414,7 +474,8 @@
         quazar.climbName = @"Quazar";
         quazar.climbDifficulty = @"E36a";
         quazar.climbQuality = @"***";
-        [self.climbs addObject: quazar];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *quantumjump = [[Climb alloc] init];
         
@@ -422,7 +483,8 @@
         quantumjump.climbName = @"Quantum Jump";
         quantumjump.climbDifficulty = @"E56b";
         quantumjump.climbQuality = @"***";
-        [self.climbs addObject: quantumjump];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *cockBlock = [[Climb alloc] init];
         
@@ -432,13 +494,16 @@
         cockBlock.climbQuality = @"***";
         [self.climbs addObject: cockBlock];
 
+        self.climbs = [NSMutableArray array];
+
         Climb *winkle = [[Climb alloc] init];
         
         winkle .climbAtCrag = @"Carreg Wastad";
         winkle .climbName = @"Winkle";
         winkle .climbDifficulty = @"VD";
         winkle .climbQuality = @"***";
-        [self.climbs addObject: winkle];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *crackstoneRib = [[Climb alloc] init];
         
@@ -446,7 +511,8 @@
         crackstoneRib.climbName = @"Crackstone Rib";
         crackstoneRib.climbDifficulty = @"S";
         crackstoneRib.climbQuality = @"***";
-        [self.climbs addObject: crackstoneRib];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *skylon = [[Climb alloc] init];
         
@@ -454,7 +520,8 @@
         skylon.climbName = @"Skylon";
         skylon.climbDifficulty = @"HS4b";
         skylon.climbQuality = @"***";
-        [self.climbs addObject: skylon];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *shadowWall = [[Climb alloc] init];
         
@@ -462,7 +529,8 @@
         shadowWall.climbName = @"Shadow Wall";
         shadowWall.climbDifficulty = @"VS4c";
         shadowWall.climbQuality = @"***";
-        [self.climbs addObject: shadowWall];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *ribstoneCrack = [[Climb alloc] init];
         
@@ -470,7 +538,8 @@
         ribstoneCrack.climbName = @"Ribstone Crack";
         ribstoneCrack.climbDifficulty = @"VS4c";
         ribstoneCrack.climbQuality = @"***";
-        [self.climbs addObject: ribstoneCrack];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *overhangingChimney = [[Climb alloc] init];
         
@@ -478,7 +547,8 @@
         overhangingChimney.climbName = @"Overhanging Chimney";
         overhangingChimney.climbDifficulty = @"VS4c";
         overhangingChimney.climbQuality = @"***";
-        [self.climbs addObject: overhangingChimney];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *yellowCrack = [[Climb alloc] init];
         
@@ -486,7 +556,8 @@
         yellowCrack.climbName = @"Yellow Crack";
         yellowCrack.climbDifficulty = @"HVS5a";
         yellowCrack.climbQuality = @"***";
-        [self.climbs addObject: yellowCrack];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *overlappingWall = [[Climb alloc] init];
         
@@ -494,7 +565,8 @@
         overlappingWall.climbName = @"Overlapping Wall";
         overlappingWall.climbDifficulty = @"E15b";
         overlappingWall.climbQuality = @"***";
-        [self.climbs addObject: overlappingWall];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *oldHolborn = [[Climb alloc] init];
       
@@ -502,7 +574,8 @@
         oldHolborn.climbName = @"Old Holborn";
         oldHolborn.climbDifficulty = @"E15b";
         oldHolborn.climbQuality = @"***";
-        [self.climbs addObject: oldHolborn];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *erosionGrooveDirect = [[Climb alloc] init];
         
@@ -510,7 +583,8 @@
         erosionGrooveDirect.climbName = @"Erosion Groove Direct";
         erosionGrooveDirect.climbDifficulty = @"E25c";
         erosionGrooveDirect.climbQuality = @"***";
-        [self.climbs addObject: erosionGrooveDirect];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *zangorilla = [[Climb alloc] init];
         
@@ -518,7 +592,8 @@
         zangorilla.climbName = @"Zangorilla";
         zangorilla.climbDifficulty = @"E46a";
         zangorilla.climbQuality = @"***";
-        [self.climbs addObject: zangorilla];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *littleWomen = [[Climb alloc] init];
         
@@ -526,7 +601,8 @@
         littleWomen.climbName = @"Little Women";
         littleWomen.climbDifficulty = @"E77a";
         littleWomen.climbQuality = @"***";
-        [self.climbs addObject:littleWomen];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *grooveIsInTheHeart = [[Climb alloc] init];
         
@@ -534,7 +610,8 @@
         grooveIsInTheHeart.climbName = @"Groove Is In The Heart";
         grooveIsInTheHeart.climbDifficulty = @"E77a";
         grooveIsInTheHeart.climbQuality = @"***";
-        [self.climbs addObject: grooveIsInTheHeart];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *shineOn = [[Climb alloc] init];
         
@@ -542,7 +619,8 @@
         shineOn.climbName = @"Shine On";
         shineOn.climbDifficulty = @"E76c";
         shineOn.climbQuality = @"***";
-        [self.climbs addObject: shineOn];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *blackCarBurning = [[Climb alloc] init];
         
@@ -550,7 +628,8 @@
         blackCarBurning.climbName = @"Black Car Burning";
         blackCarBurning.climbDifficulty = @"E76c";
         blackCarBurning.climbQuality = @"**";
-        [self.climbs addObject: blackCarBurning];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *cemetryWaits = [[Climb alloc] init];
         
@@ -558,7 +637,8 @@
         cemetryWaits.climbName = @"Cemetary Waits";
         cemetryWaits.climbDifficulty = @"E76c";
         cemetryWaits.climbQuality = @"**";
-        [self.climbs addObject: cemetryWaits];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *warmLove = [[Climb alloc] init];
         
@@ -566,7 +646,8 @@
         warmLove.climbName = @"Warm Love";
         warmLove.climbDifficulty = @"E67a";
         warmLove.climbQuality = @"**";
-        [self.climbs addObject: warmLove];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *carpeDiem = [[Climb alloc] init];
         
@@ -574,7 +655,8 @@
         carpeDiem.climbName = @"Carpe Diem";
         carpeDiem.climbDifficulty = @"E66c";
         carpeDiem.climbQuality = @"**";
-        [self.climbs addObject: carpeDiem];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *wallOfStange = [[Climb alloc] init];
         
@@ -582,7 +664,8 @@
         wallOfStange.climbName = @"Wall Of Sound";
         wallOfStange.climbDifficulty = @"E66b";
         wallOfStange.climbQuality = @"***";
-        [self.climbs addObject: wallOfStange];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *stanageWithoutOxygen = [[Climb alloc] init];
         
@@ -590,7 +673,8 @@
         stanageWithoutOxygen.climbName = @"Strange Without Oxygen";
         stanageWithoutOxygen.climbDifficulty = @"E56c";
         stanageWithoutOxygen.climbQuality = @"**";
-        [self.climbs addObject: stanageWithoutOxygen];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *headlessChicken = [[Climb alloc] init];
         
@@ -598,7 +682,8 @@
         headlessChicken.climbName = @"Headless Chicken";
         headlessChicken.climbDifficulty = @"E56b";
         headlessChicken.climbQuality = @"**";
-        [self.climbs addObject: headlessChicken];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *bocNoButress = [[Climb alloc] init];
         
@@ -606,7 +691,8 @@
         bocNoButress.climbName = @"Boc No Buttress";
         bocNoButress.climbDifficulty = @"EE56a";
         bocNoButress.climbQuality = @"**";
-        [self.climbs addObject: bocNoButress];
+
+        self.climbs = [NSMutableArray array];
 
         Climb *snugAsAThugOnAJug = [[Climb alloc] init];
         
@@ -614,6 +700,64 @@
         snugAsAThugOnAJug.climbName = @"Snug as a Thug on a Jug";
         snugAsAThugOnAJug.climbDifficulty = @"E46b";
         snugAsAThugOnAJug.climbQuality = @"***";
+       
+        
+        
+        
+        [self.climbs addObject:cenotaph];
+        [self.climbs addObject:cemetryGates ];
+        [self.climbs addObject:ivySepulchre ];
+        [self.climbs addObject: flyingButtress];
+        [self.climbs addObject:spiralStairs ];
+        [self.climbs addObject:sabreCut ];
+        [self.climbs addObject: cobwebCrack];
+        [self.climbs addObject:noahsWarning ];
+        [self.climbs addObject: theThing];
+        [self.climbs addObject: theMonster];
+        [self.climbs addObject: grond];
+        [self.climbs addObject: leftWall];
+        [self.climbs addObject:foil ];
+        [self.climbs addObject: memoryLane];
+        [self.climbs addObject: resurection];
+        [self.climbs addObject: rightWall];
+        [self.climbs addObject: atomicHotrod];
+        [self.climbs addObject: lordOfTheFlies ];
+        [self.climbs addObject: nea];
+        [self.climbs addObject: phantomRib];
+        [self.climbs addObject: brantDirect];
+        [self.climbs addObject: spectre];
+        [self.climbs addObject: kaisergebirgeWall];
+        [self.climbs addObject: karwendalWall];
+        [self.climbs addObject: sickle];
+        [self.climbs addObject: hangover];
+        [self.climbs addObject: slapeDirect];
+        [self.climbs addObject: firstAmendment];
+        [self.climbs addObject: spectrum];
+        [self.climbs addObject: strollOn];
+        [self.climbs addObject: quazar];
+        [self.climbs addObject: quantumjump];
+        [self.climbs addObject: skylon];
+        [self.climbs addObject: shadowWall];
+        [self.climbs addObject: ribstoneCrack];
+        [self.climbs addObject: overhangingChimney];
+        [self.climbs addObject: yellowCrack];
+        [self.climbs addObject: winkle];
+        [self.climbs addObject: crackstoneRib];
+        [self.climbs addObject: overlappingWall];
+        [self.climbs addObject: oldHolborn];
+        [self.climbs addObject: erosionGrooveDirect];
+        [self.climbs addObject: zangorilla];
+        [self.climbs addObject: littleWomen];
+        [self.climbs addObject: grooveIsInTheHeart];
+        [self.climbs addObject: shineOn];
+        [self.climbs addObject: blackCarBurning];
+        [self.climbs addObject: cemetryWaits];
+        [self.climbs addObject: warmLove];
+        [self.climbs addObject: carpeDiem];
+        [self.climbs addObject: wallOfStange];
+        [self.climbs addObject: stanageWithoutOxygen];
+        [self.climbs addObject: headlessChicken];
+        [self.climbs addObject: bocNoButress];
         [self.climbs addObject: snugAsAThugOnAJug];
 
     
@@ -798,9 +942,11 @@
 }
 -(void) setNumberOfClimbs: (NSInteger) number {
     
-    NSInteger i, j;
+    self.data = [[TestDataModelImport alloc] init];
     
-    for (i = 0; i <= [self.data.crags count]; ++i) {
+    NSInteger j;
+    
+  
         
         for (j =0; j <= [self.data.climbs count]; ++j) {
             
@@ -810,14 +956,11 @@
                 
                 number += number;
                 
-            }
+        
             
         }
     }
 
-    
-    
-    
     number = numberOfClimbs;
     
 }
