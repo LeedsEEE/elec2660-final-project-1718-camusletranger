@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Crag.h"
 #import "TestDataModelImport.h"
+#import "ClimbOnlyTableViewController.h"
 
 @interface CragOnlyTableViewController : UITableViewController
 

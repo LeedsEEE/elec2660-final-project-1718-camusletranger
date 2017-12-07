@@ -10,6 +10,11 @@
 
 @implementation TestDataModelImport
 
+{
+    Crag *cragForComparison;
+    NSInteger numberOfClimbs;
+    
+}
 - (instancetype)init
 {
     self = [super init];
@@ -25,6 +30,7 @@
         NSString *summer = @"Summer";
         NSString *autumn = @"Autumn";
         
+        
         self.timeOfDayArray = [NSArray arrayWithObjects: morning, afternoon, evening, nil];
         self.timOfYearArray = [NSArray arrayWithObjects: winter, spring, summer, autumn, nil];
         
@@ -32,8 +38,7 @@
 
         
         self.crags = [NSMutableArray array];
-        
-        self.crags = [NSMutableArray array];
+
         
         Crag *dinasCromlech = [[Crag alloc] init];
         
@@ -162,7 +167,8 @@
         cenotaph.climbName = @"Cenotaph";
         cenotaph.climbDifficulty = @"E15c";
         cenotaph.climbQuality = @"***";
-        
+        [self.climbs addObject:cenotaph];
+
       
         Climb *cemetryGates = [[Climb alloc] init];
         
@@ -171,7 +177,8 @@
         cemetryGates.climbDifficulty = @"E15c";
         cemetryGates.climbQuality = @"***";
      
-       ;
+        [self.climbs addObject:cemetryGates ];
+
        
         Climb *ivySepulchre = [[Climb alloc] init];
         
@@ -179,21 +186,24 @@
         ivySepulchre.climbName = @"Ivy Sepulchre";
         ivySepulchre.climbDifficulty = @"E15b";
         ivySepulchre.climbQuality = @"*";
-        
+        [self.climbs addObject:ivySepulchre ];
+
         Climb *flyingButtress  = [[Climb alloc] init];
         
         flyingButtress.climbAtCrag = @"Dinas Cromlech";
         flyingButtress.climbName = @"Flying Buttress";
         flyingButtress.climbDifficulty = @"VD";
         flyingButtress.climbQuality = @"***";
-        
+        [self.climbs addObject: flyingButtress];
+
         Climb *spiralStairs = [[Climb alloc] init];
         
         spiralStairs.climbAtCrag = @"Dinas Cromlech";
         spiralStairs.climbName = @"Spiral Stairs";
         spiralStairs.climbDifficulty = @"VD";
         spiralStairs.climbQuality = @"***";
-        
+        [self.climbs addObject:spiralStairs ];
+
         Climb *sabreCut  = [[Climb alloc] init];
         
         sabreCut.climbAtCrag = @"Dinas Cromlech";
@@ -201,6 +211,7 @@
         sabreCut.climbDifficulty = @"VS4c";
         sabreCut.climbQuality = @"**";
         
+        [self.climbs addObject:sabreCut ];
 
       
         
@@ -210,311 +221,400 @@
         cobwebCrack.climbName = @"Cobweb crack";
         cobwebCrack.climbDifficulty = @"VS5a";
         cobwebCrack.climbQuality = @"**";
-        
+        [self.climbs addObject: cobwebCrack];
+
         Climb *noahsWarning  = [[Climb alloc] init];
         
         noahsWarning.climbAtCrag = @"Dinas Cromlech";
         noahsWarning.climbName = @"Noah's Warning";
         noahsWarning.climbDifficulty = @"VS5a";
         noahsWarning.climbQuality = @"**";
+        [self.climbs addObject:noahsWarning ];
+
         Climb *theThing  = [[Climb alloc] init];
         
         theThing.climbAtCrag = @"Dinas Cromlech";
         theThing.climbName = @"The Thing";
         theThing.climbDifficulty = @"E25b";
         theThing.climbQuality = @"***";
+        [self.climbs addObject: theThing];
+
         Climb *theMonster = [[Climb alloc] init];
         
         theMonster.climbAtCrag = @"Dinas Cromlech";
         theMonster.climbName = @"The Monster";
         theMonster.climbDifficulty = @"E25c";
         theMonster.climbQuality = @"**";
+        [self.climbs addObject: theMonster];
+
         Climb *grond = [[Climb alloc] init];
         
         grond.climbAtCrag = @"Dinas Cromlech";
         grond.climbName = @"Grond";
         grond.climbDifficulty = @"E25b";
         grond.climbQuality = @"*";
+        [self.climbs addObject: grond];
+
         Climb *leftWall  = [[Climb alloc] init];
         
         leftWall.climbAtCrag = @"Dinas Cromlech";
         leftWall.climbName = @"Left Wall";
         leftWall.climbDifficulty = @"E25b";
         leftWall.climbQuality = @"***";
+        [self.climbs addObject: leftWall];
+
         Climb *foil = [[Climb alloc] init];
         
         foil.climbAtCrag = @"Dinas Cromlech";
         foil.climbName = @"Foil";
         foil.climbDifficulty = @"E15b";
         foil.climbQuality = @"***";
+        [self.climbs addObject:foil ];
+
         Climb *memoryLane = [[Climb alloc] init];
         
         memoryLane.climbAtCrag = @"Dinas Cromlech";
         memoryLane.climbName = @"Memory Lane";
         memoryLane.climbDifficulty = @"E35c";
         memoryLane.climbQuality = @"***";
+        [self.climbs addObject: memoryLane];
+
         Climb *resurection = [[Climb alloc] init];
         
         resurection.climbAtCrag = @"Dinas Cromlech";
         resurection.climbName = @"Resurection";
         resurection.climbDifficulty = @"E46a";
         resurection.climbQuality = @"***";
+        [self.climbs addObject: resurection];
+
         Climb *rightWall = [[Climb alloc] init];
         
         rightWall.climbAtCrag = @"Dinas Cromlech";
         rightWall.climbName = @"Right Wall";
         rightWall.climbDifficulty = @"E56a";
         rightWall.climbQuality = @"***";
+        [self.climbs addObject: rightWall];
+
         Climb *atomicHotrod = [[Climb alloc] init];
         
         atomicHotrod.climbAtCrag = @"Dinas Cromlech";
         atomicHotrod.climbName = @"Atomic Hotrod";
         atomicHotrod.climbDifficulty = @"E56b";
         atomicHotrod.climbQuality = @"***";
+        [self.climbs addObject: atomicHotrod];
+
         Climb *lordOfTheFlies = [[Climb alloc] init];
         
         lordOfTheFlies.climbAtCrag = @"Dinas Cromlech";
         lordOfTheFlies.climbName = @"Lord Of The Flies";
         lordOfTheFlies.climbDifficulty = @"E66a";
         lordOfTheFlies.climbQuality = @"***";
-        
-      
+        [self.climbs addObject: lordOfTheFlies ];
 
-        
+    
         Climb *nea  = [[Climb alloc] init];
         
         nea.climbAtCrag = @"Clogwyn Y Grochan";
         nea.climbName = @"Nea";
         nea.climbDifficulty = @"VS4b";
         nea.climbQuality = @"**";
+        [self.climbs addObject: nea];
+
         Climb *phantomRib = [[Climb alloc] init];
         
         phantomRib.climbAtCrag = @"Clogwyn Y Grochan";
         phantomRib.climbName = @"Phantom Rib";
         phantomRib.climbDifficulty = @"VS4c";
         phantomRib.climbQuality = @"***";
+        [self.climbs addObject: phantomRib];
+
         Climb *brantDirect = [[Climb alloc] init];
         
         brantDirect.climbAtCrag = @"Clogwyn Y Grochan";
         brantDirect.climbName = @"Brant Direct";
         brantDirect.climbDifficulty = @"HVS5a";
         brantDirect.climbQuality = @"***";
+        [self.climbs addObject:brantDirect ];
+
         Climb *spectre = [[Climb alloc] init];
         
         spectre.climbAtCrag = @"Clogwyn Y Grochan";
         spectre.climbName = @"Spectre";
         spectre.climbDifficulty = @"HVS5a";
         spectre.climbQuality = @"***";
+        [self.climbs addObject: spectre];
+
         Climb *kaisergebirgeWall = [[Climb alloc] init];
         
         kaisergebirgeWall.climbAtCrag = @"Clogwyn Y Grochan";
         kaisergebirgeWall.climbName = @"Kaisergebirge Wall";
         kaisergebirgeWall.climbDifficulty = @"HVS5b";
         kaisergebirgeWall.climbQuality = @"***";
+        [self.climbs addObject: kaisergebirgeWall];
+
         Climb *karwendalWall = [[Climb alloc] init];
         
         karwendalWall.climbAtCrag = @"Clogwyn Y Grochan";
         karwendalWall.climbName = @"Karwendal Wall";
         karwendalWall.climbDifficulty = @"HVS5b";
         karwendalWall.climbQuality = @"**";
+        [self.climbs addObject: karwendalWall];
+
         Climb *sickle = [[Climb alloc] init];
         
         sickle.climbAtCrag = @"Clogwyn Y Grochan";
         sickle.climbName = @"Sickle";
         sickle.climbDifficulty = @"HVS5b";
         sickle.climbQuality = @"**";
-        
+        [self.climbs addObject: sickle];
+
         Climb *hangover = [[Climb alloc] init];
         
         hangover.climbAtCrag = @"Clogwyn Y Grochan";
         hangover.climbName = @"Hangover";
         hangover.climbDifficulty = @"E15b";
         hangover.climbQuality = @"*";
+        [self.climbs addObject: hangover];
+
         Climb *slapeDirect = [[Climb alloc] init];
         
         slapeDirect.climbAtCrag = @"Clogwyn Y Grochan";
         slapeDirect.climbName = @"Slape Direct";
         slapeDirect.climbDifficulty = @"E25b";
         slapeDirect.climbQuality = @"**";
+        [self.climbs addObject: slapeDirect];
+
         Climb *firstAmendment = [[Climb alloc] init];
         
         firstAmendment.climbAtCrag = @"Clogwyn Y Grochan";
         firstAmendment.climbName = @"First Amendment";
         firstAmendment.climbDifficulty = @"E25c";
         firstAmendment.climbQuality = @"**";
+        [self.climbs addObject: firstAmendment];
+
         Climb *spectrum = [[Climb alloc] init];
         
         spectrum.climbAtCrag = @"Clogwyn Y Grochan";
         spectrum.climbName = @"Spectrum";
         spectrum.climbDifficulty = @"E25c";
         spectrum.climbQuality = @"**";
+        [self.climbs addObject: spectrum];
+
         Climb *strollOn = [[Climb alloc] init];
         
         strollOn.climbAtCrag = @"Clogwyn Y Grochan";
         strollOn.climbName = @"Stroll On";
         strollOn.climbDifficulty = @"E36a";
         strollOn.climbQuality = @"***";
+        [self.climbs addObject: strollOn];
+
         Climb *quazar = [[Climb alloc] init];
         
         quazar.climbAtCrag = @"Clogwyn Y Grochan";
         quazar.climbName = @"Quazar";
         quazar.climbDifficulty = @"E36a";
         quazar.climbQuality = @"***";
+        [self.climbs addObject: quazar];
+
         Climb *quantumjump = [[Climb alloc] init];
         
         quantumjump.climbAtCrag = @"Clogwyn Y Grochan";
         quantumjump.climbName = @"Quantum Jump";
         quantumjump.climbDifficulty = @"E56b";
         quantumjump.climbQuality = @"***";
+        [self.climbs addObject: quantumjump];
+
         Climb *cockBlock = [[Climb alloc] init];
         
         cockBlock.climbAtCrag = @"Clogwyn Y Grochan";
         cockBlock.climbName = @"Cock Block";
         cockBlock.climbDifficulty = @"E56b";
         cockBlock.climbQuality = @"***";
-        
+        [self.climbs addObject: cockBlock];
+
         Climb *winkle = [[Climb alloc] init];
         
         winkle .climbAtCrag = @"Carreg Wastad";
         winkle .climbName = @"Winkle";
         winkle .climbDifficulty = @"VD";
         winkle .climbQuality = @"***";
+        [self.climbs addObject: winkle];
+
         Climb *crackstoneRib = [[Climb alloc] init];
         
         crackstoneRib.climbAtCrag = @"Carreg Wastad";
         crackstoneRib.climbName = @"Crackstone Rib";
         crackstoneRib.climbDifficulty = @"S";
         crackstoneRib.climbQuality = @"***";
+        [self.climbs addObject: crackstoneRib];
+
         Climb *skylon = [[Climb alloc] init];
         
         skylon.climbAtCrag = @"Carreg Wastad";
         skylon.climbName = @"Skylon";
         skylon.climbDifficulty = @"HS4b";
         skylon.climbQuality = @"***";
+        [self.climbs addObject: skylon];
+
         Climb *shadowWall = [[Climb alloc] init];
         
         shadowWall.climbAtCrag = @"Carreg Wastad";
         shadowWall.climbName = @"Shadow Wall";
         shadowWall.climbDifficulty = @"VS4c";
         shadowWall.climbQuality = @"***";
+        [self.climbs addObject: shadowWall];
+
         Climb *ribstoneCrack = [[Climb alloc] init];
         
         ribstoneCrack.climbAtCrag = @"Carreg Wastad";
         ribstoneCrack.climbName = @"Ribstone Crack";
         ribstoneCrack.climbDifficulty = @"VS4c";
         ribstoneCrack.climbQuality = @"***";
+        [self.climbs addObject: ribstoneCrack];
+
         Climb *overhangingChimney = [[Climb alloc] init];
         
         overhangingChimney.climbAtCrag = @"Carreg Wastad";
         overhangingChimney.climbName = @"Overhanging Chimney";
         overhangingChimney.climbDifficulty = @"VS4c";
         overhangingChimney.climbQuality = @"***";
+        [self.climbs addObject: overhangingChimney];
+
         Climb *yellowCrack = [[Climb alloc] init];
         
         yellowCrack.climbAtCrag = @"Carreg Wastad";
         yellowCrack.climbName = @"Yellow Crack";
         yellowCrack.climbDifficulty = @"HVS5a";
         yellowCrack.climbQuality = @"***";
+        [self.climbs addObject: yellowCrack];
+
         Climb *overlappingWall = [[Climb alloc] init];
         
         overlappingWall.climbAtCrag = @"Carreg Wastad";
         overlappingWall.climbName = @"Overlapping Wall";
         overlappingWall.climbDifficulty = @"E15b";
         overlappingWall.climbQuality = @"***";
+        [self.climbs addObject: overlappingWall];
+
         Climb *oldHolborn = [[Climb alloc] init];
       
         oldHolborn.climbAtCrag = @"Carreg Wastad";
         oldHolborn.climbName = @"Old Holborn";
         oldHolborn.climbDifficulty = @"E15b";
         oldHolborn.climbQuality = @"***";
+        [self.climbs addObject: oldHolborn];
+
         Climb *erosionGrooveDirect = [[Climb alloc] init];
         
         erosionGrooveDirect.climbAtCrag = @"Carreg Wastad";
         erosionGrooveDirect.climbName = @"Erosion Groove Direct";
         erosionGrooveDirect.climbDifficulty = @"E25c";
         erosionGrooveDirect.climbQuality = @"***";
+        [self.climbs addObject: erosionGrooveDirect];
+
         Climb *zangorilla = [[Climb alloc] init];
         
         zangorilla.climbAtCrag = @"Carreg Wastad";
         zangorilla.climbName = @"Zangorilla";
         zangorilla.climbDifficulty = @"E46a";
         zangorilla.climbQuality = @"***";
-        
-    
-        
-        
+        [self.climbs addObject: zangorilla];
+
         Climb *littleWomen = [[Climb alloc] init];
         
         littleWomen.climbAtCrag = @"Stanage Popular";
         littleWomen.climbName = @"Little Women";
         littleWomen.climbDifficulty = @"E77a";
         littleWomen.climbQuality = @"***";
+        [self.climbs addObject:littleWomen];
+
         Climb *grooveIsInTheHeart = [[Climb alloc] init];
         
         grooveIsInTheHeart.climbAtCrag = @"Stanage Popular";
         grooveIsInTheHeart.climbName = @"Groove Is In The Heart";
         grooveIsInTheHeart.climbDifficulty = @"E77a";
         grooveIsInTheHeart.climbQuality = @"***";
+        [self.climbs addObject: grooveIsInTheHeart];
+
         Climb *shineOn = [[Climb alloc] init];
         
         shineOn.climbAtCrag = @"Stanage Popular";
         shineOn.climbName = @"Shine On";
         shineOn.climbDifficulty = @"E76c";
         shineOn.climbQuality = @"***";
+        [self.climbs addObject: shineOn];
+
         Climb *blackCarBurning = [[Climb alloc] init];
         
         blackCarBurning.climbAtCrag = @"Stanage Popular";
         blackCarBurning.climbName = @"Black Car Burning";
         blackCarBurning.climbDifficulty = @"E76c";
         blackCarBurning.climbQuality = @"**";
+        [self.climbs addObject: blackCarBurning];
+
         Climb *cemetryWaits = [[Climb alloc] init];
         
         cemetryWaits.climbAtCrag = @"Stanage Popular";
         cemetryWaits.climbName = @"Cemetary Waits";
         cemetryWaits.climbDifficulty = @"E76c";
         cemetryWaits.climbQuality = @"**";
+        [self.climbs addObject: cemetryWaits];
+
         Climb *warmLove = [[Climb alloc] init];
         
         warmLove.climbAtCrag = @"Stanage Popular";
         warmLove.climbName = @"Warm Love";
         warmLove.climbDifficulty = @"E67a";
         warmLove.climbQuality = @"**";
+        [self.climbs addObject: warmLove];
+
         Climb *carpeDiem = [[Climb alloc] init];
         
         carpeDiem.climbAtCrag = @"Stanage Popular";
         carpeDiem.climbName = @"Carpe Diem";
         carpeDiem.climbDifficulty = @"E66c";
         carpeDiem.climbQuality = @"**";
+        [self.climbs addObject: carpeDiem];
+
         Climb *wallOfStange = [[Climb alloc] init];
         
         wallOfStange.climbAtCrag = @"Stanage Popular";
         wallOfStange.climbName = @"Wall Of Sound";
         wallOfStange.climbDifficulty = @"E66b";
         wallOfStange.climbQuality = @"***";
+        [self.climbs addObject: wallOfStange];
+
         Climb *stanageWithoutOxygen = [[Climb alloc] init];
         
         stanageWithoutOxygen.climbAtCrag = @"Stanage Popular";
         stanageWithoutOxygen.climbName = @"Strange Without Oxygen";
         stanageWithoutOxygen.climbDifficulty = @"E56c";
         stanageWithoutOxygen.climbQuality = @"**";
+        [self.climbs addObject: stanageWithoutOxygen];
+
         Climb *headlessChicken = [[Climb alloc] init];
         
         headlessChicken.climbAtCrag = @"Stanage Popular";
         headlessChicken.climbName = @"Headless Chicken";
         headlessChicken.climbDifficulty = @"E56b";
         headlessChicken.climbQuality = @"**";
+        [self.climbs addObject: headlessChicken];
+
         Climb *bocNoButress = [[Climb alloc] init];
         
         bocNoButress.climbAtCrag = @"Stanage Popular";
         bocNoButress.climbName = @"Boc No Buttress";
         bocNoButress.climbDifficulty = @"EE56a";
         bocNoButress.climbQuality = @"**";
+        [self.climbs addObject: bocNoButress];
+
         Climb *snugAsAThugOnAJug = [[Climb alloc] init];
         
         snugAsAThugOnAJug.climbAtCrag = @"Stanage Popular";
         snugAsAThugOnAJug.climbName = @"Snug as a Thug on a Jug";
         snugAsAThugOnAJug.climbDifficulty = @"E46b";
         snugAsAThugOnAJug.climbQuality = @"***";
+        [self.climbs addObject: snugAsAThugOnAJug];
 
     
        
@@ -526,6 +626,7 @@
         .climbQuality = ;
         */
         
+
         
         
         
@@ -679,6 +780,98 @@
     return year;
     
 }
+
+-(Crag *) cragForcomparison {
+    
+    return cragForComparison;
+}
+
+-(NSInteger) numberOfClimbs {
+    
+    return numberOfClimbs;
+}
+
+-(void) setCragForcomparison: (Crag *) crag {
+    
+    crag = cragForComparison;
+    
+}
+-(void) setNumberOfClimbs: (NSInteger) number {
+    
+    NSInteger i, j;
+    
+    for (i = 0; i <= [self.data.crags count]; ++i) {
+        
+        for (j =0; j <= [self.data.climbs count]; ++j) {
+            
+            Climb *climb = [self.data.climbs objectAtIndex:j];
+            
+            if ([climb.climbAtCrag isEqualToString:cragForComparison.cragName]) {
+                
+                number += number;
+                
+            }
+            
+        }
+    }
+
+    
+    
+    
+    number = numberOfClimbs;
+    
+}
+
+
+
+/*-(void) countClimbs:(Crag *)crag {
+    
+    NSInteger climbCount;
+    NSInteger i, j;
+    
+    for (i = 0; i <= [self.data.crags count]; ++i) {
+        
+        for (j =0; j <= [self.data.climbs count]; ++j) {
+            
+            Crag *crag = [self.data.crags objectAtIndex:i];
+            Climb *climb = [self.data.climbs objectAtIndex:j];
+            
+            if ([climb.climbAtCrag isEqualToString:crag.cragName]) {
+                
+                climbCount += climbCount;
+                
+            }
+
+        }
+    }
+    
+}
+
+
+-(void) setNumberOfClimbs: (NSInteger) theNumber {
+    
+    NSInteger i, j;
+    
+    for (i = 0; i <= [self.data.crags count]; ++i) {
+        
+        for (j =0; j <= [self.data.climbs count]; ++j) {
+            
+            Crag *crag = [self.data.crags objectAtIndex:i];
+            Climb *climb = [self.data.climbs objectAtIndex:j];
+            
+            if ([climb.climbAtCrag isEqualToString:crag.cragName]) {
+                
+                theNumber += theNumber;
+                
+            }
+            
+        }
+    }
+    
+}
+ */
+
+
 
 
 

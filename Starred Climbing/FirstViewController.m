@@ -84,7 +84,7 @@
     self.data.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
     self.data.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
     
-    [self.data addCragArray];
+    //[self.data addCragArray];
     
     
     

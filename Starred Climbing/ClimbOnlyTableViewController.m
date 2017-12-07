@@ -22,6 +22,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.data =[[TestDataModelImport alloc] init];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,22 +40,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     
     NSInteger numberOfRows;
+    self.data.cragForcomparison = self.cragPush;
+    numberOfRows = self.data.numberOfClimbs;
+    NSLog(@"Number Of Rows = %ld", numberOfRows);
     
-    if ([self.crag.cragName isEqualToString: self.climb.climbAtCrag]) {
-        
-        if(section ==0) {
-            
-            //numberOfRows = self.data.crags.count;
-
-        }
-        
-    }
-    
-    return 0;
+    return numberOfRows;
 }
+
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
