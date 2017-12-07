@@ -824,25 +824,9 @@
     
 }
 
+
 -(void) addCragToArray: (Crag *) crag {
     
-    int i = 0;
-    
-    for (i = 0; i <= [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
-        
-        Crag *crag = [self.data.crags objectAtIndex:i];
-        
-        
-        if ([crag.cragTOD isEqualToString: self.data.convertToStringDay] && [crag.cragTOY isEqualToString: self.data.convertToStringYear] ) {
-            
-            [self.selectedArray addObject:[self.data.crags objectAtIndex:i]];
-            // NSLog(@"Crag Name: %@", crag.cragName);
-            
-        }
-        
-        
-    }
-
     
 }
 
@@ -859,6 +843,7 @@
         if ([crag.cragTOD isEqualToString: self.data.convertToStringDay] && [crag.cragTOY isEqualToString: self.data.convertToStringYear] ) {
             
             [self.selectedArray addObject:crag];
+            self.selectedArray = [[NSMutableArray alloc] init];
             // NSLog(@"Crag Name: %@", crag.cragName);
         }
     }
