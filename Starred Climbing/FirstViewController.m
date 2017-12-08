@@ -95,11 +95,14 @@
     for (i = 0; i < [self.data.crags count]; ++i) { // Equates the number of crags in datamodel for the for loop counter
         
         Crag *crag = [self.data.crags objectAtIndex:i];
-    
+        
+        NSLog(@"Crag at index: %@", crag.cragName);
+        
         [self.data addCragToArray:crag];
         
-    //[self.data cragForArray];
+    
     }
+        
 }
 #pragma mark Text Field Delegate Methods
 

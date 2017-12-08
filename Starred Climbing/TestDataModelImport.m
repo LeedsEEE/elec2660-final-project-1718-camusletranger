@@ -846,6 +846,7 @@
         
         [self.selectedArray addObject: crag];
         self.selectedArray = [[NSMutableArray alloc] init];
+        NSLog(@"Crag in selectedArray: %@", crag.cragName);
     
     
 }
