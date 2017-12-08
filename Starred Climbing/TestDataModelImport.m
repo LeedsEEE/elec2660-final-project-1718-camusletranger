@@ -820,6 +820,7 @@
     return self;
 }
 
+#pragma marks Methods for FirstViewController
 
 -(void) addCragToArray: (Crag *) crag {
     

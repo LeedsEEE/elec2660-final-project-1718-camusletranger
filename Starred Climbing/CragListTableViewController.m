@@ -54,7 +54,6 @@
     
     if (section == 0) {
         
-        //numberOfRows = self.data.crags.count;
         numberOfRows = self.tableData.selectedArray.count;
         
     }

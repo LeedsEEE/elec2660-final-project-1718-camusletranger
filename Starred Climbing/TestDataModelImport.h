@@ -39,7 +39,7 @@
 
 //-(void) setSelectedCrag: (Crag *) crag;
 //-(Crag *) getSelectedCrag;
-//-(void) addCragToArray: (Crag *) crag;
+-(void) addCragToArray: (Crag *) crag;
 
 //-(void) setCragForComparison: (Crag *) crag;
 //-(void) setClimbForComparison: (Climb *) climb;

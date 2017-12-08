@@ -20,7 +20,6 @@
 		390AA2891FB5F1F60061B2AF /* ClimbingPhotoAndy.JPG - OneDrive.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 390AA2881FB5F1F60061B2AF /* ClimbingPhotoAndy.JPG - OneDrive.webarchive */; };
 		390AA28B1FB5F35C0061B2AF /* MarkAlmack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 390AA28A1FB5F35C0061B2AF /* MarkAlmack.jpg */; };
 		392C5EE51FC6D957007BE014 /* TestDataModelImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 392C5EE41FC6D957007BE014 /* TestDataModelImport.m */; };
-		393808091FD0112B005C47E8 /* Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 393808081FD0112B005C47E8 /* Operations.m */; };
 		393943701FD7FB4400954D91 /* CragOnlyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3939436F1FD7FB4400954D91 /* CragOnlyTableViewController.m */; };
 		393943731FD7FB5700954D91 /* ClimbOnlyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393943721FD7FB5700954D91 /* ClimbOnlyTableViewController.m */; };
 		393943761FD806EC00954D91 /* ClimbInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393943751FD806EC00954D91 /* ClimbInformationViewController.m */; };
@@ -70,8 +69,6 @@
 		390AA28A1FB5F35C0061B2AF /* MarkAlmack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MarkAlmack.jpg; sourceTree = "<group>"; };
 		392C5EE31FC6D957007BE014 /* TestDataModelImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataModelImport.h; sourceTree = "<group>"; };
 		392C5EE41FC6D957007BE014 /* TestDataModelImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataModelImport.m; sourceTree = "<group>"; };
-		393808071FD0112B005C47E8 /* Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operations.h; sourceTree = "<group>"; };
-		393808081FD0112B005C47E8 /* Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operations.m; sourceTree = "<group>"; };
 		3939436E1FD7FB4400954D91 /* CragOnlyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CragOnlyTableViewController.h; sourceTree = "<group>"; };
 		3939436F1FD7FB4400954D91 /* CragOnlyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CragOnlyTableViewController.m; sourceTree = "<group>"; };
 		393943711FD7FB5700954D91 /* ClimbOnlyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClimbOnlyTableViewController.h; sourceTree = "<group>"; };
@@ -152,8 +149,6 @@
 				39EFB78F1FBB1EC900EEF502 /* Crag.m */,
 				392C5EE31FC6D957007BE014 /* TestDataModelImport.h */,
 				392C5EE41FC6D957007BE014 /* TestDataModelImport.m */,
-				393808071FD0112B005C47E8 /* Operations.h */,
-				393808081FD0112B005C47E8 /* Operations.m */,
 				390AA28A1FB5F35C0061B2AF /* MarkAlmack.jpg */,
 				390AA2881FB5F1F60061B2AF /* ClimbingPhotoAndy.JPG - OneDrive.webarchive */,
 				390AA2561FB5E0620061B2AF /* Main.storyboard */,
@@ -329,7 +324,6 @@
 				393943731FD7FB5700954D91 /* ClimbOnlyTableViewController.m in Sources */,
 				393943761FD806EC00954D91 /* ClimbInformationViewController.m in Sources */,
 				39EFB78D1FBB1EAC00EEF502 /* Climb.m in Sources */,
-				393808091FD0112B005C47E8 /* Operations.m in Sources */,
 				390AA24F1FB5E0620061B2AF /* AppDelegate.m in Sources */,
 				390AA2521FB5E0620061B2AF /* FirstViewController.m in Sources */,
 				390AA24C1FB5E0620061B2AF /* main.m in Sources */,
