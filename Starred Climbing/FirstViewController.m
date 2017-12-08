@@ -45,19 +45,19 @@
 
 
 #pragma mark Time of Day and Year Picker Delegate Methods
+/*
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
 
-/*- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
-
-    UIView *band = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 50, 30)];
-
-    
-    if (component == 0) {
-        
-        band.text = [self.search.timeOfDayArray objectAtIndex:row];
-        
-        
-    }
-}*/
+ UIView *band = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 50, 30)];
+ 
+ if (component == 0){
+ band.backgroundColor = [UIColor yellowColor];
+ } else {
+ band.backgroundColor = [UIColor yellowColor];
+ }
+ 
+ return band;
+ }*/
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     
@@ -83,9 +83,8 @@
     self.data.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
     self.data.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
     
-    // Given the timeOfDayPosition and the
+    self.data.timeOfDay = self.data.convertToStringDay; //Sets the time of day string to that in the convert to string method in preperation for comparison in the addCragToArray method
     
-    self.data.timeOfDay = self.data.convertToStringDay;
     self.data.timeOfYear = self.data.convertToStringYear;
     
     NSLog(@"Time of Day,Year %@, %@", self.data.timeOfDay, self.data.timeOfYear);
@@ -100,7 +99,6 @@
         
         [self.data addCragToArray:crag];
         
-    
     }
         
 }
