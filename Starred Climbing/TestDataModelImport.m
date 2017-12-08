@@ -820,24 +820,6 @@
     return self;
 }
 
--(void) cragForArray {
-    
-    self.data = [[TestDataModelImport alloc] init];
-    
-    int i = 0;
-    
-    for (i = 0; i <= [self.data.crags count]; ++i) { // Equates the number of crags in datamodel for the for loop counter
-        
-         Crag *crag = [self.data.crags objectAtIndex:i];
-        
-        if ([crag.cragTOD isEqualToString: self.data.timeOfDay] && [crag.cragTOY isEqualToString: self.data.timeOfYear] )
- 
-            [self.data.selectedArray addObject: crag];
-            self.data.selectedArray = [[NSMutableArray alloc] init];
-        
-
-    }
-}
 
 -(void) addCragToArray: (Crag *) crag {
     
@@ -855,20 +837,11 @@
 }
 
 
--(Crag *) getSelectedCrag {
+/*-(Crag *) getSelectedCrag {
     
     return getSelectedCrag;
-}
-
-
-
-/*-(void) addCragToArray: (Crag *) crag {
-    
-               [self.data.selectedArray addObject:crag];
-               self.data.selectedArray = [[NSMutableArray alloc] init];
-   
-    
 }*/
+
 
 
 -(NSString *) convertToStringDay {
@@ -935,7 +908,7 @@
     return year;
     
 }
-
+/*
 -(Crag *) cragForComparison {
     
     return cragForComparison;
@@ -981,7 +954,7 @@
     
 }
 
-
+*/
 
 
 @end
