@@ -8,6 +8,7 @@
 // ----- TEST DATA MODEL -----
 // Model that includes crag, and climb instances, and methods (attempted) for communication with view controller
 
+
 #import <Foundation/Foundation.h>
 #import "Crag.h"
 
@@ -26,29 +27,21 @@
 // ----- Methods for Sorting Crags -----
 @property (nonatomic, strong) NSArray *timeOfDayArray; // Populates the picker with possible time of day, and time of year selections
 
-@property (nonatomic, strong) NSArray *timOfYearArray; // Populates the picker with possible and time of year selections
+@property (nonatomic, strong) NSArray *timOfYearArray; // As above
 
-@property NSInteger  timeOfDayPosition, timeOfYearPosition; // Setters and getters for picker position relevent to time of day/year
+@property NSInteger  timeOfDayPosition, timeOfYearPosition; // Getters for picker position relevent to time of day/year
 
-@property NSString *timeOfDay, *timeOfYear; // String to hold a specific time of day
+@property NSString *timeOfDay, *timeOfYear; // Strings to hold a specific time of day/year
 
 @property NSString *inputClimbDifficulty; //Gets string from the text field
 
 
--(NSString *) convertToStringDay; // Given the integer value of timeOfDayPosition, this equates that position with an NSString  eg. 0 is morning. This value is then compared with that time of day for the crag, and along with the time of year, if true the crag is added to selected climbs
+-(NSString *) convertToStringDay; // Given the integer value of timeOfDayPosition, this equates that position with an NSString  eg. 0 is morning.
+
 -(NSString *) convertToStringYear; // This works the same as above but for the time of year
 
+-(void) addCragToArray: (Crag *) crag; // Method to add a crag object to an array dependant on the crag timeOfDay, cragTimeOFYear, and their respective picker positions
 
-//-(void) setSelectedCrag: (Crag *) crag;
-//-(Crag *) getSelectedCrag;
--(void) addCragToArray: (Crag *) crag;
-
-//-(void) setCragForComparison: (Crag *) crag;
-//-(void) setClimbForComparison: (Climb *) climb;
-//-(Crag *) cragForComparison;
-//-(Climb *) climbForComparison;
-//-(NSInteger) numberOfClimbs;
-//-(void) setNumberOfClimbs: (NSInteger) number;
 
 
 @end
