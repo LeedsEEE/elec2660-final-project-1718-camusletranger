@@ -54,8 +54,8 @@
     
     if (section == 0) {
         
-        numberOfRows = self.data.crags.count;
-        //numberOfRows = self.tableOperations.selectedCrags.count;
+        //numberOfRows = self.data.crags.count;
+        numberOfRows = self.tableData.selectedArray.count;
         
     }
 
@@ -72,7 +72,6 @@
    if (indexPath.section == 0) {
        
         Crag *tempData = [self.tableData.selectedArray objectAtIndex:indexPath.row];
-        // Crag *tempCrags = [self.tableOperations.selectedCrags objectAtIndex:indexPath.row];
        
         cell.textLabel.text = tempData.cragName;
         cell.detailTextLabel.text = tempData.cragGuidebook;

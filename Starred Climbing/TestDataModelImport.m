@@ -14,6 +14,7 @@
     Crag *cragForComparison;
     Climb *climbForComparison;
     Crag *cragForArray;
+    Crag *getSelectedCrag;
     NSInteger numberOfClimbs;
     
 }
@@ -818,52 +819,43 @@
     }
     return self;
 }
--(Crag*) cragForArray {
-    
-    return cragForArray;
-    
-}
 
-
--(void) addCragToArray: (Crag *) crag {
+-(void) cragForArray {
+    
+    self.data = [[TestDataModelImport alloc] init];
     
     int i = 0;
     
-    for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
+    for (i = 0; i <= [self.data.crags count]; ++i) { // Equates the number of crags in datamodel for the for loop counter
         
-        Crag *crag = [self.data.crags objectAtIndex:i];
+         Crag *crag = [self.data.crags objectAtIndex:i];
         
+        if ([crag.cragTOD isEqualToString: self.data.timeOfDay] && [crag.cragTOY isEqualToString: self.data.timeOfYear] )
+ 
+            [self.data.selectedArray addObject: crag];
+            self.data.selectedArray = [[NSMutableArray alloc] init];
         
-        if ([crag.cragTOD isEqualToString: self.data.convertToStringDay] && [crag.cragTOY isEqualToString: self.data.convertToStringYear] ) {
-            
-            [self.selectedArray addObject:crag];
-            self.selectedArray = [[NSMutableArray alloc] init];
-            // NSLog(@"Crag Name: %@", crag.cragName);
-        }
-    }
 
-    
+    }
 }
 
--(void) addCragArray {
+
+
+-(Crag *) getSelectedCrag {
     
-    
-    int i = 0;
-    
-    for (i = 0; i < [self.data.crags count]; ++i) { // Establishes number of crags in datamodel for the for loop
-        
-        Crag *crag = [self.data.crags objectAtIndex:i];
-        
-        
-        if ([crag.cragTOD isEqualToString: self.data.convertToStringDay] && [crag.cragTOY isEqualToString: self.data.convertToStringYear] ) {
-            
-            [self.selectedArray addObject:crag];
-            self.selectedArray = [[NSMutableArray alloc] init];
-            // NSLog(@"Crag Name: %@", crag.cragName);
-        }
-    }
-    
+    return getSelectedCrag;
 }
+
+
+
+/*-(void) addCragToArray: (Crag *) crag {
+    
+               [self.data.selectedArray addObject:crag];
+               self.data.selectedArray = [[NSMutableArray alloc] init];
+   
+    
+}*/
+
 
 -(NSString *) convertToStringDay {
     
@@ -969,8 +961,8 @@
         }
     }
 
-    NSLog(@"CragPush: %@", self.cragForComparison.cragName);
-    NSLog(@"Number Of Rows = %ld", numberOfClimbs);
+    // NSLog(@"CragPush: %@", self.cragForComparison.cragName);
+    // NSLog(@"Number Of Rows = %ld", numberOfClimbs);
     number = numberOfClimbs;
     
 }

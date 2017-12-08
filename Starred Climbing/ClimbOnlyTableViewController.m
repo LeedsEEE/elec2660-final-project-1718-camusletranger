@@ -44,7 +44,7 @@
    
     NSInteger numberOfRows;
 
-    /*
+/*
     if(section == 0) {
     self.data.cragForComparison = self.cragPush;
     self.data.numberOfClimbs = numberOfRows;

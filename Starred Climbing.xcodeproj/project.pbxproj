@@ -63,7 +63,7 @@
 		390AA2721FB5E0620061B2AF /* Starred_ClimbingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Starred_ClimbingUITests.m; sourceTree = "<group>"; };
 		390AA2741FB5E0620061B2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		390AA2801FB5EB9B0061B2AF /* CragListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CragListTableViewController.h; sourceTree = "<group>"; };
-		390AA2811FB5EB9B0061B2AF /* CragListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CragListTableViewController.m; sourceTree = "<group>"; };
+		390AA2811FB5EB9B0061B2AF /* CragListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CragListTableViewController.m; sourceTree = "<group>"; tabWidth = 5; };
 		390AA2831FB5EBAC0061B2AF /* CragSpecificTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CragSpecificTableViewController.h; sourceTree = "<group>"; };
 		390AA2841FB5EBAC0061B2AF /* CragSpecificTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CragSpecificTableViewController.m; sourceTree = "<group>"; };
 		390AA2881FB5F1F60061B2AF /* ClimbingPhotoAndy.JPG - OneDrive.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ClimbingPhotoAndy.JPG - OneDrive.webarchive"; sourceTree = "<group>"; };

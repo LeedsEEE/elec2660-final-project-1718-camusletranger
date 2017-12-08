@@ -16,8 +16,6 @@
 @property (strong, nonatomic) Crag *crag;
 @property (strong, nonatomic) NSMutableArray *tempArray;
 
-//@property (strong, nonatomic) Operations *tableOperations;
-//@property (strong, nonatomic) Operations *operations;
 @property (strong, nonatomic) TestDataModelImport *tableData;
 
 @end

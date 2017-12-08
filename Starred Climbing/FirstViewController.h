@@ -18,7 +18,6 @@
 - (IBAction)sortButtonPushed:(UIButton *)sender;
 
 // ----- Instnaces of Classes ------
-//@property (strong, nonatomic) Operations *operations;
 @property (strong, nonatomic) TestDataModelImport *data;
 @property (strong, nonatomic) Crag *crag;
 

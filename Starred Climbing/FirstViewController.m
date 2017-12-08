@@ -37,7 +37,7 @@
 
 - (IBAction)sortButtonPushed:(UIButton *)sender {
     
-    self.data.inputClimbDifficulty = self.difficultyTextField.text;
+   // self.data.inputClimbDifficulty = self.difficultyTextField.text;
     
     NSLog(@"Climb Difficulty: %@", self.data.inputClimbDifficulty);
     NSLog(@"Text Field: %@", self.difficultyTextField.text);
@@ -84,10 +84,11 @@
     self.data.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
     self.data.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
     
-    //[self.data addCragArray];
+    self.data.timeOfDay = self.data.convertToStringDay;
+    self.data.timeOfYear =self.data.convertToStringYear;
     
-
-
+    [self.data cragForArray];
+    
 }
 #pragma mark Text Field Delegate Methods
 
@@ -135,11 +136,7 @@
  
         CragListTableViewController *destinationViewcontroller = [segue destinationViewController];
         
-        
-       // Operations *tempOperations = self.operations; // A tempory Operations class within which the array selectedCrags, from the addCrag method will be called to populate the table view
-        
-        // destinationViewcontroller.tableOperations = tempOperations; //Within the TableViewController the tableOperations will call the relevent features of each Crag selected
-        
+            
         TestDataModelImport *tempData = self.data; // A tempory Operations class within which the array selectedCrags, from the addCrag method will be called to populate the table view
         
         destinationViewcontroller.tableData = tempData; //Within the TableViewController the tableOperations will call the relevent features of each Crag selected
