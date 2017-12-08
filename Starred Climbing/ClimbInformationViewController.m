@@ -18,11 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.viewTitle.text = @"Climb";
-    self.climbName.text = self.climbPush.climbName;
-    self.climbCrag.text = self.climbPush.climbAtCrag;
-    self.climbGrade.text = self.climbPush.climbDifficulty;
-    self.climbQuality.text = self.climbPush.climbQuality;
+    self.viewTitleLabel.text = @"Climb";
+    self.climbNameLabel.text = self.climbPush.climbName;
+    self.climbCragLabel.text = self.climbPush.climbAtCrag;
+    self.climbGradeLabel.text = self.climbPush.climbDifficulty;
+    self.climbQualityLabel.text = self.climbPush.climbQuality;
     
     
     

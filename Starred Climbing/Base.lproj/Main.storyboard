@@ -360,11 +360,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="climbCrag" destination="AOf-MV-g1O" id="WGX-Np-Ytb"/>
-                        <outlet property="climbGrade" destination="rdX-vB-ySs" id="KPV-RW-f1b"/>
-                        <outlet property="climbName" destination="bf1-OG-7dT" id="0fh-Kj-Ze8"/>
-                        <outlet property="climbQuality" destination="fvf-Gd-qIO" id="IPb-Zo-yS5"/>
-                        <outlet property="viewTitle" destination="k5i-n5-7iO" id="dTH-6I-hdE"/>
+                        <outlet property="climbCragLabel" destination="AOf-MV-g1O" id="iPC-jd-RlF"/>
+                        <outlet property="climbGradeLabel" destination="rdX-vB-ySs" id="P70-jh-G6B"/>
+                        <outlet property="climbNameLabel" destination="bf1-OG-7dT" id="mQr-pN-5rr"/>
+                        <outlet property="climbQualityLabel" destination="fvf-Gd-qIO" id="IRp-eq-AkF"/>
+                        <outlet property="viewTitleLabel" destination="k5i-n5-7iO" id="4Kr-hJ-KVC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Un-kF-Ici" userLabel="First Responder" sceneMemberID="firstResponder"/>

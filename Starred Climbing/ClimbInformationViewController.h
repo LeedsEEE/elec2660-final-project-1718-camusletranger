@@ -13,11 +13,13 @@
 
 @interface ClimbInformationViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *viewTitle;
-@property (weak, nonatomic) IBOutlet UILabel *climbName;
-@property (weak, nonatomic) IBOutlet UILabel *climbCrag;
-@property (weak, nonatomic) IBOutlet UILabel *climbGrade;
-@property (weak, nonatomic) IBOutlet UILabel *climbQuality;
+@property (weak, nonatomic) IBOutlet UILabel *viewTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *climbNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *climbCragLabel;
+@property (weak, nonatomic) IBOutlet UILabel *climbGradeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *climbQualityLabel;
+
+
 
 @property (strong, nonatomic) Climb *climbPush;
 
