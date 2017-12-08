@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "TestDataModelImport.h"
+#import "CragListTableViewController.h"
 
 @interface CragSpecificTableViewController : UITableViewController
 
 @property (strong, nonatomic) TestDataModelImport *data;
+@property (strong, nonatomic) TestDataModelImport *tableData;
 
 @end

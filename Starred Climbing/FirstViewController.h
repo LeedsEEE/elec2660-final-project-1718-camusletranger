@@ -20,21 +20,10 @@
 
 - (IBAction)sortButtonPushed:(UIButton *)sender; // When press the view changes to the crag table view
 
-// ----- Instnaces of Classes ------
+// ----- Instances of Classes ------
 
 @property (strong, nonatomic) TestDataModelImport *data;
 @property (strong, nonatomic) Crag *crag;
-
-// ----- Arrays -----
-
-@property (strong, nonatomic) NSMutableArray *emptyArray;
-
-
-
-
-
-
-
 
 @end
 

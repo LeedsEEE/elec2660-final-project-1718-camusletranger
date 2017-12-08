@@ -5,7 +5,9 @@
 //  Created by Joshua Marshall [ll13jrm] on 14/11/2017.
 //  Copyright © 2017 Joshua Marshall [ll13jrm]. All rights reserved.
 //
+//----- CLIMB CLASS -----
 
+//Class which attribute the properties for a climb instance
 #import <Foundation/Foundation.h>
 
 @interface Climb : NSObject

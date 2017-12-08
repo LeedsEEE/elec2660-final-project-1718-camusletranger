@@ -838,10 +838,6 @@
 }
 
 
-/*-(Crag *) getSelectedCrag {
-    
-    return getSelectedCrag;
-}*/
 
 
 

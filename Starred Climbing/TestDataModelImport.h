@@ -5,6 +5,8 @@
 //  Created by Joshua Marshall [ll13jrm] on 23/11/2017.
 //  Copyright © 2017 Joshua Marshall [ll13jrm]. All rights reserved.
 //
+// ----- TEST DATA MODEL -----
+// Model that includes crag, and climb instances, and methods (attempted) for communication with view controller
 
 #import <Foundation/Foundation.h>
 #import "Crag.h"

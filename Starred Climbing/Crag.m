@@ -19,10 +19,5 @@
     toy = _cragTOY; // Time of year
 
 }
--(void) addCrag: (Crag *) crag {
-    
-    [self.selectedCrags addObject: crag]; // Adds Crag object to a new array that is then used to populate the table view
-    
-    
-}
+
 @end

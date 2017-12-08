@@ -45,19 +45,7 @@
 
 
 #pragma mark Time of Day and Year Picker Delegate Methods
-/*
-- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
 
- UIView *band = [[UIView alloc] initWithFrame: CGRectMake(0, 0, 50, 30)];
- 
- if (component == 0){
- band.backgroundColor = [UIColor yellowColor];
- } else {
- band.backgroundColor = [UIColor yellowColor];
- }
- 
- return band;
- }*/
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     
@@ -91,13 +79,13 @@
     
     int i = 0;
     
-    for (i = 0; i < [self.data.crags count]; ++i) { // Equates the number of crags in datamodel for the for loop counter
+    for (i = 0; i < [self.data.crags count]; ++i) { // Gets the number of crags in datamodel for the for loop counter
         
         Crag *crag = [self.data.crags objectAtIndex:i];
         
         NSLog(@"Crag at index: %@", crag.cragName);
         
-        [self.data addCragToArray:crag];
+        [self.data addCragToArray: crag]; // This method is unable to reach self.data.selectedArray and so does not add crags to the array
         
     }
         
@@ -107,7 +95,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     
-    [textField resignFirstResponder];
+    [textField resignFirstResponder]; //Gets rid of keyboard when return key is pressed
     
     return YES;
 }
@@ -127,7 +115,6 @@
     NSInteger rows;
     
     if (component == 0) { // Component for time of day, morning, afternoon, or evening
-        
         
         rows = [self.data.timeOfDayArray count];
     }
