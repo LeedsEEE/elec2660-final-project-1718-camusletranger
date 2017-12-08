@@ -5,6 +5,8 @@
 //  Created by Joshua Marshall [ll13jrm] on 06/12/2017.
 //  Copyright © 2017 Joshua Marshall [ll13jrm]. All rights reserved.
 //
+// ----- CLIMB ONLY TABLE VIEW -----
+// Table of all climbs in data model
 
 #import <UIKit/UIKit.h>
 #import "Crag.h"
