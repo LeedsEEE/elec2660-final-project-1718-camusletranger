@@ -5,6 +5,8 @@
 //  Created by Joshua Marshall [ll13jrm] on 10/11/2017.
 //  Copyright © 2017 Joshua Marshall [ll13jrm]. All rights reserved.
 //
+// ----- FIRST VIEW CONTROLLER -----
+// Implementaion of picker, text field button image and labels
 
 #import <UIKit/UIKit.h>
 #import "TestDataModelImport.h"
