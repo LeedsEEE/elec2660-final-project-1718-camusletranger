@@ -839,6 +839,19 @@
     }
 }
 
+-(void) addCragToArray: (Crag *) crag {
+    
+        
+    if ([crag.cragTOD isEqualToString: self.data.timeOfDay] && [crag.cragTOY isEqualToString: self.data.timeOfYear] ) {
+        
+        [self.selectedArray addObject: crag];
+        self.selectedArray = [[NSMutableArray alloc] init];
+    
+    
+}
+
+
+}
 
 
 -(Crag *) getSelectedCrag {

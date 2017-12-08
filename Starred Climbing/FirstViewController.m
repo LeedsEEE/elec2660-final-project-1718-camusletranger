@@ -21,7 +21,6 @@
     self.timeOfDayYearPicker.delegate = self;
     self.timeOfDayYearPicker.dataSource = self;
     
-   // self.operations = [[Operations alloc] init];
     self.crag = [[Crag alloc] init];
     self.data = [[TestDataModelImport alloc] init];
 }
@@ -84,11 +83,23 @@
     self.data.timeOfDayPosition = [self.timeOfDayYearPicker selectedRowInComponent:0];
     self.data.timeOfYearPosition = [self.timeOfDayYearPicker selectedRowInComponent:1];
     
+    // Given the timeOfDayPosition and the
+    
     self.data.timeOfDay = self.data.convertToStringDay;
-    self.data.timeOfYear =self.data.convertToStringYear;
+    self.data.timeOfYear = self.data.convertToStringYear;
     
-    [self.data cragForArray];
+    NSLog(@"Time of Day,Year %@, %@", self.data.timeOfDay, self.data.timeOfYear);
     
+    int i = 0;
+    
+    for (i = 0; i < [self.data.crags count]; ++i) { // Equates the number of crags in datamodel for the for loop counter
+        
+        Crag *crag = [self.data.crags objectAtIndex:i];
+    
+        [self.data addCragToArray:crag];
+        
+    //[self.data cragForArray];
+    }
 }
 #pragma mark Text Field Delegate Methods
 
